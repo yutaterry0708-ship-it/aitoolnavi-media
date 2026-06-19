@@ -115,7 +115,7 @@ footer{{background:var(--surface);padding:32px 0;text-align:center;color:var(--m
 </div>
 </div>
 </main>
-<footer><div class="container">© 2026 AIツールナビ | AIツール比較メディア</div></footer>
+<footer><div class="container">© 2026 AIツールナビ | <a href="/about/" style="color:var(--muted)">運営者情報</a> | <a href="/privacy/" style="color:var(--muted)">プライバシーポリシー</a> | <a href="/contact/" style="color:var(--muted)">お問い合わせ</a></div></footer>
 </body>
 </html>"""
 
@@ -174,6 +174,123 @@ def parse_md(md_path: Path) -> dict:
     return {"title": title, "slug": slug, "date": date, "description": desc, "body": body_html}
 
 
+PAGE_TEMPLATE = """<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{title} | AIツールナビ</title>
+<style>
+:root{{--accent:#6366f1;--bg:#0f172a;--surface:#1e293b;--text:#f8fafc;--muted:#94a3b8}}
+*{{box-sizing:border-box;margin:0;padding:0}}
+body{{font-family:'Hiragino Sans','Yu Gothic',sans-serif;background:var(--bg);color:var(--text);line-height:1.8;font-size:16px}}
+.container{{max-width:800px;margin:0 auto;padding:0 20px}}
+header{{background:var(--surface);border-bottom:3px solid var(--accent);padding:16px 0}}
+header a{{color:var(--text);text-decoration:none;font-weight:700;font-size:1.2rem}}
+.hero{{padding:40px 0 20px}}
+h1{{font-size:1.8rem;margin-bottom:16px}}
+article{{padding:20px 0 60px}}
+article h2{{font-size:1.3rem;color:var(--accent);margin:32px 0 12px;padding-bottom:6px;border-bottom:1px solid #334155}}
+article p{{margin-bottom:14px;color:#cbd5e1}}
+article ul{{margin:12px 0 12px 24px;color:#cbd5e1}}
+article li{{margin-bottom:6px}}
+footer{{background:var(--surface);padding:32px 0;text-align:center;color:var(--muted);font-size:.85rem}}
+</style>
+</head>
+<body>
+<header><div class="container"><a href="/">AIツールナビ</a></div></header>
+<main>
+<div class="hero container"><h1>{title}</h1></div>
+<article class="container">{body}</article>
+</main>
+<footer><div class="container">© 2026 AIツールナビ | <a href="/">トップ</a> | <a href="/privacy/">プライバシーポリシー</a> | <a href="/contact/">お問い合わせ</a></div></footer>
+</body>
+</html>"""
+
+
+def _build_static_pages(output_dir: Path):
+    """プライバシーポリシー・お問い合わせ・運営者情報ページを生成"""
+    pages = {
+        "privacy": {
+            "title": "プライバシーポリシー",
+            "body": """
+<h2>個人情報の取り扱いについて</h2>
+<p>AIツールナビ（以下「当サイト」）は、ユーザーのプライバシーを尊重し、個人情報の保護に努めます。</p>
+
+<h2>広告について</h2>
+<p>当サイトは、第三者配信の広告サービス（A8.net、もしもアフィリエイト等）を利用しています。
+広告配信事業者は、ユーザーの興味に応じた広告を表示するためにCookieを使用することがあります。</p>
+<p>当サイトはAmazon.co.jpを宣伝しリンクすることによってサイトが紹介料を獲得できる手段を提供することを目的に設定されたアフィリエイトプログラムである、Amazonアソシエイト・プログラムの参加者です。</p>
+
+<h2>アフィリエイトについて</h2>
+<p>当サイトはアフィリエイト広告（成果報酬型広告）を掲載しています。
+掲載している広告はA8.net、もしもアフィリエイト、アクセストレード等のASPを通じて提供されています。
+読者が広告リンクから商品・サービスを購入・申し込みした場合、当サイトに報酬が発生することがあります。</p>
+
+<h2>アクセス解析ツールについて</h2>
+<p>当サイトでは、アクセス解析のためにGoogle Analyticsを使用する場合があります。
+Google AnalyticsはCookieを使用してデータを収集しますが、個人を特定する情報は含まれません。</p>
+
+<h2>免責事項</h2>
+<p>当サイトの情報は正確性を期していますが、掲載内容の正確性・安全性を保証するものではありません。
+当サイトの情報を参考にした結果生じた損害について、当サイトは一切の責任を負いかねます。</p>
+
+<h2>Cookieについて</h2>
+<p>当サイトはCookieを使用しています。ブラウザの設定からCookieを無効にすることができます。</p>
+
+<h2>プライバシーポリシーの変更</h2>
+<p>本ポリシーは予告なく変更されることがあります。最新版は本ページをご確認ください。</p>
+<p>制定日：2026年6月1日</p>
+"""
+        },
+        "contact": {
+            "title": "お問い合わせ",
+            "body": """
+<h2>お問い合わせ</h2>
+<p>AIツールナビへのお問い合わせは以下のGoogleフォームからお願いします。</p>
+<p>・記事の内容に関するご意見・ご指摘<br>
+・掲載情報の誤りのご報告<br>
+・広告・取材に関するご相談</p>
+<p style="margin-top:24px;">
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSf_contact_form/viewform"
+   style="display:inline-block;background:#6366f1;color:#fff;padding:12px 28px;border-radius:6px;text-decoration:none;font-weight:600;">
+お問い合わせフォームへ
+</a>
+</p>
+<p style="margin-top:20px;color:#94a3b8;font-size:.9rem;">※ お返事まで数日いただく場合がございます。</p>
+"""
+        },
+        "about": {
+            "title": "運営者情報",
+            "body": """
+<h2>運営者情報</h2>
+<ul>
+<li><strong>サイト名：</strong>AIツールナビ</li>
+<li><strong>運営者：</strong>AIツールナビ編集部</li>
+<li><strong>設立：</strong>2026年6月</li>
+<li><strong>所在地：</strong>日本</li>
+<li><strong>お問い合わせ：</strong><a href="/contact/" style="color:#6366f1;">お問い合わせフォーム</a></li>
+</ul>
+
+<h2>サイトの目的</h2>
+<p>AIツールナビは、ChatGPT・Claude・Notion・GitHub Copilotなど、最新のAIツール・SaaSサービスを実際に使用して比較・レビューする情報メディアです。</p>
+<p>AIツールを選ぶ際の信頼できる情報源となることを目指しています。</p>
+
+<h2>記事の信頼性について</h2>
+<p>当サイトの記事は、実際にツールを使用した上での情報を基に作成しています。
+アフィリエイト広告を掲載していますが、広告主からの依頼により内容を変更することはありません。</p>
+"""
+        },
+    }
+
+    for slug, page in pages.items():
+        page_dir = output_dir / slug
+        page_dir.mkdir(exist_ok=True)
+        html = PAGE_TEMPLATE.format(title=page["title"], body=page["body"])
+        (page_dir / "index.html").write_text(html, encoding="utf-8")
+        print(f"  → docs/{slug}/index.html")
+
+
 def build_site():
     OUTPUT_DIR.mkdir(exist_ok=True)
     articles = []
@@ -203,6 +320,9 @@ def build_site():
     )
     index_html = INDEX_TEMPLATE.format(cards=cards)
     (OUTPUT_DIR / "index.html").write_text(index_html, encoding="utf-8")
+
+    # 固定ページ生成
+    _build_static_pages(OUTPUT_DIR)
 
     # sitemap.xml
     BASE = "https://yutaterry0708-ship-it.github.io/aitoolnavi-media"
