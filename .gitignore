@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+data/youtube_audio/
+data/youtube_videos/
+*.log

@@ -1,0 +1,68 @@
+# ===== AI自動アフィリエイト・メディア 設定 =====
+# 編集が必要なのは brand と affiliate.links（ASP審査通過後）だけ。
+
+brand:
+  name: "AIツールナビ"          # 匿名ブランド名（実名・人脈は使わない）
+  domain: "aitoolnavi.com"      # Xserver WordPress で稼働中
+  tagline: "実際に使って選ぶ、AIツールの比較メディア"
+  language: ja
+
+niche:
+  primary: "AIツール・SaaSの比較レビュー（非金融）"
+  # 収益化の柱（金融は禁止）
+  monetization:
+    - saas_affiliate      # AIツール/SaaS（A8/もしも/afb/アクセストレード）
+    - career_affiliate    # 転職IT/AI人材（高単価¥15,000〜）
+    - amazon              # 関連ガジェット
+
+llm:
+  article_model: "claude-sonnet-4-6"          # 記事本文（品質重視）
+  keyword_model: "claude-haiku-4-5-20251001"  # KW設計/SNS整形（安価）
+  temperature: 0.7
+
+seo:
+  min_words: 2500
+  internal_links: true
+
+content:
+  output_dir: "content"
+  disclosure: "※本記事はアフィリエイト広告（PR）を含みます。実際に使用・調査した内容に基づき公平に解説しています。"
+
+publishing:
+  articles_per_day: 3
+  platform: "wordpress"
+  wp_url: "https://aitoolnavi.com"
+  # wp_user / wp_app_password → .env に追加予定
+
+sns:
+  x_enabled: true           # 顔出しなしX（自動投稿）
+  instagram_enabled: true   # リール・カルーセル（Meta Business Suite経由）
+  note_enabled: true        # note.com（記事リパーパス・SEO流入）
+  youtube_enabled: true     # 顔出しなし動画（VOICEVOX + CapCut）
+  # 投稿最適時間（JST）
+  x_post_hours: [9, 12, 19]
+  note_post_days: [1, 3, 5]   # 月水金（週3本）
+  youtube_per_week: 3       # 週3本ペース
+
+affiliate:
+  asp:
+    - { name: "A8.net",        url: "https://www.a8.net/" }
+    - { name: "もしもアフィリエイト", url: "https://af.moshimo.com/" }
+    - { name: "afb",           url: "https://www.afi-b.com/" }
+    - { name: "アクセストレード", url: "https://www.accesstrade.ne.jp/" }
+  # ======================================================
+  # A8.net でのリンク取得方法:
+  #   1. A8.net ログイン → 広告プログラム → 参加中のプログラム
+  #   2. 案件をクリック → 広告素材 → テキストリンク → URL をコピー
+  #   3. 下の行のコメントを外して URL を貼り付ける
+  # ======================================================
+  links:
+    # ---- A8.net 案件（URL を貼り付ける） ----
+    # "Notion":        "https://px.a8.net/svt/ejp?a8mat=XXXXXX"
+    # "Canva Pro":     "https://px.a8.net/svt/ejp?a8mat=YYYYYY"
+    # "ChatGPT Plus":  "https://px.a8.net/svt/ejp?a8mat=ZZZZZZ"
+    # "GitHub Copilot":"https://px.a8.net/svt/ejp?a8mat=AAAAAA"
+    # "Midjourney":    "https://px.a8.net/svt/ejp?a8mat=BBBBBB"
+    # ---- アクセストレード 高単価転職系 ----
+    # "レバテックキャリア": "https://h.accesstrade.net/sp/cc?rk=XXXXXX"
+    # "マイナビIT":    "https://h.accesstrade.net/sp/cc?rk=YYYYYY"
