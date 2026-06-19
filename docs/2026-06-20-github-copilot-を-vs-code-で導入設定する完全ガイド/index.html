@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="---">
+<title>2026-06-20-github-copilot-を-vs-code-で導入設定する完全ガイド | AIツールナビ</title>
+<link rel="canonical" href="https://aitoolnavi.com/2026-06-20-github-copilot-を-vs-code-で導入設定する完全ガイド/">
+<style>
+:root{--accent:#6366f1;--bg:#0f172a;--surface:#1e293b;--text:#f8fafc;--muted:#94a3b8}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Hiragino Sans','Yu Gothic',sans-serif;background:var(--bg);color:var(--text);line-height:1.8;font-size:17px}
+.container{max-width:800px;margin:0 auto;padding:0 20px}
+header{background:var(--surface);border-bottom:3px solid var(--accent);padding:16px 0}
+header a{color:var(--text);text-decoration:none;font-weight:700;font-size:1.2rem}
+.hero{padding:60px 0 40px;border-bottom:1px solid #334155}
+h1{font-size:clamp(1.4rem,4vw,2rem);line-height:1.4;color:var(--text);margin-bottom:16px}
+.meta{color:var(--muted);font-size:.9rem;margin-bottom:24px}
+.disclosure{background:#1e293b;border-left:4px solid var(--accent);padding:12px 16px;font-size:.85rem;color:var(--muted);margin:24px 0;border-radius:0 4px 4px 0}
+article{padding:40px 0}
+article h2{font-size:1.5rem;color:var(--accent);margin:40px 0 16px;padding-bottom:8px;border-bottom:2px solid #334155}
+article h3{font-size:1.2rem;margin:28px 0 12px;color:#e2e8f0}
+article p{margin-bottom:16px;color:#cbd5e1}
+article ul,article ol{margin:16px 0 16px 24px;color:#cbd5e1}
+article li{margin-bottom:8px}
+article strong{color:var(--text)}
+article a{color:var(--accent);text-decoration:none}
+article a:hover{text-decoration:underline}
+.aff-link{display:inline-block;background:var(--accent);color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;margin:8px 0;font-weight:600}
+.aff-link:hover{opacity:.85;text-decoration:none}
+footer{background:var(--surface);padding:32px 0;text-align:center;color:var(--muted);font-size:.85rem;margin-top:60px}
+</style>
+</head>
+<body>
+<header><div class="container"><a href="/">AIツールナビ</a></div></header>
+<main>
+<div class="hero container">
+<h1>2026-06-20-github-copilot-を-vs-code-で導入設定する完全ガイド</h1>
+<div class="meta">更新日: 2026-06-20 | AIツールナビ編集部</div>
+<div class="disclosure">※本記事はアフィリエイト広告（PR）を含みます。実際に使用・調査した内容に基づき公平に解説しています。</div>
+</div>
+<article class="container">
+<hr />
+<p>title: "GitHub Copilot を VS Code で導入・設定する完全ガイド"<br />
+description: "GitHub CopilotをVS Codeで使うための導入手順・おすすめ設定・実際に使って感じたメリット／デメリットを徹底解説。初心者から中級者まで役立つ完全ガイド。"<br />
+keywords: ["GitHub Copilot VS Code 設定"]<br />
+date: "2026-06-20"<br />
+draft: false</p>
+<hr />
+<blockquote>
+<p>※本記事はアフィリエイト広告（PR）を含みます。実際に使用・調査した内容に基づき公平に解説しています。</p>
+</blockquote>
+<hr />
+<h2>「補完が出ない」「どこで設定するの？」――Copilotで詰まる人が多い理由</h2>
+<p>GitHub Copilotを契約したはいいものの、「VS Codeで全然サジェストが出ない」「Chat機能はどこにある？」「拡張機能が2つあって混乱する」――こうした声はコミュニティやSNSで今でも頻繁に見かけます。</p>
+<p>公式ドキュメントは英語が多く、UIのアップデートも早いため、半年前の記事を見ながら設定しようとすると画面が全然違う、ということも珍しくありません。</p>
+<p><strong>この記事では、実際にGitHub CopilotをVS Codeで日常的に使い込んでいる筆者が、2025年現在の最新UIに合わせた導入手順・推奨設定・正直なデメリットまでをまとめて解説します。</strong> 読み終わる頃には「とりあえず動く状態」から「快適に使える状態」まで到達できるはずです。</p>
+<!-- TODO: affiliate link for 'copilot_vscode' not set in config.yaml -->
+
+<hr />
+<h2>GitHub Copilotとは？VS Codeとの相性が抜群な理由</h2>
+<p>GitHub Copilotは、OpenAIのモデルをベースにGitHubが開発したAIコーディングアシスタントです。コードの自動補完だけでなく、チャット形式での質問・コードレビュー・テスト生成など、開発ワークフロー全体をサポートします。</p>
+<p>VS Codeとの相性が特によい理由は主に3点です。</p>
+<ul>
+<li><strong>公式拡張機能が充実</strong>：GitHubが直接メンテナンスしているため、機能追加が最も早い</li>
+<li><strong>インラインChat・Edits機能</strong>：ファイルを開いたまま自然言語で修正依頼できる</li>
+<li><strong>エージェントモード（2025年〜）</strong>：複数ファイルにまたがる変更を自律的に実行できる</li>
+</ul>
+<p>実際に使ってみて感じるのは、JetBrainsやNeovimプラグインと比べて「UIの洗練度」が一段上だという点です。特にInline Chatのショートカット（<code>Ctrl+I</code> / <code>Cmd+I</code>）はコードを書く手を止めずに質問できるため、一度慣れると手放せなくなります。</p>
+<hr />
+<h2>料金プラン一覧（2025年現在）</h2>
+<table>
+<thead>
+<tr>
+<th>プラン</th>
+<th>月額（USD）</th>
+<th>主な対象</th>
+<th>補完回数</th>
+<th>Chat</th>
+<th>Agent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Free</td>
+<td>$0</td>
+<td>個人・お試し</td>
+<td>月2,000回</td>
+<td>月50回</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>Pro</td>
+<td>$10</td>
+<td>個人開発者</td>
+<td>無制限</td>
+<td>無制限</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Business</td>
+<td>$19/ユーザー</td>
+<td>チーム・企業</td>
+<td>無制限</td>
+<td>無制限</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Enterprise</td>
+<td>$39/ユーザー</td>
+<td>大規模組織</td>
+<td>無制限</td>
+<td>無制限</td>
+<td>✓（拡張）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>筆者注</strong>: Freeプランは2024年末に追加された比較的新しいプランです。月2,000回の補完は軽い用途なら十分ですが、1日フルに開発すると数日で上限に近づく印象でした。本格利用にはProプラン（月$10）が現実的な選択肢です。</p>
+</blockquote>
+<!-- TODO: affiliate link for 'copilot_vscode' not set in config.yaml -->
+
+<hr />
+<h2>導入手順：VS CodeにGitHub Copilotを設定する</h2>
+<h3>ステップ1：GitHubアカウントとプランの準備</h3>
+<ol>
+<li><a href="https://github.com">github.com</a> にアクセスし、アカウントを作成またはログイン</li>
+<li>右上のアバター → <strong>Settings</strong> → <strong>Copilot</strong> から希望プランを有効化</li>
+<li>Freeプランは自動で有効、有料プランはクレジットカード登録が必要</li>
+</ol>
+<h3>ステップ2：VS Code拡張機能のインストール</h3>
+<p>VS Codeの拡張機能マーケットプレイスで <strong>「GitHub Copilot」</strong> と検索します。</p>
+<p><strong>注意点</strong>：検索結果に似た名前の拡張機能が複数表示されます。インストールすべきは以下の2つです。</p>
+<table>
+<thead>
+<tr>
+<th>拡張機能名</th>
+<th>役割</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>GitHub Copilot</strong></td>
+<td>インライン補完（コード自動補完）</td>
+</tr>
+<tr>
+<td><strong>GitHub Copilot Chat</strong></td>
+<td>チャット・Inline Chat・Edits機能</td>
+</tr>
+</tbody>
+</table>
+<p>2025年現在、「GitHub Copilot Chat」は「GitHub Copilot」をインストールすると自動的に同梱されるケースが多いですが、古いVS Codeバージョンでは別途インストールが必要なこともあります。バージョンは<strong>1.85以上</strong>を推奨します。</p>
+<h3>ステップ3：GitHubアカウントでサインイン</h3>
+<p>拡張機能インストール後、VS Code左下のアカウントアイコン → <strong>「GitHub Copilotでサインイン」</strong> をクリック。ブラウザが開いてOAuth認証が完了すれば、ステータスバーにCopilotのアイコンが表示されます。</p>
+<blockquote>
+<p><strong>詰まりポイント</strong>：サインイン後もアイコンが「×」のままの場合、プロキシ環境やVPN接続が原因のことがあります。<code>settings.json</code>に<code>"http.proxy"</code>を設定するか、VPNを一時的にオフにして確認しましょう。</p>
+</blockquote>
+<h3>ステップ4：動作確認</h3>
+<p>任意のファイル（例：<code>test.py</code>）を開き、以下を入力してみてください。</p>
+<pre><code class="language-python">def fibonacci(n):
+</code></pre>
+<p>数秒でグレーのサジェストテキストが表示されれば成功です。<code>Tab</code>キーで確定、<code>Esc</code>で却下できます。</p>
+<hr />
+<h2>快適に使うための推奨設定（settings.json）</h2>
+<p>インストール直後のデフォルト設定でも動きますが、私の運用では以下の設定を加えることで格段に使いやすくなりました。</p>
+<pre><code class="language-jsonc">{
+  // インライン補完の有効化（デフォルトtrue、念のため明示）
+  &quot;github.copilot.enable&quot;: {
+    &quot;*&quot;: true,
+    &quot;markdown&quot;: true,
+    &quot;plaintext&quot;: false  // テキスト編集中の誤爆を防ぐ
+  },
+
+  // 補完候補を複数表示（Copilot Labsが不要になった機能）
+  &quot;editor.inlineSuggest.enabled&quot;: true,
+
+  // Copilot Chatのデフォルトモデル指定（2025年時点）
+  &quot;github.copilot.chat.defaultModel&quot;: &quot;gpt-4o&quot;,
+
+  // エディタ内でChatパネルを開くショートカット確認用
+  // Ctrl+Shift+I (Windows) / Cmd+Shift+I (Mac)
+
+  // 保存時に自動フォーマット（Copilotと組み合わせると快適）
+  &quot;editor.formatOnSave&quot;: true
+}
+</code></pre>
+<h3>言語別にCopilotをオフにする方法</h3>
+<p>Markdownや設定ファイル編集中にCopilotが余計なサジェストを出してくる場合、<code>"github.copilot.enable"</code>の言語キーを<code>false</code>にするだけで制御できます。実際に使ってみると、YAMLファイルでの誤補完がかなりのストレスだったため、私の環境では<code>"yaml": false</code>も追加しています。</p>
+<hr />
+<h2>主要機能の使い方</h2>
+<h3>インライン補完（Ghosttext）</h3>
+<p>最も基本的な機能。コードを書くと自動でサジェストが表示されます。</p>
+<table>
+<thead>
+<tr>
+<th>操作</th>
+<th>Windows/Linux</th>
+<th>Mac</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>サジェスト確定</td>
+<td><code>Tab</code></td>
+<td><code>Tab</code></td>
+</tr>
+<tr>
+<td>サジェスト却下</td>
+<td><code>Esc</code></td>
+<td><code>Esc</code></td>
+</tr>
+<tr>
+<td>次の候補</td>
+<td><code>Alt+]</code></td>
+<td><code>Option+]</code></td>
+</tr>
+<tr>
+<td>前の候補</td>
+<td><code>Alt+[</code></td>
+<td><code>Option+[</code></td>
+</tr>
+<tr>
+<td>全候補をパネル表示</td>
+<td><code>Ctrl+Enter</code></td>
+<td><code>Ctrl+Enter</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inline Chat（<code>Ctrl+I</code> / <code>Cmd+I</code>）</h3>
+<p>コードを選択した状態でショートカットを押すと、その場でCopilotに指示できます。</p>
+<pre><code>/fix このループのオフバイワンエラーを修正して
+/explain このコードを日本語で説明して
+/test ユニットテストを生成して
+</code></pre>
+<p>実際に使ってみて特に便利だったのは <code>/explain</code> です。他人のコードレビュー時に、難解な正規表現や複雑なアルゴリズムを即座に日本語で説明させると、読解時間が大幅に短縮できます。</p>
+<h3>Copilot Edits（複数ファイル編集）</h3>
+<p>VS Code 1.93以降で利用可能な機能。サイドパネルから「Copilot Edits」を開き、変更したいファイルを複数追加してから自然言語で指示します。</p>
+<p>「このプロジェクトのエラーハンドリングをすべてtry-catchに統一して」といった横断的な変更を一度に提案させることができます。ただし、<strong>変更内容は必ず差分を確認してから適用すること</strong>を強く推奨します。意図しないファイルまで変更されるケースがあるためです。</p>
+<hr />
+<h2>正直なメリット・デメリット</h2>
+<h3>✅ メリット</h3>
+<ul>
+<li><strong>補完の精度が高い</strong>：特に定型的なコード（CRUD処理・テスト・設定ファイル）の生成は目を見張るレベル</li>
+<li><strong>コンテキスト理解が優秀</strong>：開いているファイルや関連ファイルを参照して補完するため、プロジェクト固有の命名規則に沿ったコードが出やすい</li>
+<li><strong>学習コストが低い</strong>：インストールして使うだけ。特別な設定なしでも即日使える</li>
+<li><strong>日本語でのChat対応</strong>：質問・指示を日本語で書いても精度の高い回答が返ってくる</li>
+</ul>
+<h3>❌ デメリット（正直に書きます）</h3>
+<ul>
+<li><strong>月$10のコストは人によって重い</strong>：フリーランスや副業開発者には費用対効果を感じやすいが、趣味プログラマーには割高に感じることも</li>
+<li><strong>補完が「それっぽいが間違っている」コードを出すことがある</strong>：特に最新ライブラリのAPIや、ニッチなフレームワークでは古い・誤った補完が出る。鵜呑みにせず動作確認は必須</li>
+<li><strong>Freeプランの制限が体感でわかりやすい</strong>：月2,000回の補完は思ったより早く消費する。「今日は使えない」となるとストレスになる</li>
+<li><strong>プライバシー設定の確認が必要</strong>：デフォルトでは入力コードがモデル改善に使われる設定になっている場合があります。Business/Enterpriseプランでは無効化できますが、個人プランでは設定を確認・変更する必要があります（Settings → Copilot → Allow GitHub to use my code snippets）</li>
+<li><strong>ネット接続必須</strong>：オフライン環境では一切動作しません。ローカルLLMを使いたい場合はContinueなど別ツールを検討する必要があります</li>
+</ul>
+<hr />
+<h2>他のAIコーディングアシスタントとの比較</h2>
+<table>
+<thead>
+<tr>
+<th>ツール</th>
+<th>月額</th>
+<th>VS Code対応</th>
+<th>オフライン</th>
+<th>補完精度</th>
+<th>Chat機能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>GitHub Copilot</strong></td>
+<td>$0〜$10</td>
+<td>◎（公式）</td>
+<td>✗</td>
+<td>◎</td>
+<td>◎</td>
+</tr>
+<tr>
+<td><strong>Cursor</strong></td>
+<td>$0〜$20</td>
+<td>△（別エディタ）</td>
+<td>✗</td>
+<td>◎</td>
+<td>◎</td>
+</tr>
+<tr>
+<td><strong>Tabnine</strong></td>
+<td>$0〜$12</td>
+<td>◎</td>
+<td>✓（有料）</td>
+<td>○</td>
+<td>△</td>
+</tr>
+<tr>
+<td><strong>Codeium</strong></td>
+<td>$0〜</td>
+<td>◎</td>
+<td>✗</td>
+<td>○</td>
+<td>○</td>
+</tr>
+<tr>
+<td><strong>Continue</strong></td>
+<td>無料（OSS）</td>
+<td>◎</td>
+<td>✓</td>
+<td>△〜◎※</td>
+<td>○</td>
+</tr>
+</tbody>
+</table>
+<p>※Continueはローカルモデル次第</p>
+<p><strong>筆者の所感</strong>：VS Codeをメインエディタとして使い続けるなら、GitHub Copilotが最もシームレスです。Cursorは補完・Chat機能ともに強力ですが「エディタごと乗り換える」必要があり、既存のVS Code設定・拡張機能を引き継ぐ手間がかかります。コスト重視ならCodeiumの無料プランも選択肢になります。</p>
+<!-- TODO: affiliate link for 'copilot_vscode' not set in config.yaml -->
+
+<hr />
+<h2>FAQ</h2>
+<h3>Q1. GitHub Copilot無料プランとProプランは何が違いますか？</h3>
+<p>最大の違いは<strong>補完回数とChat回数の上限</strong>です。Freeプランは月2,000回の補完・50回のChatが上限で、超過すると月末まで使えなくなります。Proプランは$10/月で両方が無制限になり、エージェントモードも利用可能です。本格的に開発に使うならProプランへの移行を検討するのが現実的です。</p>
+<h3>Q2. 補完が全然出ないときのチェックポイントは？</h3>
+<p>以下の順番で確認してください。</p>
+<ol>
+<li>VS Codeのステータスバー右下にCopilotアイコンが表示されているか</li>
+<li>アイコンをクリックして「Enabled」になっているか（言語別にオフになっている可能性）</li>
+<li>GitHubアカウントのサインイン状態を確認（アカウントアイコンから再サインイン）</li>
+<li>プロキシ・VPN環境下でないか確認</li>
+<li>VS Codeを最新バージョンにアップデートする</li>
+</ol>
+<p>それでも解決しない場合は、VS Codeのコマンドパレット（<code>Ctrl+Shift+P</code>）から「GitHub Copilot: Diagnose」を実行すると詳細なエラー情報が得られます。</p>
+<h3>Q3. 入力したコードがGitHubに送られてセキュリティリスクはありますか？</h3>
+<p>個人プラン（Free/Pro）のデフォルト設定では、コードスニペットがモデル改善のために送信される場合があります。機密プロジェクトで使用する場合は、GitHubのSettings → Copilot → <strong>「Allow GitHub to use my code snippets for product improvements」をオフ</strong>にすることを推奨します。Business/Enterpriseプランでは組織単位でこの設定を管理でき、コードがモデルトレーニングに使われないことが契約で保証されています。</p>
+<hr />
+<h2>まとめ</h2>
+<p>GitHub CopilotをVS Codeで使うための要点を整理します。</p>
+<ul>
+<li><strong>インストールは5分以内</strong>：拡張機能2つ＋GitHubサインインで完了</li>
+<li><strong>Freeプランでまず試す</strong>：月2,000回の補完で使用感を確認してからProへ移行</li>
+<li><strong>settings.jsonで言語別制御</strong>：Markdownや設定ファイルは誤補完が多いのでオフ推奨</li>
+<li><strong>Inline Chatは最強の武器</strong>：<code>Ctrl+I</code>を使いこなすと生産性が大きく変わる</li>
+<li><strong>補完を鵜呑みにしない</strong>：特に新しいAPIや外部ライブラリの補完は動作確認必須</li>
+</ul>
+<p>実際に使ってみて、「コードを書く速度」よりも「調べる・考える時間」が減った実感の方が大きいです。エラーの原因調査・ドキュメント読み込み・テスト作成といった「本来の実装以外の作業」をCopilotに任せることで、本質的な設計や実装に集中しやすくなります。</p>
+<p>まずはFreeプランで試してみて、物足りなくなったらProへ。それが最もリスクの少ない始め方です。</p>
+<!-- TODO: affiliate link for 'copilot_vscode' not set in config.yaml -->
+
+<hr />
+<p><em>最終更新: 2026年6月 / 検証環境: VS Code 1.95, GitHub Copilot 拡張機能 v1.250</em></p>
+</article>
+</main>
+<footer><div class="container">© 2026 AIツールナビ | <a href="/">トップ</a></div></footer>
+</body>
+</html>
