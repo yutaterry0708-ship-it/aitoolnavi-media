@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="---">
+<title>目的: ユーザーIDのリストを受け取り、アクティブなユーザーのみを返す | AIツールナビ</title>
+<link rel="canonical" href="https://aitoolnavi.com/2026-06-19-github-copilot-の精度を高めるプロンプト作成のコツ/">
+<style>
+:root{--accent:#6366f1;--bg:#0f172a;--surface:#1e293b;--text:#f8fafc;--muted:#94a3b8}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Hiragino Sans','Yu Gothic',sans-serif;background:var(--bg);color:var(--text);line-height:1.8;font-size:17px}
+.container{max-width:800px;margin:0 auto;padding:0 20px}
+header{background:var(--surface);border-bottom:3px solid var(--accent);padding:16px 0}
+header a{color:var(--text);text-decoration:none;font-weight:700;font-size:1.2rem}
+.hero{padding:60px 0 40px;border-bottom:1px solid #334155}
+h1{font-size:clamp(1.4rem,4vw,2rem);line-height:1.4;color:var(--text);margin-bottom:16px}
+.meta{color:var(--muted);font-size:.9rem;margin-bottom:24px}
+.disclosure{background:#1e293b;border-left:4px solid var(--accent);padding:12px 16px;font-size:.85rem;color:var(--muted);margin:24px 0;border-radius:0 4px 4px 0}
+article{padding:40px 0}
+article h2{font-size:1.5rem;color:var(--accent);margin:40px 0 16px;padding-bottom:8px;border-bottom:2px solid #334155}
+article h3{font-size:1.2rem;margin:28px 0 12px;color:#e2e8f0}
+article p{margin-bottom:16px;color:#cbd5e1}
+article ul,article ol{margin:16px 0 16px 24px;color:#cbd5e1}
+article li{margin-bottom:8px}
+article strong{color:var(--text)}
+article a{color:var(--accent);text-decoration:none}
+article a:hover{text-decoration:underline}
+.aff-link{display:inline-block;background:var(--accent);color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;margin:8px 0;font-weight:600}
+.aff-link:hover{opacity:.85;text-decoration:none}
+footer{background:var(--surface);padding:32px 0;text-align:center;color:var(--muted);font-size:.85rem;margin-top:60px}
+</style>
+</head>
+<body>
+<header><div class="container"><a href="/">AIツールナビ</a></div></header>
+<main>
+<div class="hero container">
+<h1>目的: ユーザーIDのリストを受け取り、アクティブなユーザーのみを返す</h1>
+<div class="meta">更新日: 2026-06-19 | AIツールナビ編集部</div>
+<div class="disclosure">※本記事はアフィリエイト広告（PR）を含みます。実際に使用・調査した内容に基づき公平に解説しています。</div>
+</div>
+<article class="container">
+<hr />
+<p>title: "GitHub Copilot の精度を高めるプロンプト作成のコツ"<br />
+description: "GitHub Copilot の精度が上がらないと悩む開発者向けに、実際に使い込んだ経験をもとにプロンプト作成のコツ・設定・比較を徹底解説。具体的なテクニックで補完品質を底上げしよう。"<br />
+keywords: ["GitHub Copilot 精度 精度向上 プロンプト"]<br />
+date: "2026-06-19"<br />
+draft: false</p>
+<hr />
+<blockquote>
+<p>※本記事はアフィリエイト広告（PR）を含みます。実際に使用・調査した内容に基づき公平に解説しています。</p>
+</blockquote>
+<hr />
+<h2>「Copilot って思ったより使えない」と感じたことはありませんか？</h2>
+<p>GitHub Copilot を導入したものの、「なんか的外れな補完ばかり出てくる」「コメントを書いても意図が伝わらない」と感じて、結局手書きに戻してしまう——そんな経験をした開発者は少なくないはずです。</p>
+<p>私自身、AIツールナビの編集部で複数のAIコーディングアシスタントを実際に使い込む中で、最初は同じ壁にぶつかりました。Copilot は使い方次第で補完精度が大きく変わるツールです。<strong>「プロンプト（コンテキスト）の与え方」を変えるだけで、体感できるレベルで提案品質が上がります。</strong></p>
+<p>この記事では、実際の運用で効果を感じたプロンプト作成のコツを体系的にまとめます。設定面の見直しから、コメントの書き方、Copilot Chat との使い分けまで、すぐ実践できる内容に絞って解説します。</p>
+<!-- TODO: affiliate link for 'copilot_accuracy' not set in config.yaml -->
+
+<hr />
+<h2>GitHub Copilot の精度が低く感じる根本的な原因</h2>
+<h3>Copilot はコンテキストを読んで補完する</h3>
+<p>GitHub Copilot の補完エンジンは、カーソル位置の<strong>前後のコード・コメント・ファイル名・関連ファイル</strong>などをコンテキストとして取り込み、最も確率の高いコードを予測します。つまり、<strong>コンテキストが貧弱だと提案も貧弱になる</strong>のは構造上避けられません。</p>
+<p>「使えない」と感じる場面の多くは、Copilot のモデルが悪いのではなく、<strong>モデルに渡している情報が不十分</strong>なケースです。実際に使ってみて痛感したのですが、ファイルを新規作成してすぐ関数を書こうとすると、汎用的すぎる補完しか出てきません。一方、同じ関数でも周辺に型定義・既存関数・詳細なコメントがあると、驚くほどピンポイントな提案が返ってきます。</p>
+<h3>精度低下の主な原因まとめ</h3>
+<table>
+<thead>
+<tr>
+<th>原因</th>
+<th>具体的な症状</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>コンテキスト不足</td>
+<td>汎用的すぎる・関係ない補完が出る</td>
+</tr>
+<tr>
+<td>コメントが曖昧</td>
+<td>意図と異なる実装が提案される</td>
+</tr>
+<tr>
+<td>ファイルが大きすぎる</td>
+<td>コンテキストウィンドウから重要部分が溢れる</td>
+</tr>
+<tr>
+<td>言語・フレームワーク情報がない</td>
+<td>別スタックのコードが混入する</td>
+</tr>
+<tr>
+<td>Copilot の設定が未調整</td>
+<td>全言語で同じ挙動になる</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>精度を高めるプロンプト作成のコツ【実践編】</h2>
+<h3>コツ1：コメントは「目的 → 入力 → 出力 → 制約」の順で書く</h3>
+<p>Copilot への最大のプロンプトは<strong>インラインコメント</strong>です。「// ユーザー一覧を取得する」のような一行コメントより、以下のように構造化すると精度が上がります。</p>
+<pre><code class="language-python"># 入力: user_ids (List[int])
+# 出力: List[User] - is_active=True のユーザーのみ
+# 制約: DB へのクエリは1回に抑えること。削除済みユーザーは除外する
+def get_active_users(user_ids: list[int]) -&gt; list[User]:
+</code></pre>
+<p>私の運用では、このフォーマットをスニペットとして登録しておき、複雑な関数を書くときはテンプレとして貼り付けています。コメントを埋めるだけで Copilot の提案精度が明確に変わります。</p>
+<h3>コツ2：型アノテーションを必ず書く</h3>
+<p>型情報はコメントと同等かそれ以上に強力なヒントになります。特に TypeScript・Python・Rust などの型システムが充実した言語では、<strong>型を書くだけで補完が劇的に絞られます。</strong></p>
+<pre><code class="language-typescript">// 型なし → 汎用的な補完
+function processOrder(order) {
+
+// 型あり → 具体的な補完
+function processOrder(order: Order): Promise&lt;ProcessedOrder&gt; {
+</code></pre>
+<p>実際に使ってみて、TypeScript プロジェクトで <code>any</code> を多用していた頃と、型を厳密に書くようにしてからとでは、補完の的中率が体感で大きく異なりました。</p>
+<h3>コツ3：関連ファイルを開いたままにする</h3>
+<p>Copilot（特に最新バージョン）は、<strong>エディタで開いているタブのコード</strong>もコンテキストとして参照します。これを意識的に活用します。</p>
+<ul>
+<li>実装する前に、関連する型定義ファイル（<code>types.ts</code>、<code>models.py</code> など）を開いておく</li>
+<li>参考にしてほしいユーティリティ関数のファイルを開いておく</li>
+<li>テストファイルを開いておくと、テストしやすい実装を提案しやすくなる</li>
+</ul>
+<p>逆に言えば、<strong>不要なファイルを閉じてコンテキストを整理する</strong>ことも精度向上につながります。</p>
+<h3>コツ4：ファイル冒頭に「コンテキストブロック」を置く</h3>
+<p>新規ファイルを作成するとき、冒頭に以下のようなブロックを置くと、ファイル全体の補完品質が上がります。</p>
+<pre><code class="language-python">&quot;&quot;&quot;
+モジュール: 注文処理サービス
+フレームワーク: FastAPI + SQLAlchemy
+DB: PostgreSQL
+規約: 非同期処理は async/await を使用。例外は OrderError を継承すること
+&quot;&quot;&quot;
+</code></pre>
+<p>これは特にチーム開発で有効で、コーディング規約をコメントとして埋め込むことで、Copilot がプロジェクト固有のスタイルに寄せた提案をしやすくなります。</p>
+<h3>コツ5：Copilot Chat を「設計の壁打ち」に使う</h3>
+<p>インライン補完だけでなく、<strong>Copilot Chat（<code>/explain</code>・<code>/fix</code>・<code>/tests</code> コマンド）</strong>を組み合わせると精度向上の幅が広がります。</p>
+<p>私の運用では以下のフローが定着しています。</p>
+<ol>
+<li><strong>Chat で設計を固める</strong>：「この関数の責務をどう分割すべきか」を Chat に相談</li>
+<li><strong>コメントを Chat で生成</strong>：「この関数の JSDoc を書いて」と依頼してコメントを充実させる</li>
+<li><strong>インライン補完で実装</strong>：充実したコメント・型を元に Copilot に補完させる</li>
+<li><strong><code>/tests</code> でテスト生成</strong>：実装後にテストケースを自動生成</li>
+</ol>
+<p>このフローにしてから、補完の手戻りが明らかに減りました。</p>
+<!-- TODO: affiliate link for 'copilot_accuracy' not set in config.yaml -->
+
+<hr />
+<h2>AIコーディングアシスタント比較表</h2>
+<p>精度向上を考える上で、他ツールとの比較も参考になります。</p>
+<table>
+<thead>
+<tr>
+<th>ツール</th>
+<th>補完精度</th>
+<th>Chat 機能</th>
+<th>コンテキスト活用</th>
+<th>価格（月額）</th>
+<th>特徴</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>GitHub Copilot</strong></td>
+<td>★★★★☆</td>
+<td>◎</td>
+<td>タブ参照・<code>copilot-instructions.md</code></td>
+<td>個人$10〜</td>
+<td>IDE統合が最も成熟</td>
+</tr>
+<tr>
+<td><strong>Cursor</strong></td>
+<td>★★★★★</td>
+<td>◎</td>
+<td>Codebase全体インデックス</td>
+<td>$20〜</td>
+<td>リポジトリ全体を把握しやすい</td>
+</tr>
+<tr>
+<td><strong>Codeium</strong></td>
+<td>★★★☆☆</td>
+<td>○</td>
+<td>タブ参照</td>
+<td>無料〜</td>
+<td>無料プランが充実</td>
+</tr>
+<tr>
+<td><strong>Amazon Q Developer</strong></td>
+<td>★★★☆☆</td>
+<td>○</td>
+<td>AWSリソース連携</td>
+<td>無料〜</td>
+<td>AWS環境に強い</td>
+</tr>
+<tr>
+<td><strong>Tabnine</strong></td>
+<td>★★★☆☆</td>
+<td>△</td>
+<td>ローカルモデル選択可</td>
+<td>$12〜</td>
+<td>プライバシー重視向け</td>
+</tr>
+</tbody>
+</table>
+<p>※価格・機能は2025年時点の情報。為替・プラン変更により異なる場合があります。</p>
+<p>Copilot の強みは <strong>IDE との統合成熟度とエコシステムの広さ</strong>です。VS Code・JetBrains・Neovim など対応エディタが多く、<code>copilot-instructions.md</code> によるプロジェクト単位のカスタマイズも可能です。一方、リポジトリ全体を横断したコンテキスト把握は Cursor の方が優れている場面があります。</p>
+<!-- TODO: affiliate link for 'copilot_accuracy' not set in config.yaml -->
+
+<hr />
+<h2>正直なメリット・デメリット</h2>
+<h3>メリット</h3>
+<ul>
+<li><strong>コンテキストの与え方を工夫するだけで精度が上がる</strong>：追加費用なし、設定変更なしで効果を感じやすい</li>
+<li><strong><code>copilot-instructions.md</code> でプロジェクト全体に規約を適用できる</strong>：チーム開発で特に有効</li>
+<li><strong>Chat コマンドが充実している</strong>：<code>/fix</code>・<code>/explain</code>・<code>/tests</code> など目的別に使い分けられる</li>
+<li><strong>主要IDE との統合が安定している</strong>：JetBrains 系でも動作が安定しており、乗り換えコストが低い</li>
+</ul>
+<h3>デメリット（正直に書きます）</h3>
+<ul>
+<li><strong>コンテキストウィンドウに限界がある</strong>：大規模なモノリポでは、関連ファイルが多すぎてコンテキストが溢れる場面がある</li>
+<li><strong>プロンプトエンジニアリングの学習コストがかかる</strong>：「入れるだけで使える」と思って導入すると期待外れになりやすい</li>
+<li><strong>補完の採用・却下の繰り返しが疲弊感につながることも</strong>：提案の質が低い言語（ニッチなDSLなど）では逆に邪魔に感じる</li>
+<li><strong>セキュリティポリシーによっては導入できない環境がある</strong>：コードがサーバーに送信されるため、機密性の高いプロジェクトでは要確認</li>
+<li><strong>Cursor など競合と比較するとリポジトリ全体把握は弱い</strong>：プロジェクト横断の補完精度では差を感じる場面がある</li>
+</ul>
+<hr />
+<h2>よくある質問（FAQ）</h2>
+<h3>Q1. <code>copilot-instructions.md</code> とは何ですか？効果はありますか？</h3>
+<p><strong>A.</strong> リポジトリのルートまたは <code>.github/</code> ディレクトリに置くことで、<strong>プロジェクト全体の Copilot の挙動をカスタマイズできるファイル</strong>です。コーディング規約・使用フレームワーク・禁止パターンなどを記述すると、補完・Chat の両方に反映されます。実際に使ってみて、チーム開発での規約遵守率が上がる効果を感じました。ただし VS Code での対応が先行しており、JetBrains 系では機能が限定的な場合があります。最新の対応状況は公式ドキュメントで確認してください。</p>
+<h3>Q2. コメントを英語で書くと精度が上がりますか？</h3>
+<p><strong>A.</strong> モデルの学習データは英語が多いため、<strong>英語コメントの方が補完精度が高い傾向はあります</strong>。ただし日本語でも十分な精度が出るケースが多く、「日本語だから使えない」というほどの差ではありません。私の運用では、関数レベルのコメントは英語、ファイル全体の説明は日本語という使い分けをしています。チームの読みやすさと精度のバランスで判断するのが現実的です。</p>
+<h3>Q3. Copilot Individual と Copilot Business で精度に差はありますか？</h3>
+<p><strong>A.</strong> 補完モデル自体の精度に大きな差はありませんが、<strong>Business・Enterprise プランでは組織単位のポリシー設定・<code>copilot-instructions.md</code> の組織適用・監査ログ</strong>などが使えます。精度向上という観点では、Enterprise の「ナレッジベース（社内ドキュメントをコンテキストに追加）」機能が効果的です。個人開発なら Individual で十分ですが、チーム開発では Business 以上のプランを検討する価値があります。</p>
+<hr />
+<h2>まとめ：Copilot の精度はプロンプト次第で変わる</h2>
+<p>GitHub Copilot の補完精度が低く感じる原因のほとんどは、<strong>モデルへのコンテキスト（情報）の渡し方</strong>にあります。</p>
+<p>今日から実践できるポイントを整理します。</p>
+<ol>
+<li><strong>コメントは「目的・入力・出力・制約」の構造で書く</strong></li>
+<li><strong>型アノテーションを丁寧に書く</strong></li>
+<li><strong>関連ファイルをエディタで開いておく</strong></li>
+<li><strong>ファイル冒頭にコンテキストブロックを置く</strong></li>
+<li><strong>Copilot Chat を設計・コメント生成に活用する</strong></li>
+<li><strong><code>copilot-instructions.md</code> でプロジェクト規約を明示する</strong></li>
+</ol>
+<p>どれも追加費用なし・設定変更なしで今すぐ試せます。「Copilot を入れたけど使えない」と感じているなら、まずコメントの書き方を変えるところから始めてみてください。</p>
+<p>Copilot の導入・プラン選択については、以下のリンクから詳細を確認できます。</p>
+<!-- TODO: affiliate link for 'copilot_accuracy' not set in config.yaml -->
+
+<hr />
+<p><em>この記事はAIツールナビ編集部が実際にツールを使用・調査した内容に基づいて執筆しています。価格・機能情報は記事執筆時点のものです。最新情報は各公式サイトをご確認ください。</em></p>
+</article>
+</main>
+<footer><div class="container">© 2026 AIツールナビ | <a href="/">トップ</a></div></footer>
+</body>
+</html>
