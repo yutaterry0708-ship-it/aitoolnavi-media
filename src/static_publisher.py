@@ -203,6 +203,21 @@ def build_site():
     )
     index_html = INDEX_TEMPLATE.format(cards=cards)
     (OUTPUT_DIR / "index.html").write_text(index_html, encoding="utf-8")
+
+    # sitemap.xml
+    BASE = "https://yutaterry0708-ship-it.github.io/aitoolnavi-media"
+    sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n'
+    sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    sitemap += f'<url><loc>{BASE}/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>\n'
+    for a in articles:
+        sitemap += f'<url><loc>{BASE}/{a["slug"]}/</loc><lastmod>{a["date"]}</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>\n'
+    sitemap += '</urlset>'
+    (OUTPUT_DIR / "sitemap.xml").write_text(sitemap, encoding="utf-8")
+
+    # robots.txt
+    robots = f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n"
+    (OUTPUT_DIR / "robots.txt").write_text(robots, encoding="utf-8")
+    print("sitemap.xml / robots.txt 生成完了")
     print(f"\nindex.html 作成完了")
     print(f"→ docs/ フォルダを GitHub にpushすれば即公開！")
     print(f"  GitHub Pages: https://<user>.github.io/<repo>/")

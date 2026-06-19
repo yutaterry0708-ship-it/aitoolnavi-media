@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yutaterry0708-ship-it.github.io/aitoolnavi-media/sitemap.xml

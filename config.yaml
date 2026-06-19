@@ -56,13 +56,14 @@ affiliate:
   #   2. 案件をクリック → 広告素材 → テキストリンク → URL をコピー
   #   3. 下の行のコメントを外して URL を貼り付ける
   # ======================================================
+  # ツール名 → 提携後にA8.netの「テキストリンクURL」を貼る
+  # A8.net: ログイン → 参加中のプログラム → 広告素材 → テキストリンク → URLコピー
   links:
-    # ---- A8.net 案件（URL を貼り付ける） ----
-    # "Notion":        "https://px.a8.net/svt/ejp?a8mat=XXXXXX"
-    # "Canva Pro":     "https://px.a8.net/svt/ejp?a8mat=YYYYYY"
-    # "ChatGPT Plus":  "https://px.a8.net/svt/ejp?a8mat=ZZZZZZ"
-    # "GitHub Copilot":"https://px.a8.net/svt/ejp?a8mat=AAAAAA"
-    # "Midjourney":    "https://px.a8.net/svt/ejp?a8mat=BBBBBB"
-    # ---- アクセストレード 高単価転職系 ----
+    # ---- A8.net（提携後にURLを貼る）----
+    "Notta":            ""   # 文字起こしAI EPC72 確定率80%
+    "DMM生成AICAMP":    ""   # AI学習スクール EPC34 確定率100%
+    "MiriCanvas":       ""   # AIスライド作成 確定率100%
+    "天秤AI":           ""   # 生成AI比較ツール
+    "Plaud":            ""   # AIボイスレコーダー EPC74
+    # ---- アクセストレード 高単価転職系（後日追加）----
     # "レバテックキャリア": "https://h.accesstrade.net/sp/cc?rk=XXXXXX"
-    # "マイナビIT":    "https://h.accesstrade.net/sp/cc?rk=YYYYYY"
