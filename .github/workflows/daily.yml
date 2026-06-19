@@ -1,0 +1,59 @@
+name: Daily Content Pipeline
+
+on:
+  schedule:
+    - cron: '30 22 * * *'  # 毎日 7:30 JST (22:30 UTC)
+  workflow_dispatch:        # 手動実行も可能
+
+jobs:
+  generate-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install anthropic google-generativeai feedparser pyyaml python-dotenv markdown requests tweepy
+
+      - name: Generate articles (3/day)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          cd src
+          python run_daily.py --count 3
+
+      - name: Inject affiliate links
+        run: |
+          cd src
+          python affiliate_inject.py
+
+      - name: Build static site
+        run: |
+          pip install markdown
+          cd src
+          python static_publisher.py
+
+      - name: Post to X (if credits available)
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+        run: |
+          cd src
+          python traffic/x_auto_poster.py --generate 3 || true
+          python traffic/x_auto_poster.py --post --force || true
+        continue-on-error: true
+
+      - name: Commit and push
+        run: |
+          git config user.email "action@github.com"
+          git config user.name "AIツールナビ Bot"
+          git add content/ docs/ data/keywords.csv data/sns_queue.csv || true
+          git diff --staged --quiet || git commit -m "auto: $(date +'%Y-%m-%d') content update"
+          git push

@@ -1,0 +1,82 @@
+keyword,intent,affiliate_tag,title,status
+Notion AI 使い方,commercial,Notion,Notion AIの使い方,published
+ChatGPT プラグイン 使い方,informational,plugin_guide,ChatGPTプラグインの使い方完全ガイド｜インストール方法から活用例まで,published
+ChatGPT API 連携 SaaS,commercial,api_integration,ChatGPT APIを使ったSaaS開発｜連携方法と活用事例,published
+ChatGPT カスタムGPT 作成方法,informational,custom_gpt,カスタムGPTの作成方法｜ノーコードで独自AIツールを構築,published
+ChatGPT 業務効率化 活用例,informational,business_use,ChatGPTで業務効率化｜実践的な活用例と導入のコツ,published
+ChatGPT Webクローラー 代替ツール,commercial,web_scraping,ChatGPT連携のWebスクレイピングツール比較｜2024年版,published
+ChatGPT 画像生成 DALL-E 連携,informational,image_generation,ChatGPTでDALL-Eを使った画像生成｜プラグイン設定と活用法,published
+ChatGPT 音声入力 音声出力 設定,informational,voice_feature,ChatGPTの音声機能の使い方｜音声入出力の設定方法,published
+ChatGPT 無料版 有料版 比較 機能差,commercial,pricing_comparison,ChatGPT無料版vs有料版｜機能比較と選び方ガイド,published
+Claude AI vs ChatGPT 比較,commercial,claude_vs_chatgpt,Claude AIとChatGPTを徹底比較｜機能・料金・精度の違い,published
+Claude 3 おすすめ 使い方,informational,claude3_guide,Claude 3の使い方ガイド｜Opus/Sonnet/Haiku の選び方,published
+Claude AI 無料版 制限,informational,claude_free_limits,Claude AIの無料版でできること｜有料版との制限比較,published
+Claude API 導入 メリット,commercial,claude_api_benefits,Claude APIの導入メリット｜他のAI APIとの比較,published
+Claude AI 日本語 精度,informational,claude_japanese,Claude AIの日本語対応｜精度検証と活用例,published
+Claude Pro 料金 価値,commercial,claude_pro_pricing,Claude Pro は買うべき？｜月額20ドルの価値を検証,published
+Claude AI 長文 要約 おすすめ,informational,claude_summarize,Claude AIで長文要約｜GPTより優れた理由と活用法,published
+Claude AI コーディング 精度,commercial,claude_coding,Claude AIのコーディング性能｜プログラマー向け評価,published
+Notion AI 文章作成 テンプレート,informational,notion_ai_template,Notion AIで文章作成を自動化するテンプレート集と活用法,published
+Notion AI 議事録 自動生成,commercial,notion_ai_meeting,Notion AIで議事録を自動生成する方法と導入メリット,published
+Notion AI vs ChatGPT 業務効率,informational,notion_ai_comparison,Notion AIとChatGPTの比較：業務効率化ツールとしての選び方,published
+Notion AI メール返信 自動化,commercial,notion_ai_email,Notion AIでメール返信を自動化する設定手順と実例,published
+Notion AI プロジェクト管理 活用例,informational,notion_ai_project,Notion AIを使ったプロジェクト管理の実践的な活用例,published
+Notion AI 料金 無料版 制限,commercial,notion_ai_pricing,Notion AI の料金プランと無料版の制限事項を徹底解説,published
+Notion AI データベース 要約機能,informational,notion_ai_database,Notion AIのデータベース要約機能で情報整理を効率化,published
+Notion AI 日本語 精度 改善,informational,notion_ai_japanese,Notion AIの日本語対応精度と改善方法のコツ,published
+GitHub Copilot 使い方 初心者,informational,copilot_beginner,GitHub Copilot の基本的な使い方を初心者向けに解説,published
+GitHub Copilot VS Code 設定,informational,copilot_vscode,GitHub Copilot を VS Code で導入・設定する完全ガイド,published
+GitHub Copilot 料金 個人,commercial,copilot_pricing,GitHub Copilot の個人向け料金プランと他ツールとの比較,pending
+GitHub Copilot Python コード例,informational,copilot_python,GitHub Copilot で Python コードを効率的に書く方法,pending
+GitHub Copilot JetBrains IDE 対応,informational,copilot_jetbrains,GitHub Copilot を JetBrains IDE で使う設定手順,pending
+GitHub Copilot 精度 精度向上 プロンプト,informational,copilot_accuracy,GitHub Copilot の精度を高めるプロンプト作成のコツ,pending
+GitHub Copilot セキュリティ リスク,informational,copilot_security,GitHub Copilot のセキュリティリスクと安全な使用方法,pending
+GitHub Copilot Tabnine ChatGPT 比較,commercial,copilot_comparison,GitHub Copilot vs Tabnine vs ChatGPT - AI コード補完ツール比較,pending
+Midjourney 使い方 初心者,informational,midjourney_tutorial,Midjourneyの使い方を初心者向けに完全解説｜登録から画像生成まで,pending
+Midjourney プロンプト コツ,informational,midjourney_prompt,Midjourneyでクオリティの高い画像を生成するプロンプトのコツ,pending
+Midjourney 無料 使える,informational,midjourney_free,Midjourneyは無料で使える？料金プランと無料トライアルの活用法,pending
+Midjourney vs Stable Diffusion,commercial,midjourney_comparison,MidjourneyとStable Diffusionを比較｜どちらがおすすめ？,pending
+Midjourney Discord 連携,informational,midjourney_discord,MidjourneyをDiscordで使う方法｜サーバー設定から画像生成まで,pending
+Midjourney 日本語 対応,informational,midjourney_japanese,Midjourneyは日本語対応？日本語プロンプトの使い方,pending
+Midjourney 商用利用 ライセンス,commercial,midjourney_commercial,Midjourneyで生成した画像は商用利用できる？利用規約を解説,pending
+Midjourney アップスケール やり方,informational,midjourney_upscale,Midjourneyのアップスケール機能の使い方｜高品質画像を出力する方法,pending
+Microsoft Copilot Word 使い方,informational,office_tutorial,Microsoft Copilot in Wordの使い方完全ガイド｜文章作成を効率化,pending
+Copilot Excel データ分析 自動化,informational,excel_automation,CopilotでExcelのデータ分析を自動化｜実例と活用法,pending
+Microsoft 365 Copilot 料金 比較,commercial,pricing_comparison,Microsoft 365 Copilotの料金プラン｜他ツールとの比較表,pending
+Copilot PowerPoint プレゼン作成 時間短縮,informational,presentation_tool,CopilotでPowerPointのプレゼン作成時間を50%削減する方法,pending
+Office Copilot vs ChatGPT 違い,informational,tool_comparison,Office CopilotとChatGPTの違い｜どちらを選ぶべき？,pending
+Copilot Outlook メール自動返信 設定,informational,email_productivity,Outlookの自動返信をCopilotで効率化｜設定方法と実例,pending
+Microsoft Copilot Teams 会議 議事録,informational,meeting_assistant,Teamsの会議議事録をCopilotが自動作成｜活用シーン別ガイド,pending
+Copilot OneNote ノート整理 AI活用,informational,note_management,OneNoteのノート整理をCopilotで効率化｜AI要約・検索機能,pending
+Perplexity AI 使い方 初心者向け,informational,perplexity_beginner,Perplexity AIの使い方を初心者向けに解説｜基本機能から活用法まで,pending
+Perplexity AI Pro 料金 価値,commercial,perplexity_pro_pricing,Perplexity AI Proは本当に必要か｜料金と機能を他ツールと比較,pending
+Perplexity AI ChatGPT 違い 比較,informational,perplexity_vs_chatgpt,Perplexity AIとChatGPTの違いは？検索機能と精度を徹底比較,pending
+Perplexity AI 検索精度 評判,informational,perplexity_accuracy_review,Perplexity AIの検索精度は本当に高い？実際の評判と精度検証,pending
+Perplexity AI 日本語対応 使える,informational,perplexity_japanese,Perplexity AIは日本語で使える？日本語対応状況と活用方法,pending
+Perplexity AI API 導入 企業向け,commercial,perplexity_api_enterprise,Perplexity AI APIの導入方法｜企業向け検索ツール活用ガイド,pending
+Perplexity AI モバイルアプリ Android iOS,informational,perplexity_mobile_app,Perplexity AIアプリの使い方｜スマホで快適に使うコツ,pending
+Perplexity AI 無料版 制限 Pro版との違い,commercial,perplexity_free_vs_pro,Perplexity AI無料版の制限は？Pro版へのアップグレードを検討すべき人,pending
+Canva Pro AI背景削除 使い方,informational,canva_ai_bg_removal,Canva ProのAI背景削除機能の使い方完全ガイド,pending
+Canva Pro AIロゴジェネレーター 比較,commercial,canva_ai_logo_compare,Canva ProのAIロゴジェネレーターを他ツールと比較,pending
+Canva Pro AI画像生成 無料版との違い,informational,canva_ai_image_gen_free,Canva ProのAI画像生成機能は無料版で使える？違いを解説,pending
+Canva Pro AI魔法編集ツール レビュー,commercial,canva_ai_magic_edit,Canva ProのAI魔法編集ツール実際の評判と使用感,pending
+Canva Pro AIテンプレート生成 効率化,informational,canva_ai_template_gen,Canva ProのAIテンプレート生成で制作時間を短縮する方法,pending
+Canva Pro AI文字起こし 動画編集,informational,canva_ai_transcription,Canva ProのAI文字起こし機能で動画編集を効率化,pending
+Canva Pro AI vs Adobe Express AI機能,commercial,canva_vs_adobe_ai,Canva ProとAdobe ExpressのAI機能を徹底比較,pending
+Canva Pro AI デザイン初心者 おすすめ,informational,canva_ai_beginner,デザイン初心者がCanva ProのAI機能で成功するコツ,pending
+Zapier Make 連携 違い,informational,zapier_make_comparison,ZapierとMakeの連携機能の違いを徹底比較,pending
+Make自動化ツール 無料プラン 機能比較,commercial,make_pricing_features,Make自動化ツールの無料プランを詳しく解説,pending
+Zapier 複雑なワークフロー 自動化,informational,zapier_advanced_workflows,Zapierで複雑なワークフローを実現する方法,pending
+Make Zapier どちらが安い,commercial,automation_cost_comparison,MakeとZapierの料金プラン徹底比較,pending
+自動化ツール 初心者向け Make vs Zapier,informational,beginner_automation_guide,初心者向け：MakeとZapierどちらを選ぶべき？,pending
+Zapier 連携アプリ数 最新,informational,zapier_integrations,Zapierの連携可能なアプリ数と対応サービス一覧,pending
+Make自動化 日本語対応 使いやすさ,commercial,make_japanese_support,Make自動化ツールの日本語対応と使いやすさ評価,pending
+業務自動化 Zapier Make Integromat 選び方,informational,automation_tool_selection,業務自動化ツール3社比較：最適なツール選びガイド,pending
+AIライティングツール 比較 おすすめ,commercial,tool_comparison,AIライティングツール比較おすすめ7選【2024年版】,pending
+AIライティングツール 無料 日本語,commercial,free_tools,無料で使えるAIライティングツール日本語対応おすすめ,pending
+ChatGPT ライティングツール 違い,informational,comparison_chatgpt,ChatGPTとAIライティングツールの違いを徹底比較,pending
+AIライティングツール ブログ 初心者,commercial,beginner_guide,ブログ初心者向けAIライティングツールの選び方,pending
+AIライティングツール 料金 安い,commercial,pricing_comparison,料金が安いAIライティングツールおすすめランキング,pending
+AIライティングツール 精度 精密度,informational,quality_comparison,AIライティングツール精度比較：どのツールが最も正確か,pending
+AIライティングツール SEO対応,commercial,seo_tools,SEO対応のAIライティングツールおすすめ5選,pending
+AIライティングツール 日本語 使いやすさ,commercial,usability_ranking,日本語対応で使いやすいAIライティングツール比較,pending
