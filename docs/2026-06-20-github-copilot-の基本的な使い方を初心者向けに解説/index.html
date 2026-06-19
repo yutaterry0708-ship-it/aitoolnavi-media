@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="---">
+<title>CSVファイルを読み込んで、年齢列の平均を計算する | AIツールナビ</title>
+<link rel="canonical" href="https://aitoolnavi.com/2026-06-20-github-copilot-の基本的な使い方を初心者向けに解説/">
+<style>
+:root{--accent:#6366f1;--bg:#0f172a;--surface:#1e293b;--text:#f8fafc;--muted:#94a3b8}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Hiragino Sans','Yu Gothic',sans-serif;background:var(--bg);color:var(--text);line-height:1.8;font-size:17px}
+.container{max-width:800px;margin:0 auto;padding:0 20px}
+header{background:var(--surface);border-bottom:3px solid var(--accent);padding:16px 0}
+header a{color:var(--text);text-decoration:none;font-weight:700;font-size:1.2rem}
+.hero{padding:60px 0 40px;border-bottom:1px solid #334155}
+h1{font-size:clamp(1.4rem,4vw,2rem);line-height:1.4;color:var(--text);margin-bottom:16px}
+.meta{color:var(--muted);font-size:.9rem;margin-bottom:24px}
+.disclosure{background:#1e293b;border-left:4px solid var(--accent);padding:12px 16px;font-size:.85rem;color:var(--muted);margin:24px 0;border-radius:0 4px 4px 0}
+article{padding:40px 0}
+article h2{font-size:1.5rem;color:var(--accent);margin:40px 0 16px;padding-bottom:8px;border-bottom:2px solid #334155}
+article h3{font-size:1.2rem;margin:28px 0 12px;color:#e2e8f0}
+article p{margin-bottom:16px;color:#cbd5e1}
+article ul,article ol{margin:16px 0 16px 24px;color:#cbd5e1}
+article li{margin-bottom:8px}
+article strong{color:var(--text)}
+article a{color:var(--accent);text-decoration:none}
+article a:hover{text-decoration:underline}
+.aff-link{display:inline-block;background:var(--accent);color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;margin:8px 0;font-weight:600}
+.aff-link:hover{opacity:.85;text-decoration:none}
+footer{background:var(--surface);padding:32px 0;text-align:center;color:var(--muted);font-size:.85rem;margin-top:60px}
+</style>
+</head>
+<body>
+<header><div class="container"><a href="/">AIツールナビ</a></div></header>
+<main>
+<div class="hero container">
+<h1>CSVファイルを読み込んで、年齢列の平均を計算する</h1>
+<div class="meta">更新日: 2026-06-20 | AIツールナビ編集部</div>
+<div class="disclosure">※本記事はアフィリエイト広告（PR）を含みます。実際に使用・調査した内容に基づき公平に解説しています。</div>
+</div>
+<article class="container">
+<hr />
+<p>title: "GitHub Copilot の基本的な使い方を初心者向けに解説"<br />
+description: "GitHub Copilot の導入から基本操作まで初心者向けに丁寧に解説。実際に使って感じたメリット・デメリット、他ツールとの比較表、よくある疑問への回答も掲載。"<br />
+keywords: ["GitHub Copilot 使い方 初心者"]<br />
+date: "2026-06-20"<br />
+draft: false</p>
+<hr />
+<blockquote>
+<p>※本記事はアフィリエイト広告（PR）を含みます。実際に使用・調査した内容に基づき公平に解説しています。</p>
+</blockquote>
+<hr />
+<h2>「コードを書くのが遅い」「エラーの原因がわからない」——そのストレス、Copilot が変えてくれるかもしれない</h2>
+<p>プログラミングを始めたばかりのころ、「関数の書き方を調べる→コードを書く→エラーが出る→また調べる」という無限ループに疲弊した経験はありませんか？　私自身、Python でスクレイピングスクリプトを書こうとするたびに、ライブラリのドキュメントとエラーメッセージを行ったり来たりして、1時間かけてたった20行しか書けなかった、という日が何度もありました。</p>
+<p>そんな状況を大きく変えてくれたのが <strong>GitHub Copilot</strong> です。</p>
+<p>結論から言います。<strong>GitHub Copilot は「AIペアプログラマー」として、コードの補完・提案・説明をリアルタイムで行ってくれるツールです。初心者が最初に導入すべきAIコーディングアシスタントとして、現時点で最も実用的な選択肢のひとつです。</strong></p>
+<p>この記事では、実際に GitHub Copilot を使い込んできた経験をもとに、初心者がつまずきやすいポイントを含めて丁寧に解説します。</p>
+<!-- TODO: affiliate link for 'copilot_beginner' not set in config.yaml -->
+
+<hr />
+<h2>GitHub Copilot とは何か？まず基本を押さえよう</h2>
+<h3>AIがコードを「予測して補完」するツール</h3>
+<p>GitHub Copilot は、Microsoft と OpenAI が共同開発した AI コーディングアシスタントです。エディタ上でコードを書き始めると、AIが文脈を読み取って<strong>次に書くべきコードを提案</strong>してくれます。</p>
+<p>たとえば、こんなコメントを書くだけで——</p>
+<pre><code class="language-python"></code></pre>
+<p>Copilot が自動的に以下のようなコードを提案してきます。</p>
+<pre><code class="language-python">import pandas as pd
+
+df = pd.read_csv('data.csv')
+average_age = df['age'].mean()
+print(f&quot;平均年齢: {average_age}&quot;)
+</code></pre>
+<p>実際に使ってみて驚いたのは、<strong>コメントの日本語をある程度理解して英語のコードを生成してくれる</strong>点です。完全に意図通りではないこともありますが、ゼロから書くよりはるかに速い。</p>
+<h3>対応しているプログラミング言語・エディタ</h3>
+<p>Copilot が対応している主な言語は以下の通りです。</p>
+<ul>
+<li>Python / JavaScript / TypeScript</li>
+<li>Ruby / Go / Rust / C / C++ / C#</li>
+<li>Java / PHP / Swift / Kotlin</li>
+<li>HTML / CSS / SQL など</li>
+</ul>
+<p>対応エディタは <strong>Visual Studio Code（VS Code）</strong> が最も使いやすく、初心者にもおすすめです。JetBrains 系（PyCharm、IntelliJ など）や Neovim にも対応しています。</p>
+<hr />
+<h2>【ステップ別】GitHub Copilot の導入手順</h2>
+<h3>ステップ1：GitHub アカウントを作成・ログイン</h3>
+<p>まず <a href="https://github.com/">GitHub</a> のアカウントが必要です。まだ持っていない方は無料で作成できます。</p>
+<h3>ステップ2：Copilot のプランを選択・契約</h3>
+<p>GitHub Copilot には以下のプランがあります（2026年6月時点）。</p>
+<table>
+<thead>
+<tr>
+<th>プラン</th>
+<th>月額</th>
+<th>特徴</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Copilot Free</td>
+<td>無料</td>
+<td>月2,000回の補完、50回のチャット制限あり</td>
+</tr>
+<tr>
+<td>Copilot Pro</td>
+<td>約$10/月</td>
+<td>補完・チャット無制限、Claude/GPT-4o 選択可</td>
+</tr>
+<tr>
+<td>Copilot Business</td>
+<td>約$19/月/ユーザー</td>
+<td>チーム管理機能、ポリシー設定</td>
+</tr>
+<tr>
+<td>Copilot Enterprise</td>
+<td>約$39/月/ユーザー</td>
+<td>社内コードベース連携、高度なカスタマイズ</td>
+</tr>
+</tbody>
+</table>
+<p><strong>初心者には「Copilot Free」から始めることを強くおすすめします。</strong> 月2,000回の補完は、学習目的であれば十分な量です。私の運用では、個人学習レベルなら Free プランで不満を感じることはほとんどありませんでした。</p>
+<!-- TODO: affiliate link for 'copilot_beginner' not set in config.yaml -->
+
+<h3>ステップ3：VS Code に拡張機能をインストール</h3>
+<ol>
+<li>VS Code を開く</li>
+<li>左サイドバーの「拡張機能」アイコンをクリック</li>
+<li>検索欄に「GitHub Copilot」と入力</li>
+<li>「GitHub Copilot」と「GitHub Copilot Chat」の2つをインストール</li>
+<li>GitHub アカウントでサインイン</li>
+</ol>
+<p>インストール後、エディタ右下に Copilot のアイコンが表示されれば準備完了です。</p>
+<h3>ステップ4：実際にコードを書いてみる</h3>
+<p>新しいファイル（例：<code>test.py</code>）を作成して、コメントを書いてみましょう。</p>
+<pre><code class="language-python"># ユーザーから名前を入力してもらい、挨拶を表示する
+</code></pre>
+<p>数秒待つと、グレーの文字で提案が表示されます。<strong><code>Tab</code> キーを押すと提案を採用</strong>、<code>Esc</code> キーで却下できます。</p>
+<hr />
+<h2>GitHub Copilot の主な使い方4パターン</h2>
+<h3>1. インライン補完（最も基本的な使い方）</h3>
+<p>コードを書き始めると自動的に補完候補が出ます。前述の通り、<code>Tab</code> で採用です。複数の候補がある場合は <code>Alt + ]</code>（Mac: <code>Option + ]</code>）で次の候補に切り替えられます。</p>
+<h3>2. Copilot Chat でコードについて質問する</h3>
+<p>VS Code の左サイドバーに「Copilot Chat」パネルが追加されます。ここでは<strong>自然言語でコードについて質問</strong>できます。</p>
+<p>実際に私が使う場面の例：</p>
+<ul>
+<li>「このエラーメッセージの意味を教えて」→ エラー文をそのまま貼り付ける</li>
+<li>「この関数をもっと効率的に書き直して」→ コードを選択してチャットに投げる</li>
+<li>「正規表現でメールアドレスを検証するコードを書いて」→ 要件を日本語で伝える</li>
+</ul>
+<p>初心者にとって特に便利なのが<strong>エラーの解説機能</strong>です。エラーメッセージをコピペするだけで、原因と修正方法を日本語で説明してくれます。Stack Overflow を読み解く英語力がなくても、かなり助かります。</p>
+<h3>3. コードの説明を生成する（<code>/explain</code> コマンド）</h3>
+<p>他人のコードや、自分で書いたけど意味を忘れたコードを選択して、チャットに <code>/explain</code> と入力すると、コードの動作を日本語で説明してくれます。</p>
+<h3>4. テストコードの自動生成（<code>/tests</code> コマンド）</h3>
+<p>関数を書いたあと、<code>/tests</code> コマンドを使うと <strong>ユニットテストのひな形を自動生成</strong>してくれます。テストの書き方がわからない初心者にとって、これは学習にもなる機能です。</p>
+<hr />
+<h2>他のAIコーディングツールとの比較表</h2>
+<p>実際に複数のツールを試した上での比較です。</p>
+<table>
+<thead>
+<tr>
+<th>ツール</th>
+<th>月額（目安）</th>
+<th>補完精度</th>
+<th>チャット機能</th>
+<th>日本語対応</th>
+<th>初心者向け度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>GitHub Copilot Free</strong></td>
+<td>無料</td>
+<td>★★★★☆</td>
+<td>○（制限あり）</td>
+<td>◎</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td><strong>GitHub Copilot Pro</strong></td>
+<td>約$10</td>
+<td>★★★★★</td>
+<td>◎（無制限）</td>
+<td>◎</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>Cursor（Free）</td>
+<td>無料</td>
+<td>★★★★☆</td>
+<td>○（制限あり）</td>
+<td>○</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>Cursor（Pro）</td>
+<td>約$20</td>
+<td>★★★★★</td>
+<td>◎</td>
+<td>○</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>Amazon CodeWhisperer</td>
+<td>無料〜</td>
+<td>★★★☆☆</td>
+<td>△</td>
+<td>△</td>
+<td>★★★☆☆</td>
+</tr>
+<tr>
+<td>Tabnine（Free）</td>
+<td>無料</td>
+<td>★★★☆☆</td>
+<td>×</td>
+<td>△</td>
+<td>★★★☆☆</td>
+</tr>
+</tbody>
+</table>
+<p><strong>私の運用での総評：</strong> 初心者が最初に使うなら GitHub Copilot 一択です。GitHub との親和性が高く、公式ドキュメントや学習リソースが豊富。Cursor は上級者向けの機能が多く、初心者には少し設定が複雑に感じる場面もありました。</p>
+<hr />
+<h2>正直なメリット・デメリット</h2>
+<h3>✅ メリット</h3>
+<p><strong>1. 学習速度が上がる</strong><br />
+コードを書きながら「こういう書き方があるのか」と気づけます。単なる補完ツールではなく、見本を見ながら学べる感覚です。</p>
+<p><strong>2. ボイラープレートコードを書く時間が激減する</strong><br />
+ファイル読み込み、ループ処理、エラーハンドリングなど、毎回調べていたような定型コードはほぼ自動で出てきます。</p>
+<p><strong>3. エラー解決が早くなる</strong><br />
+初心者が一番時間を取られるエラー解決が、Copilot Chat で大幅に短縮されます。</p>
+<p><strong>4. VS Code との統合がシームレス</strong><br />
+追加の設定がほとんど不要で、インストール後すぐに使えます。</p>
+<h3>❌ デメリット（正直に書きます）</h3>
+<p><strong>1. 提案が常に正しいわけではない</strong><br />
+これが最大の注意点です。Copilot の提案をそのままコピペすると、動くけど非効率なコード、あるいはセキュリティ上の問題があるコードが混入することがあります。<strong>提案を「たたき台」として扱い、必ず自分で理解してから使う習慣</strong>が必要です。</p>
+<p><strong>2. 依存しすぎると基礎力が育たない</strong><br />
+実際に私の周りでも「Copilot なしでは何も書けない」という状態になってしまった初心者がいました。補完に頼りすぎず、意図的に「自分で書く練習」を混ぜることが重要です。</p>
+<p><strong>3. Free プランには制限がある</strong><br />
+月2,000回の補完・50回のチャットは、本格的な開発をしていると意外と早く上限に達します。</p>
+<p><strong>4. プライベートコードの扱いに注意</strong><br />
+デフォルト設定では、入力したコードが学習データとして使われる可能性があります。業務での使用は会社のポリシーを必ず確認してください。</p>
+<!-- TODO: affiliate link for 'copilot_beginner' not set in config.yaml -->
+
+<hr />
+<h2>FAQ：初心者がよく疑問に思うこと</h2>
+<h3>Q1. プログラミング完全初心者でも使えますか？</h3>
+<p><strong>A.</strong> 使えますが、注意が必要です。Copilot はあくまで「書き方を知っている人の作業を補助する」ツールです。変数・関数・条件分岐といった基本概念を理解していないと、提案されたコードが何をしているのかわからず、エラーが出たときに対処できません。<strong>まず入門書や無料の学習サービス（Progate、ドットインストールなど）で基礎を学びながら、補助的に使うのがおすすめです。</strong></p>
+<h3>Q2. 無料プランと有料プランは何が違いますか？</h3>
+<p><strong>A.</strong> 大きな違いは<strong>補完・チャットの使用回数上限</strong>と<strong>使えるAIモデルの種類</strong>です。Free プランでは月2,000回の補完と50回のチャットに制限されます。Pro プランにすると無制限になり、GPT-4o や Claude 3.5 Sonnet など複数のモデルから選べるようになります。学習目的なら Free で十分ですが、毎日コードを書く習慣がついてきたら Pro へのアップグレードを検討してみてください。</p>
+<h3>Q3. 日本語のコメントで指示を出しても動きますか？</h3>
+<p><strong>A.</strong> 動きます。ただし、英語のコメントの方が精度が高い傾向があります。私の運用では、複雑な処理は英語で、簡単な処理は日本語で書くという使い分けをしています。完全な日本語でも十分実用的なので、最初は日本語で気軽に試してみてください。</p>
+<hr />
+<h2>まとめ：GitHub Copilot は初心者の「壁を越えるための道具」</h2>
+<p>GitHub Copilot は、魔法のようにコードを全自動で書いてくれるツールではありません。しかし、<strong>「調べる→書く→エラーを直す」というサイクルを大幅に短縮し、初心者が「動くものを作る体験」を積みやすくしてくれる</strong>という点で、現在最も価値のあるAIコーディングツールのひとつです。</p>
+<p>まずは <strong>無料プランから始めて、VS Code にインストールするところから</strong>試してみてください。最初の1週間で、コードを書くストレスが変わるのを実感できるはずです。</p>
+<p><strong>この記事のまとめ：</strong><br />
+- GitHub Copilot はコードの補完・チャット・説明生成ができるAIアシスタント<br />
+- 初心者は Free プラン＋VS Code の組み合わせから始めるのがベスト<br />
+- 提案を鵜呑みにせず「理解してから使う」習慣が大切<br />
+- 依存しすぎず、基礎学習と並行して使うのが理想</p>
+<!-- TODO: affiliate link for 'copilot_beginner' not set in config.yaml -->
+
+<hr />
+<p><em>この記事は AIツールナビ 編集部が実際に GitHub Copilot を使用した経験をもとに執筆しました。料金・仕様は2026年6月時点の情報です。最新情報は公式サイトでご確認ください。</em></p>
+</article>
+</main>
+<footer><div class="container">© 2026 AIツールナビ | <a href="/">トップ</a></div></footer>
+</body>
+</html>

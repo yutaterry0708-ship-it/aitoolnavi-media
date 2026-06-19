@@ -26,9 +26,9 @@ Notion AI データベース 要約機能,informational,notion_ai_database,Notio
 Notion AI 日本語 精度 改善,informational,notion_ai_japanese,Notion AIの日本語対応精度と改善方法のコツ,published
 GitHub Copilot 使い方 初心者,informational,copilot_beginner,GitHub Copilot の基本的な使い方を初心者向けに解説,published
 GitHub Copilot VS Code 設定,informational,copilot_vscode,GitHub Copilot を VS Code で導入・設定する完全ガイド,published
-GitHub Copilot 料金 個人,commercial,copilot_pricing,GitHub Copilot の個人向け料金プランと他ツールとの比較,pending
-GitHub Copilot Python コード例,informational,copilot_python,GitHub Copilot で Python コードを効率的に書く方法,pending
-GitHub Copilot JetBrains IDE 対応,informational,copilot_jetbrains,GitHub Copilot を JetBrains IDE で使う設定手順,pending
+GitHub Copilot 料金 個人,commercial,copilot_pricing,GitHub Copilot の個人向け料金プランと他ツールとの比較,published
+GitHub Copilot Python コード例,informational,copilot_python,GitHub Copilot で Python コードを効率的に書く方法,published
+GitHub Copilot JetBrains IDE 対応,informational,copilot_jetbrains,GitHub Copilot を JetBrains IDE で使う設定手順,published
 GitHub Copilot 精度 精度向上 プロンプト,informational,copilot_accuracy,GitHub Copilot の精度を高めるプロンプト作成のコツ,pending
 GitHub Copilot セキュリティ リスク,informational,copilot_security,GitHub Copilot のセキュリティリスクと安全な使用方法,pending
 GitHub Copilot Tabnine ChatGPT 比較,commercial,copilot_comparison,GitHub Copilot vs Tabnine vs ChatGPT - AI コード補完ツール比較,pending
