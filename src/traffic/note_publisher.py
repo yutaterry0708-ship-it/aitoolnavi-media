@@ -51,12 +51,26 @@ def publish_to_note(md_path, dry_run=False):
         return "dry-run"
     from playwright.sync_api import sync_playwright
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        page = browser.new_context().new_page()
-        page.goto("https://note.com/login", wait_until="networkidle")
-        page.fill('input[name="email"]', NOTE_EMAIL)
-        page.fill('input[name="password"]', NOTE_PASSWORD)
-        page.click('button[type="submit"]')
+        browser = p.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled"])
+        ctx = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36")
+        page = ctx.new_page()
+        page.goto("https://note.com/login", wait_until="domcontentloaded", timeout=60000)
+        time.sleep(3)
+        # メールアドレス入力 (複数セレクタ試行)
+        for sel in ['input[name="email"]', 'input[type="email"]', 'input[placeholder*="メール"]', 'input[placeholder*="email"]']:
+            try:
+                page.fill(sel, NOTE_EMAIL, timeout=5000); break
+            except: pass
+        time.sleep(0.5)
+        for sel in ['input[name="password"]', 'input[type="password"]']:
+            try:
+                page.fill(sel, NOTE_PASSWORD, timeout=5000); break
+            except: pass
+        time.sleep(0.5)
+        for sel in ['button[type="submit"]', 'button:has-text("ログイン")', 'button:has-text("Login")']:
+            try:
+                page.click(sel, timeout=5000); break
+            except: pass
         time.sleep(3)
         if "login" in page.url:
             print("  ERROR: ログイン失敗"); browser.close(); return ""
