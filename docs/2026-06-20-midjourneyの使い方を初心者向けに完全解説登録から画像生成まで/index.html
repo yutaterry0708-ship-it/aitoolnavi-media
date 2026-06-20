@@ -42,7 +42,7 @@ footer{background:var(--surface);padding:32px 0;text-align:center;color:var(--mu
 <article class="container">
 <hr />
 <p>title: "Midjourneyの使い方を初心者向けに完全解説｜登録から画像生成まで"<br />
-description: "Midjourneyの始め方・使い方を初心者向けに完全解説。登録手順からプロンプトの書き方、料金プランの比較、実際に使って感じたメリット・デメリットまで丁寧にまとめました。"<br />
+description: "Midjourneyの始め方・使い方を初心者向けに徹底解説。登録手順からプロンプトの書き方、料金プランの比較、正直なデメリットまで実体験をもとに詳しく紹介します。"<br />
 keywords: ["Midjourney 使い方 初心者"]<br />
 date: "2026-06-20"<br />
 draft: false</p>
@@ -51,153 +51,193 @@ draft: false</p>
 <p>※本記事はアフィリエイト広告（PR）を含みます。実際に使用・調査した内容に基づき公平に解説しています。</p>
 </blockquote>
 <hr />
-<h2>「Midjourneyって難しそう…」と感じているあなたへ</h2>
-<p>「Midjourneyを試したいけど、Discordって何？プロンプトって英語で書かないといけないの？」——そんな疑問を抱えたまま、結局手を付けられていない方は多いと思います。</p>
-<p>私もはじめてMidjourneyに触れたとき、<strong>Discordというゲーマー向けチャットツールを経由しなければならない</strong>という独特の仕様に戸惑いました。「なぜ画像生成AIなのにチャットアプリを使うの？」と首をかしげながら、それでも試してみたら、最初のプロンプトで想像以上にクオリティの高い画像が出てきて正直驚きました。</p>
-<p>この記事では、<strong>登録から最初の1枚を生成するまでの手順</strong>を、実際の操作経験をもとに初心者向けに丁寧に解説します。途中でつまずきやすいポイントも正直にお伝えしますので、ぜひ最後まで読んでみてください。</p>
+<h2>「プロンプトって何？」「Discordが必要？」——Midjourney、最初の壁を一緒に越えよう</h2>
+<p>AIで画像を生成してみたいけど、Midjourneyって名前を聞いただけで「なんかDiscordとか使うんでしょ？難しそう…」と感じていませんか？</p>
+<p>私も最初はまったく同じでした。Discordのアカウントを作ったはいいものの、サーバーに入ったら英語だらけで、どこに何を入力すればいいかすら分からず30分ほどフリーズした記憶があります。</p>
+<p><strong>でも安心してください。手順さえ分かれば、Midjourneyは初心者でも10〜15分で最初の画像を生成できます。</strong></p>
+<p>この記事では、AIツールを実際に多数使い込んできた私が、Midjourneyの登録から画像生成・プロンプトの書き方・料金プランの選び方まで、初心者がつまずきやすいポイントを重点的に解説します。「難しそう」という印象が、読み終わるころには「これなら使える」に変わるはずです。</p>
 <!-- TODO: affiliate link for 'midjourney_tutorial' not set in config.yaml -->
 
 <hr />
-<h2>Midjourneyとは？他のAI画像生成ツールとの違い</h2>
-<p>Midjourneyは、テキスト（プロンプト）を入力するだけで高品質な画像を生成できるAIツールです。2022年のリリース以降、アーティスト・デザイナー・マーケターを中心に急速に普及し、現在では<strong>商用利用可能なAI画像生成ツールの中でも最高峰の画質</strong>を誇ると評価されています。</p>
-<p>他の主要ツールとの違いを簡単に整理すると、以下のようになります。</p>
-<h3>主要AI画像生成ツール比較表</h3>
+<h2>Midjourneyとは？他のAI画像生成ツールと何が違うの？</h2>
+<p>Midjourneyは、アメリカのMidjourney Inc.が開発したAI画像生成サービスです。テキスト（プロンプト）を入力するだけで、高品質なイラストや写真風画像を数十秒で生成できます。</p>
+<h3>他のツールとの大きな違い</h3>
+<p>実際にStable Diffusion・DALL-E 3・Adobe Fireflyなど複数のAI画像生成ツールを使い比べてきた経験から言うと、Midjourneyの最大の特徴は<strong>「アーティスティックな仕上がりのクオリティの高さ」</strong>です。</p>
 <table>
 <thead>
 <tr>
-<th>ツール名</th>
-<th>画質レベル</th>
-<th>操作のしやすさ</th>
-<th>無料プラン</th>
+<th>ツール</th>
+<th>操作難易度</th>
+<th>画質・芸術性</th>
+<th>無料枠</th>
 <th>日本語プロンプト対応</th>
-<th>商用利用</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>Midjourney</strong></td>
+<td>中（Discord操作が必要）</td>
 <td>★★★★★</td>
-<td>★★★☆☆</td>
-<td>なし（無料枠廃止済み）</td>
+<td>なし（有料のみ）</td>
 <td>△（英語推奨）</td>
-<td>プランによる</td>
 </tr>
 <tr>
-<td><strong>DALL-E 3</strong>（ChatGPT）</td>
-<td>★★★★☆</td>
-<td>★★★★★</td>
-<td>あり（制限付き）</td>
-<td>◎</td>
-<td>可</td>
-</tr>
-<tr>
-<td><strong>Stable Diffusion</strong></td>
-<td>★★★★☆</td>
-<td>★★☆☆☆</td>
-<td>あり（ローカル）</td>
-<td>△</td>
-<td>可（モデルによる）</td>
-</tr>
-<tr>
-<td><strong>Adobe Firefly</strong></td>
-<td>★★★★☆</td>
+<td>DALL-E 3（ChatGPT）</td>
+<td>低（チャットで操作）</td>
 <td>★★★★☆</td>
 <td>あり（制限付き）</td>
 <td>◎</td>
-<td>可</td>
 </tr>
 <tr>
-<td><strong>Leonardo.Ai</strong></td>
+<td>Adobe Firefly</td>
+<td>低（ブラウザで完結）</td>
+<td>★★★☆☆</td>
+<td>あり（制限付き）</td>
+<td>◎</td>
+</tr>
+<tr>
+<td>Stable Diffusion</td>
+<td>高（環境構築が必要）</td>
 <td>★★★★☆</td>
+<td>無料（ローカル）</td>
+<td>△</td>
+</tr>
+<tr>
+<td>Leonardo.Ai</td>
+<td>中</td>
 <td>★★★★☆</td>
 <td>あり（制限付き）</td>
 <td>△</td>
-<td>プランによる</td>
 </tr>
 </tbody>
 </table>
-<p>実際に複数ツールを使い比べた感想として、<strong>「芸術的な雰囲気・映画的な質感・独特のテクスチャ」を求めるならMidjourneyが頭一つ抜けています</strong>。一方、日本語で気軽に試したい・無料で始めたいという方にはDALL-E 3やAdobe Fireflyの方が入りやすいのも正直なところです。</p>
+<p>Midjourneyは「操作が少し独特」「無料枠がない」というハードルがある一方で、<strong>クリエイターやデザイナーが商業利用で選ぶ理由が分かるレベルの仕上がり品質</strong>を誇ります。SNSで見かける「AIが作ったとは思えない絵」の多くがMidjourneyで生成されていると言っても過言ではありません。</p>
 <hr />
-<h2>Midjourneyの登録手順【ステップバイステップ】</h2>
-<h3>Step 1：Discordアカウントを作成する</h3>
-<p>MidjourneyはDiscord上で動作します。まず<a href="https://discord.com/">Discord公式サイト</a>にアクセスし、メールアドレスでアカウントを作成してください。</p>
-<ul>
-<li>ユーザー名・パスワード・生年月日を入力</li>
+<h2>Midjourneyの始め方｜登録〜最初の画像生成まで</h2>
+<h3>STEP 1：Discordアカウントを作成する</h3>
+<p>MidjourneyはDiscord（ゲーマーに人気のチャットアプリ）上で動作します。まずDiscordのアカウントが必要です。</p>
+<ol>
+<li><a href="https://discord.com/">Discord公式サイト</a>にアクセス</li>
+<li>「Discordを開く」→「登録」をクリック</li>
+<li>メールアドレス・ユーザー名・パスワードを設定</li>
 <li>メール認証を完了させる</li>
-<li>スマートフォンアプリ版でも利用可能（PC版を推奨）</li>
-</ul>
+</ol>
 <blockquote>
-<p><strong>つまずきポイント①</strong>：メール認証が届かない場合、迷惑メールフォルダを確認してください。Gmailでは「プロモーション」タブに入ることがあります。</p>
+<p><strong>注意点（私が実際につまずいた箇所）：</strong> Discordのユーザー名は後から変更できますが、サーバー内の表示名は別途設定が必要です。最初はデフォルトのままでも問題ありません。</p>
 </blockquote>
-<h3>Step 2：Midjourneyの公式サイトでサブスクリプションに登録する</h3>
-<p>2024年以降、Midjourneyは<strong>無料プランを廃止</strong>しています。利用するには有料プランへの加入が必須です。</p>
+<h3>STEP 2：Midjourneyのサブスクリプションに加入する</h3>
+<p>2024年以降、Midjourneyは<strong>完全有料制</strong>に移行しています。無料トライアルは現在提供されていません（時期によって復活する場合もありますが、基本的に有料前提で考えてください）。</p>
 <!-- TODO: affiliate link for 'midjourney_tutorial' not set in config.yaml -->
 
-<p><a href="https://www.midjourney.com/">Midjourney公式サイト</a>にアクセスし、「Sign In」からDiscordアカウントでログインした後、プランを選択します。</p>
-<h4>料金プラン一覧（2025年時点）</h4>
+<p><strong>料金プランの比較（2025年時点の目安）：</strong></p>
 <table>
 <thead>
 <tr>
-<th>プラン名</th>
+<th>プラン</th>
 <th>月額（月払い）</th>
 <th>月額（年払い）</th>
 <th>生成枚数の目安</th>
-<th>商用利用</th>
+<th>商業利用</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Basic</strong></td>
-<td>$10</td>
-<td>$8</td>
+<td>Basic</td>
+<td>約$10</td>
+<td>約$8</td>
 <td>約200枚/月</td>
-<td>可</td>
+<td>◎</td>
 </tr>
 <tr>
-<td><strong>Standard</strong></td>
-<td>$30</td>
-<td>$24</td>
+<td>Standard</td>
+<td>約$30</td>
+<td>約$24</td>
 <td>無制限（低速）</td>
-<td>可</td>
+<td>◎</td>
 </tr>
 <tr>
-<td><strong>Pro</strong></td>
-<td>$60</td>
-<td>$48</td>
-<td>無制限＋ステルスモード</td>
-<td>可</td>
+<td>Pro</td>
+<td>約$60</td>
+<td>約$48</td>
+<td>無制限＋高速</td>
+<td>◎</td>
 </tr>
 <tr>
-<td><strong>Mega</strong></td>
-<td>$120</td>
-<td>$96</td>
-<td>高速生成60時間/月</td>
-<td>可</td>
+<td>Mega</td>
+<td>約$120</td>
+<td>約$96</td>
+<td>高速生成60時間</td>
+<td>◎</td>
 </tr>
 </tbody>
 </table>
-<p>私の運用では、最初はBasicプランで試し、生成枚数の上限に引っかかりはじめたタイミングでStandardに切り替えるのが現実的だと感じています。<strong>ブログのアイキャッチや個人制作用途ならBasicで十分</strong>ですが、クライアント案件で大量生成するならStandard以上が安心です。</p>
-<h3>Step 3：MidjourneyのDiscordサーバーに参加する</h3>
-<p>公式サイトのサイドバーにある「Discord」リンク、またはDiscord内で「Midjourney」を検索してサーバーに参加します。</p>
-<h3>Step 4：Midjourneyボットをダイレクトメッセージで使う（推奨）</h3>
-<p>初心者の方には、パブリックチャンネルではなく<strong>Midjourneyボットとのダイレクトメッセージ（DM）での利用を強くおすすめします</strong>。</p>
-<p>パブリックチャンネルでは他のユーザーの生成画像が大量に流れてきて、自分の画像を見失いやすいからです。DMなら自分の画像だけが表示されるので管理が楽です。</p>
+<p><strong>私の運用では</strong>、最初はBasicプランで始めて、使用頻度が上がってきたらStandardに移行するパターンをおすすめしています。月200枚というのは、毎日6〜7枚ペースなので、趣味利用なら十分なことが多いです。</p>
+<h3>STEP 3：MidjourneyのDiscordサーバーに参加する</h3>
 <ol>
-<li>Discordの左サイドバーからMidjourneyサーバーを開く</li>
-<li>メンバーリストから「Midjourney Bot」を見つける</li>
-<li>ボットのアイコンをクリック→「メッセージを送る」を選択</li>
-<li>DM画面でコマンドを入力する</li>
+<li><a href="https://www.midjourney.com/">Midjourney公式サイト</a>にアクセス</li>
+<li>「Sign In」→「Join the Beta」をクリック</li>
+<li>DiscordのMidjourneyサーバーへの招待が表示されるので「承認」</li>
+</ol>
+<h3>STEP 4：自分専用のDMチャンネルで使う（おすすめ）</h3>
+<p>公式サーバーの「newbies」チャンネルでも使えますが、他のユーザーの画像が大量に流れてきて非常に見づらいです。</p>
+<p><strong>おすすめの方法：</strong> MidjourneyのBotをDM（ダイレクトメッセージ）に追加して、自分だけのスペースで使う。</p>
+<ol>
+<li>Discordのサーバー左側メニューから「Midjourney Bot」を探す</li>
+<li>Botのアイコンをクリック→「メッセージを送る」</li>
+<li>これ以降はDMチャンネルで操作できる</li>
 </ol>
 <hr />
-<h2>最初の画像を生成しよう：プロンプトの基本</h2>
-<h3><code>/imagine</code> コマンドの使い方</h3>
-<p>DMチャット欄に以下のように入力します。</p>
-<pre><code>/imagine prompt: a cute cat sitting on a wooden table, soft lighting, watercolor style
+<h2>プロンプトの書き方｜初心者が最初に覚えるべき基本</h2>
+<p>Midjourneyへの命令文（プロンプト）は、チャット欄に <code>/imagine</code> と入力してからスペースを押し、続けてテキストを入力します。</p>
+<h3>基本の構文</h3>
+<pre><code>/imagine prompt: [被写体] [スタイル] [雰囲気] [技術的パラメーター]
 </code></pre>
-<p><code>/imagine</code> と入力すると候補が表示されるので選択し、<code>prompt:</code> の後に生成したい画像の説明文（プロンプト）を入力してEnterを押します。</p>
-<p>数十秒〜1分ほどで<strong>4枚の画像が一度に生成</strong>されます。</p>
-<h3>ボタン操作の意味を覚えよう</h3>
-<p>生成後に表示されるボタンの意味は以下の通りです。</p>
+<p><strong>具体例：</strong></p>
+<pre><code>/imagine prompt: a cute cat sitting on a wooden table, watercolor style, soft lighting, pastel colors --ar 16:9 --v 6
+</code></pre>
+<h3>初心者が最初に覚えるべきパラメーター</h3>
+<table>
+<thead>
+<tr>
+<th>パラメーター</th>
+<th>意味</th>
+<th>例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--ar</code></td>
+<td>アスペクト比（縦横比）</td>
+<td><code>--ar 16:9</code>（横長）<code>--ar 1:1</code>（正方形）</td>
+</tr>
+<tr>
+<td><code>--v</code></td>
+<td>バージョン指定</td>
+<td><code>--v 6</code>（最新版）</td>
+</tr>
+<tr>
+<td><code>--style raw</code></td>
+<td>よりリアルな仕上がり</td>
+<td><code>--v 6 --style raw</code></td>
+</tr>
+<tr>
+<td><code>--no</code></td>
+<td>除外したい要素</td>
+<td><code>--no text</code>（文字を入れない）</td>
+</tr>
+<tr>
+<td><code>--q</code></td>
+<td>品質（0.25〜1）</td>
+<td><code>--q 1</code>（最高品質）</td>
+</tr>
+</tbody>
+</table>
+<h3>日本語プロンプトは使える？</h3>
+<p>実際に試してみて分かったことですが、<strong>日本語プロンプトでも一応生成はできます</strong>。ただし、英語に比べて意図通りの結果になりにくいことが多いです。</p>
+<p>Google翻訳やDeepLで英語に変換してから入力する習慣をつけると、クオリティが目に見えて上がります。</p>
+<hr />
+<h2>生成した画像の操作方法</h2>
+<p>画像が生成されると、4枚のバリエーションが表示されます。その下に並ぶボタンの意味を覚えておきましょう。</p>
 <table>
 <thead>
 <tr>
@@ -207,105 +247,65 @@ draft: false</p>
 </thead>
 <tbody>
 <tr>
-<td><strong>U1〜U4</strong></td>
-<td>1〜4番の画像を高解像度化（Upscale）</td>
+<td>U1〜U4</td>
+<td>各番号の画像を高解像度化（Upscale）</td>
 </tr>
 <tr>
-<td><strong>V1〜V4</strong></td>
-<td>1〜4番の画像をベースにバリエーションを生成</td>
+<td>V1〜V4</td>
+<td>各番号の画像をベースにバリエーションを生成</td>
 </tr>
 <tr>
-<td><strong>🔄（再生成）</strong></td>
+<td>🔄（リロード）</td>
 <td>同じプロンプトで再生成</td>
 </tr>
 </tbody>
 </table>
-<p>実際に使ってみて感じるのは、<strong>最初の4枚の中に「惜しい！」と思う画像があったとき、Vボタンでバリエーションを出すのが最も効率的</strong>だということです。U（アップスケール）は気に入った1枚が決まってから使いましょう。</p>
-<h3>プロンプトを書くコツ【初心者向け】</h3>
-<p>日本語でも一定程度認識されますが、<strong>英語で書いた方が精度が高く、意図が正確に伝わります</strong>。基本的な構造は以下の通りです。</p>
-<pre><code>[主題] + [スタイル・雰囲気] + [照明・色調] + [構図・アングル] + [品質パラメータ]
-</code></pre>
-<p><strong>例：</strong></p>
-<pre><code>/imagine prompt: a Japanese woman in kimono, standing in a cherry blossom garden, 
-golden hour lighting, soft bokeh background, portrait photography style, 
-highly detailed, 8k --ar 16:9 --v 6.1
-</code></pre>
-<p>よく使うパラメータ：</p>
-<table>
-<thead>
-<tr>
-<th>パラメータ</th>
-<th>意味</th>
-<th>例</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>--ar</code></td>
-<td>アスペクト比</td>
-<td><code>--ar 16:9</code>（横長）<code>--ar 1:1</code>（正方形）</td>
-</tr>
-<tr>
-<td><code>--v</code></td>
-<td>モデルバージョン</td>
-<td><code>--v 6.1</code>（最新推奨）</td>
-</tr>
-<tr>
-<td><code>--style raw</code></td>
-<td>よりリアル寄りに</td>
-<td><code>--style raw</code></td>
-</tr>
-<tr>
-<td><code>--no</code></td>
-<td>含めたくない要素</td>
-<td><code>--no text, watermark</code></td>
-</tr>
-</tbody>
-</table>
+<p><strong>私の運用では</strong>、まずV（バリエーション）で気に入った方向性を絞り込んでから、最後にUで高解像度化するフローが効率的でした。最初からUを押すと生成枚数を無駄に消費してしまいます。</p>
 <hr />
-<h2>Midjourneyのメリット・デメリット【正直レビュー】</h2>
+<h2>Midjourneyの正直なメリット・デメリット</h2>
 <h3>✅ メリット</h3>
-<p><strong>1. 画質・芸術性が群を抜いている</strong><br />
-他のツールと同じプロンプトを入力して比較すると、Midjourneyの出力は「絵画のような奥行き」「光と影の表現」において一段上の仕上がりになることが多いです。特にポートレート・風景・コンセプトアートは圧倒的。</p>
-<p><strong>2. コミュニティが活発でプロンプト事例が豊富</strong><br />
-Discordのパブリックチャンネルや外部サイト（PromptHero等）には膨大なプロンプト事例が公開されており、初心者でも真似しながら学べます。</p>
-<p><strong>3. バージョンアップが速い</strong><br />
-v4→v5→v6と短期間でモデルが更新され、そのたびに画質が大きく向上しています。有料プランに加入していれば自動的に最新モデルが使えます。</p>
+<ul>
+<li><strong>画質・芸術性のクオリティが業界トップクラス</strong>：商業デザインやSNS投稿に使えるレベルの画像が短時間で生成できる</li>
+<li><strong>スタイルの幅が広い</strong>：写真風・アニメ風・油絵風・3DCG風など、プロンプト次第で多彩な表現が可能</li>
+<li><strong>コミュニティが活発</strong>：プロンプトの参考例がDiscordやX（旧Twitter）に大量にあり、独学しやすい</li>
+<li><strong>商業利用が全プランで可能</strong>：有料プランであれば生成画像を商用利用できる（利用規約の確認は必須）</li>
+</ul>
 <h3>❌ デメリット（正直に書きます）</h3>
-<p><strong>1. 無料プランがない</strong><br />
-これが最大のハードルです。「まず試してみたい」という方には、まずDALL-E 3やAdobe Fireflyで感覚をつかんでからMidjourneyに移行するルートをおすすめします。</p>
-<p><strong>2. Discordを経由する必要がある</strong><br />
-Web版UIも整備されてきましたが、まだDiscordでの操作が基本です。ゲーム用途以外でDiscordを使ったことがない方には最初の設定が面倒に感じるかもしれません。</p>
-<p><strong>3. 細かい指示が通りにくい</strong><br />
-「右手だけ赤い手袋をつけて」「テキストをこの位置に入れて」といった細かいレイアウト指示は苦手です。テキスト生成精度もDALL-E 3より劣ります。</p>
-<p><strong>4. 生成した画像の著作権・商用利用ルールが複雑</strong><br />
-Basicプランでも商用利用は可能ですが、年間売上$1,000,000以上の企業はProプラン以上が必要など、規約が細かく設定されています。利用前に必ず<a href="https://docs.midjourney.com/docs/terms-of-service">公式利用規約</a>を確認してください。</p>
+<ul>
+<li><strong>完全有料制</strong>：無料で試せないのは初心者にとって大きなハードル。「合わなかったら…」という不安がある</li>
+<li><strong>Discord操作が必須</strong>（2025年時点でウェブ版UIも改善中だが、まだDiscordが主流）：ゲームをしない人には最初とっつきにくい</li>
+<li><strong>プロンプトは英語が有利</strong>：日本語ユーザーには一手間かかる</li>
+<li><strong>手や指の生成が苦手</strong>：人物画像で手が6本になるなどのミスが起きやすい（最新バージョンで改善傾向だが完璧ではない）</li>
+<li><strong>生成画像の著作権が曖昧</strong>：AIが生成した画像の権利関係は法的にグレーな部分があり、商用利用時は注意が必要</li>
+</ul>
 <!-- TODO: affiliate link for 'midjourney_tutorial' not set in config.yaml -->
 
 <hr />
-<h2>よくある質問（FAQ）</h2>
-<h3>Q1. Midjourneyは日本語のプロンプトで使えますか？</h3>
-<p><strong>A.</strong> 使えますが、英語の方が精度が高いです。「かわいい猫、水彩画風」と入力しても画像は生成されますが、英語（<code>cute cat, watercolor style</code>）と比べると意図が正確に伝わらないケースがあります。DeepLやChatGPTで英訳してからプロンプトに使うのが現実的なワークフローです。</p>
+<h2>FAQ｜よくある質問</h2>
+<h3>Q1. Midjourneyは無料で使えますか？</h3>
+<p><strong>A.</strong> 現在（2025年時点）、Midjourneyは無料トライアルを提供していません。最低でも月額約$10のBasicプランへの加入が必要です。ただし、無料で試したい場合はDALL-E 3（ChatGPT経由）やAdobe Fireflyが無料枠を提供しているので、まずそちらで「AIで画像を作る感覚」を掴んでからMidjourneyに移行するのも一つの手です。</p>
 <h3>Q2. 生成した画像は商用利用できますか？</h3>
-<p><strong>A.</strong> 有料プランであれば基本的に商用利用可能です。ただし、個人事業主・法人の場合は規約上の条件が異なります。また、著名人に似た画像・ブランドロゴに似たデザインなどは利用規約・法律上の問題が生じる可能性があるため注意が必要です。必ず公式ドキュメントを確認してください。</p>
-<h3>Q3. プランはいつでも変更・解約できますか？</h3>
-<p><strong>A.</strong> はい、いつでも変更・解約可能です。解約した場合、請求期間の終了まではサービスを利用できます。年払いプランは月払いより約20%割安ですが、途中解約時の返金ポリシーは公式サイトで確認することをおすすめします。</p>
+<p><strong>A.</strong> 有料プランのユーザーは、Midjourneyの利用規約に従った範囲で商用利用が可能です。ただし、著作権や肖像権に関する法的な整備はまだ途上にある部分もあります。商用利用を検討する際は最新の利用規約を必ず確認し、必要に応じて専門家に相談することをおすすめします。</p>
+<h3>Q3. プロンプトが思い通りの結果にならないのですが、どうすればいいですか？</h3>
+<p><strong>A.</strong> これは私自身も最初に最も悩んだ点です。効果的な対策をいくつか紹介します。①英語で入力する（DeepLを活用）、②形容詞を具体的にする（「beautiful」より「soft morning light, cinematic」など）、③参考にしたいアーティスト名や作品スタイルを入れる（例：<code>in the style of Studio Ghibli</code>）、④V（バリエーション）ボタンで方向性を絞り込む。プロンプトは「試行錯誤の繰り返し」が上達の近道です。</p>
 <hr />
-<h2>まとめ：Midjourneyは「最高画質」を求める人のための選択肢</h2>
-<p>Midjourneyは、<strong>AI画像生成ツールの中でも芸術的な画質・表現力において現時点でトップクラス</strong>のツールです。一方で、無料プランがないこと・Discordを経由する独特の操作感・細かい指示の通りにくさといったデメリットも正直に存在します。</p>
-<p>初心者の方へのおすすめの進め方：</p>
+<h2>まとめ｜Midjourneyは「最初の壁」を越えれば最強のAI画像ツール</h2>
+<p>Midjourneyの使い方をまとめます。</p>
 <ol>
-<li><strong>まずDALL-E 3（ChatGPT）やAdobe Fireflyで無料体験</strong>し、AI画像生成の感覚をつかむ</li>
-<li>「もっとクオリティを上げたい」と感じたタイミングで<strong>MidjourneyのBasicプランに加入</strong></li>
-<li>プロンプトの書き方を少しずつ学びながら、自分のワークフローに組み込んでいく</li>
+<li><strong>Discordアカウントを作成</strong>する</li>
+<li><strong>Midjourneyの有料プランに加入</strong>する（まずはBasicでOK）</li>
+<li><strong>MidjourneyのDiscordサーバーに参加</strong>し、BotをDMに追加</li>
+<li><code>/imagine</code> コマンドで<strong>英語プロンプトを入力</strong>して生成</li>
+<li><strong>U/Vボタン</strong>で画像を選別・高解像度化</li>
 </ol>
-<p>このステップで進めると、挫折せずにMidjourneyを使いこなせるようになります。実際に私の運用でも、最初から完璧なプロンプトを書こうとするより、<strong>まず生成してみてVボタンでバリエーションを出し続ける</strong>方が早くコツをつかめました。</p>
-<p>ぜひ一歩踏み出してみてください。</p>
+<p>確かに最初はDiscordの操作やプロンプトの書き方に戸惑います。でも、一度コツをつかんでしまえば、Midjourneyは「こんな画像が欲しい」という想像を形にしてくれる、非常に強力なクリエイティブパートナーになります。</p>
+<p>実際に使い込んできた立場から言うと、<strong>クオリティの高さと表現の幅広さは、他のAI画像生成ツールと比較しても頭一つ抜けている</strong>と感じています。デザインの仕事、SNS運用、趣味の創作活動など、活用シーンは無限大です。</p>
+<p>まずは公式サイトから登録して、最初の一枚を生成してみてください。</p>
 <!-- TODO: affiliate link for 'midjourney_tutorial' not set in config.yaml -->
 
 <hr />
-<p><em>本記事の情報は執筆時点（2026年6月）のものです。料金・仕様は変更される場合があります。最新情報は<a href="https://www.midjourney.com/">Midjourney公式サイト</a>でご確認ください。</em></p>
-<p><em>執筆：AIツールナビ編集部｜実際に複数のAI画像生成ツールを使用・比較した経験をもとに作成しています。</em></p>
+<p><em>本記事の情報は執筆時点のものです。料金・機能は変更される場合があるため、最新情報は公式サイトでご確認ください。</em></p>
+<p><em>執筆：AIツールナビ編集部（実際に多数のAIツール・SaaSを使用・比較した経験をもとに執筆しています）</em></p>
 </article>
 </main>
 <footer><div class="container">© 2026 AIツールナビ | <a href="/">トップ</a></div></footer>

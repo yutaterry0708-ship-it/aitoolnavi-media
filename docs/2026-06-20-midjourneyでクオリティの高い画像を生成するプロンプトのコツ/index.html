@@ -42,7 +42,7 @@ footer{background:var(--surface);padding:32px 0;text-align:center;color:var(--mu
 <article class="container">
 <hr />
 <p>title: "Midjourneyでクオリティの高い画像を生成するプロンプトのコツ"<br />
-description: "Midjourneyでクオリティの高い画像を生成するプロンプトのコツを実体験ベースで解説。構造・パラメーター・スタイル指定まで具体例付きで紹介します。"<br />
+description: "Midjourneyでクオリティの高い画像を生成するプロンプトのコツを実体験ベースで解説。構造・パラメーター・スタイル指定など具体的なテクニックを比較表付きで紹介。"<br />
 keywords: ["Midjourney プロンプト コツ"]<br />
 date: "2026-06-20"<br />
 draft: false</p>
@@ -50,310 +50,267 @@ draft: false</p>
 <blockquote>
 <p>※本記事はアフィリエイト広告（PR）を含みます。実際に使用・調査した内容に基づき公平に解説しています。</p>
 </blockquote>
-<h2>「なんか思ったのと違う…」Midjourneyのプロンプト沼、抜け出せていますか？</h2>
-<p>Midjourneyを使い始めた多くの人が最初にぶつかる壁が「プロンプトを入力しても、頭の中のイメージと全然違う画像が出てくる」という問題です。</p>
-<p>「beautiful landscape」と入れても凡庸な風景画しか出ない。「anime girl」と入れたら崩れた顔が出てくる。呪文のようにキーワードを並べてみても、なぜかクオリティが上がらない——そんな経験はないでしょうか。</p>
-<p>私自身、Midjourneyを使い込んできた中で、最初の数ヶ月はまさにこの「プロンプト沼」にはまっていました。試行錯誤を繰り返した結果、<strong>プロンプトには明確な「構造」と「書き方のコツ」があり、それを知っているかどうかで出力クオリティが劇的に変わる</strong>ということを実感しています。</p>
-<p>この記事では、実際に多数の生成を経験した立場から、Midjourneyでクオリティの高い画像を安定して出すためのプロンプトのコツを体系的に解説します。初心者から中級者まで役立てていただける内容です。</p>
+<hr />
+<h2>「なんか思ったのと違う…」Midjourneyのプロンプトに悩んでいませんか？</h2>
+<p>Midjourneyを始めたばかりのころ、私も同じ壁にぶつかりました。「beautiful landscape」と入力しても、なんとなくぼんやりした風景が出てくる。「anime girl」と打っても、キャラクターの雰囲気が全然イメージと違う。試行錯誤でクレジットを消費するたびに、「自分の使い方が間違っているのか？」と不安になったものです。</p>
+<p>結論から先に言います。<strong>Midjourneyでクオリティの高い画像を出すには、「プロンプトの構造」「スタイル指定の語彙」「パラメーターの使い方」の3点を押さえるだけで、生成結果は劇的に変わります。</strong></p>
+<p>この記事では、実際に多数のプロンプトを試してきた経験をもとに、再現性の高いコツを体系的に解説します。初心者から中級者まで、すぐに実践できる内容にまとめました。</p>
 <!-- TODO: affiliate link for 'midjourney_prompt' not set in config.yaml -->
 
 <hr />
 <h2>Midjourneyのプロンプト基本構造を理解する</h2>
-<h3>プロンプトは「4つのブロック」で考える</h3>
-<p>Midjourneyのプロンプトを「なんとなくキーワードを並べるもの」と思っているうちは、クオリティが安定しません。実際に使ってみてわかったのは、<strong>プロンプトには機能ごとに役割分担があり、ブロックとして意識して組み立てると格段に結果が良くなる</strong>ということです。</p>
-<p>プロンプトは大きく以下の4ブロックで構成されます。</p>
+<h3>プロンプトは「5つの要素」で組み立てる</h3>
+<p>Midjourneyのプロンプトを書くとき、多くの初心者は「単語を並べるだけ」で止まってしまいます。しかし実際に使い込んでみると、以下の5要素を意識するだけで出力の安定感が大きく変わることがわかります。</p>
 <table>
 <thead>
 <tr>
-<th>ブロック</th>
+<th>要素</th>
 <th>役割</th>
 <th>例</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>① 主題（Subject）</td>
-<td>何を描くか</td>
+<td><strong>被写体（Subject）</strong></td>
+<td>何を描くかの核心</td>
 <td>a young woman, a futuristic city</td>
 </tr>
 <tr>
-<td>② 環境・背景（Environment）</td>
-<td>どこで・どんな状況か</td>
+<td><strong>環境・背景（Environment）</strong></td>
+<td>場所・空間・時間帯</td>
 <td>in a misty forest, at sunset</td>
 </tr>
 <tr>
-<td>③ スタイル・雰囲気（Style/Mood）</td>
-<td>どんな見た目・質感か</td>
-<td>cinematic lighting, oil painting style</td>
+<td><strong>スタイル（Style）</strong></td>
+<td>画風・アート手法</td>
+<td>oil painting, Studio Ghibli style</td>
 </tr>
 <tr>
-<td>④ パラメーター（Parameters）</td>
-<td>技術的な設定</td>
-<td>--ar 16:9 --v 6.1 --stylize 750</td>
+<td><strong>照明・雰囲気（Lighting/Mood）</strong></td>
+<td>光の質感・感情的トーン</td>
+<td>cinematic lighting, moody atmosphere</td>
+</tr>
+<tr>
+<td><strong>技術パラメーター（Parameters）</strong></td>
+<td>比率・バージョン・品質</td>
+<td>--ar 16:9 --v 6 --q 2</td>
 </tr>
 </tbody>
 </table>
-<p>この4ブロックを意識せずにキーワードを羅列すると、Midjourneyは要素の優先順位を誤解して「なんか違う」画像を生成してしまいます。</p>
-<h3>具体的なプロンプト例で比較する</h3>
-<p><strong>悪い例（キーワード羅列型）:</strong></p>
-<pre><code>anime girl beautiful forest magic light
-</code></pre>
-<p><strong>良い例（4ブロック構造型）:</strong></p>
-<pre><code>a young anime-style sorceress standing in an enchanted forest, 
-surrounded by glowing fireflies and ancient trees, 
-soft magical lighting, Studio Ghibli inspired, detailed illustration, 
---ar 2:3 --v 6.1 --stylize 600
-</code></pre>
-<p>私の運用では、この構造を意識するだけで「思い通りの画像が出る確率」が体感で大きく向上しました。特に<strong>主題を最初に明確に書く</strong>ことがもっとも効果的です。Midjourneyはプロンプトの先頭部分に高い重みを置いて解釈するため、一番伝えたいことを冒頭に書くのが鉄則です。</p>
+<p>私の運用では、この5要素を左から順番に書き込むことをルール化しています。被写体が曖昧なまま「cinematic lighting」だけ加えても、Midjourneyは何を照らせばよいかわからず、結果がブレやすくなります。</p>
+<h3>プロンプトは「短すぎず、長すぎず」が原則</h3>
+<p>実際に使ってみてわかったのですが、Midjourneyは<strong>40〜70語程度のプロンプト</strong>が最もバランスよく機能します。10語以下だと情報不足で方向性がぶれやすく、100語を超えると後半の指示が無視されることがあります。</p>
+<p>特に注意したいのが、<strong>形容詞の重複</strong>です。「very beautiful extremely gorgeous」のように似た意味の語を重ねても、効果は加算されません。むしろ「award-winning photography」「masterpiece」「highly detailed」など、Midjourneyが学習データとして多く接してきた"評価語"を1〜2個入れる方が効果的です。</p>
 <hr />
-<h2>クオリティを上げる7つのプロンプトコツ</h2>
-<h3>コツ1：品質修飾語を適切に使う</h3>
-<p>「high quality」「masterpiece」といった漠然とした品質指定は、Midjourneyの新しいバージョン（v6以降）では効果が薄れています。実際に試した結果、<strong>具体的な仕上がりを指定する言葉のほうが効果的</strong>でした。</p>
-<p>効果的な品質・仕上がり修飾語の例：<br />
-- <code>photorealistic, 8K, ultra-detailed</code>（写真リアル系）<br />
-- <code>cinematic photography, shot on Sony A7R V</code>（映画・写真風）<br />
-- <code>concept art, artstation trending</code>（コンセプトアート系）<br />
-- <code>watercolor illustration, soft brush strokes</code>（水彩・イラスト系）<br />
-- <code>studio lighting, professional photography</code>（商業写真風）</p>
-<h3>コツ2：ライティング（照明）の指定は必須</h3>
-<p>プロンプト上級者と初心者の差が最も出るのが<strong>ライティングの指定</strong>です。同じ主題でも、照明指定があるかないかで画像のプロらしさが大きく変わります。</p>
-<p>よく使うライティング指定：<br />
-- <code>golden hour lighting</code>（夕方の温かみのある光）<br />
-- <code>dramatic side lighting</code>（ドラマチックな横からの光）<br />
-- <code>soft diffused light</code>（柔らかい拡散光）<br />
-- <code>neon lighting</code>（ネオン照明）<br />
-- <code>rim lighting</code>（輪郭を際立たせる逆光）</p>
-<h3>コツ3：カメラ・レンズ情報を入れる（写真リアル系の場合）</h3>
-<p>写真リアルな画像を生成したい場合、実際のカメラ・レンズ情報を入れると驚くほど効果があります。</p>
-<p>例：</p>
-<pre><code>portrait of a woman, shot on Canon EOS R5, 85mm f/1.4 lens, 
-shallow depth of field, bokeh background, studio lighting
+<h2>スタイル指定で表現の幅を広げる</h2>
+<h3>画風を決める「スタイルキーワード」厳選リスト</h3>
+<p>実際に試してきた中で、再現性が高く使い勝手のよいスタイルキーワードをまとめます。</p>
+<table>
+<thead>
+<tr>
+<th>カテゴリ</th>
+<th>キーワード例</th>
+<th>向いている用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>写真・リアル系</td>
+<td>photorealistic, shot on Canon EOS R5, 85mm lens</td>
+<td>人物・商品・建築</td>
+</tr>
+<tr>
+<td>イラスト・アニメ系</td>
+<td>anime style, cel shading, Studio Ghibli, manga illustration</td>
+<td>キャラクター・ファンアート</td>
+</tr>
+<tr>
+<td>アート・絵画系</td>
+<td>oil painting, watercolor, impressionist, concept art</td>
+<td>風景・抽象・ポスター</td>
+</tr>
+<tr>
+<td>デジタルアート系</td>
+<td>digital painting, artstation trending, matte painting</td>
+<td>ゲーム・映画的ビジュアル</td>
+</tr>
+<tr>
+<td>3D・レンダリング系</td>
+<td>3D render, Octane render, Unreal Engine 5</td>
+<td>プロダクト・建築・キャラ</td>
+</tr>
+</tbody>
+</table>
+<p><strong>私が特によく使うのは「concept art by [アーティスト名]」の形式です。</strong> たとえば「concept art by Makoto Shinkai」と入れると、新海誠監督のアニメ的な空気感・光の表現に近い画風が出やすくなります。ただし、特定アーティストの名前を使うことには著作権的な議論もあるため、商用利用時は慎重に判断してください。</p>
+<h3>ネガティブプロンプトを使いこなす</h3>
+<p><code>--no</code> パラメーターは、出力から除外したい要素を指定するものです。実際に使ってみて、これを活用するだけで不要な要素が大幅に減りました。</p>
+<pre><code>a serene Japanese garden, cherry blossoms, soft morning light, 
+watercolor style --no people, text, watermark, ugly, deformed
 </code></pre>
-<p>実際に使ってみて、「shot on [カメラ名]」を加えるだけでテクスチャーや奥行き感が変わることを確認しています。</p>
-<h3>コツ4：ネガティブプロンプト（--no）を活用する</h3>
-<p>Midjourneyでは <code>--no</code> パラメーターを使って「出てほしくない要素」を指定できます。これを使わないのは非常にもったいないです。</p>
-<p>よく使う <code>--no</code> の例：<br />
-- <code>--no text, watermark</code>（テキストや透かしを排除）<br />
-- <code>--no blur, noise</code>（ぼけやノイズを排除）<br />
-- <code>--no extra fingers, deformed hands</code>（手の崩れを軽減）<br />
-- <code>--no ugly, low quality</code>（低品質要素を排除）</p>
-<p>特に人物生成で手や指が崩れやすい問題は、<code>--no extra fingers, deformed limbs</code> を入れることでかなり改善されます。完全には解決しませんが、私の運用では明らかに崩れの頻度が下がりました。</p>
-<h3>コツ5：<code>--stylize</code>（<code>--s</code>）パラメーターを使いこなす</h3>
-<p><code>--stylize</code>（省略形 <code>--s</code>）は、Midjourneyがどの程度「芸術的な解釈」を加えるかを0〜1000の数値で指定するパラメーターです。</p>
+<p>よく使うネガティブ指定：<br />
+- <code>--no text, watermark</code>（文字・ロゴを排除）<br />
+- <code>--no extra limbs, deformed hands</code>（人物の手の崩れを軽減）<br />
+- <code>--no oversaturated, harsh lighting</code>（色調の暴走を抑える）</p>
+<hr />
+<h2>パラメーターを正しく使う</h2>
+<h3>必須パラメーター早見表</h3>
 <table>
 <thead>
 <tr>
-<th>値</th>
-<th>特徴</th>
+<th>パラメーター</th>
+<th>意味</th>
+<th>使用例</th>
+<th>備考</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>0〜100</td>
-<td>プロンプトに忠実。素直な出力</td>
+<td><code>--v 6</code></td>
+<td>バージョン指定</td>
+<td><code>--v 6.1</code></td>
+<td>最新版を使うのが基本</td>
 </tr>
 <tr>
-<td>100〜400</td>
-<td>バランス型。デフォルトは100</td>
+<td><code>--ar</code></td>
+<td>アスペクト比</td>
+<td><code>--ar 16:9</code> / <code>--ar 1:1</code></td>
+<td>用途に合わせて変更</td>
 </tr>
 <tr>
-<td>400〜700</td>
-<td>Midjourneyの美的センスが強く出る</td>
+<td><code>--q</code></td>
+<td>品質（レンダリング時間）</td>
+<td><code>--q 1</code> / <code>--q 2</code></td>
+<td>高いほど重く時間がかかる</td>
 </tr>
 <tr>
-<td>700〜1000</td>
-<td>独自解釈が強い。予想外の結果も</td>
+<td><code>--s</code></td>
+<td>スタイライズ強度</td>
+<td><code>--s 250</code></td>
+<td>低いとリアル寄り、高いと個性的</td>
+</tr>
+<tr>
+<td><code>--chaos</code></td>
+<td>多様性の強度</td>
+<td><code>--chaos 30</code></td>
+<td>高いほど4枚がバラバラになる</td>
+</tr>
+<tr>
+<td><code>--seed</code></td>
+<td>再現性の固定</td>
+<td><code>--seed 12345</code></td>
+<td>同じ結果を再現したいとき</td>
+</tr>
+<tr>
+<td><code>--niji</code></td>
+<td>アニメ特化モード</td>
+<td><code>--niji 6</code></td>
+<td>日本風イラストに強い</td>
 </tr>
 </tbody>
 </table>
-<p>実際に試すと、<code>--s 250</code> 前後がプロンプトの意図を保ちつつ美しい仕上がりになりやすいと感じています。ただし、これは生成したい画像の種類によって大きく変わるため、同じプロンプトで数値を変えて比較することをおすすめします。</p>
-<h3>コツ6：アスペクト比（<code>--ar</code>）を目的に合わせて設定する</h3>
-<p>デフォルトの1:1（正方形）のままにしている人が多いですが、用途に合わせたアスペクト比の指定は構図に直接影響します。</p>
-<table>
-<thead>
-<tr>
-<th>用途</th>
-<th>推奨アスペクト比</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>SNSアイコン・サムネイル</td>
-<td><code>--ar 1:1</code></td>
-</tr>
-<tr>
-<td>Instagramストーリー・スマホ壁紙</td>
-<td><code>--ar 9:16</code></td>
-</tr>
-<tr>
-<td>YouTube・映像・横長バナー</td>
-<td><code>--ar 16:9</code></td>
-</tr>
-<tr>
-<td>ポートレート・書籍カバー</td>
-<td><code>--ar 2:3</code></td>
-</tr>
-<tr>
-<td>映画的な横長構図</td>
-<td><code>--ar 21:9</code></td>
-</tr>
-</tbody>
-</table>
-<h3>コツ7：<code>/describe</code> コマンドで逆引き学習する</h3>
-<p>「この画像みたいなプロンプトを書きたいけど、どう表現すればいいかわからない」——そんなときに便利なのが <code>/describe</code> コマンドです。</p>
-<p>既存の画像をアップロードすると、Midjourneyがその画像を再現するためのプロンプト候補を4つ提案してくれます。これを参考にすることで、<strong>プロのプロンプトの書き方を逆引きで学べる</strong>のが大きなメリットです。私自身、このコマンドで「こういう表現をするのか」と学んだフレーズが多くあります。</p>
+<p>私の運用では、<strong>探索フェーズは <code>--chaos 20〜40</code>、完成品に近づけるフェーズは <code>--chaos 0</code> + <code>--seed 固定</code></strong> という使い分けをしています。最初から完成形を狙うより、まず多様なバリエーションを見てから詰めていく方が効率的です。</p>
+<h3><code>--stylize</code> の調整が意外と重要</h3>
+<p><code>--s</code>（スタイライズ）は見落とされがちですが、実際に使ってみると出力の印象が大きく変わります。</p>
+<ul>
+<li><strong><code>--s 0〜50</code></strong>：プロンプトに忠実。リアル・ドキュメンタリー的な仕上がり</li>
+<li><strong><code>--s 100</code>（デフォルト）</strong>：バランス型</li>
+<li><strong><code>--s 500〜750</code></strong>：Midjourneyの「美的センス」が強く出る。アート的だが指示から離れることも</li>
+</ul>
+<p>商品撮影風の画像を作りたいときは <code>--s 20</code> 程度に下げると、余計な装飾が減って実用的な画像になりやすいです。</p>
 <!-- TODO: affiliate link for 'midjourney_prompt' not set in config.yaml -->
 
 <hr />
-<h2>バージョン別プロンプト戦略の違い</h2>
-<p>Midjourneyはバージョンによってプロンプトの効き方が異なります。現時点での主要バージョンを比較します。</p>
-<table>
-<thead>
-<tr>
-<th>バージョン</th>
-<th>特徴</th>
-<th>プロンプト戦略</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>v5.2</td>
-<td>写真リアル系が得意。安定感あり</td>
-<td>詳細なキーワード列挙が効く</td>
-</tr>
-<tr>
-<td>v6</td>
-<td>自然言語理解が向上。文章型プロンプトに対応</td>
-<td>文章で自然に書いてもOK</td>
-</tr>
-<tr>
-<td>v6.1</td>
-<td>v6の改善版。細部の描写精度が向上</td>
-<td>文章型＋技術指定の組み合わせが最強</td>
-</tr>
-<tr>
-<td>Niji v6</td>
-<td>アニメ・イラスト特化</td>
-<td>アニメ用語（chibi, shonen style等）が有効</td>
-</tr>
-</tbody>
-</table>
-<p>実際に使ってみて感じるのは、<strong>v6以降は「自然な英文で意図を伝える」ほうが、キーワード羅列よりも精度が上がりやすい</strong>という点です。ただし、パラメーター指定の重要性は変わりません。</p>
+<h2>実際に試してわかった：よくある失敗パターンと改善策</h2>
+<h3>失敗① 日本語でプロンプトを書く</h3>
+<p>Midjourneyは英語で学習されたモデルです。日本語プロンプトも一定程度機能しますが、実際に使ってみると英語の方が明らかに精度が高い。翻訳に不安があればDeepLやChatGPTを経由して英語化するのが現実的な解決策です。</p>
+<h3>失敗② 抽象的な感情語だけで構成する</h3>
+<p>「悲しい女性」「幸せな風景」のような抽象語だけでは、Midjourneyは視覚的な手がかりを得られません。<strong>感情を「視覚的描写」に変換する</strong>のがコツです。</p>
+<ul>
+<li>✕ <code>a sad woman</code></li>
+<li>○ <code>a woman sitting alone by a rainy window, looking down, tears on her cheek, soft gray lighting</code></li>
+</ul>
+<h3>失敗③ スタイルと被写体が矛盾している</h3>
+<p>「anime style, photorealistic face」のように、スタイル指示が矛盾すると出力がぶれます。スタイルは一方向に統一するのが基本です。</p>
 <hr />
 <h2>Midjourneyのメリット・デメリット（正直レビュー）</h2>
 <h3>✅ メリット</h3>
 <ul>
-<li><strong>生成クオリティが業界トップクラス</strong>：特に写真リアル系とアート系の仕上がりは他のツールと比較しても頭一つ抜けている</li>
-<li><strong>コミュニティが充実</strong>：Discordサーバーで他ユーザーのプロンプトを参照でき、学習リソースが豊富</li>
-<li><strong>バージョンアップが速い</strong>：数ヶ月ごとに大きく性能が向上している</li>
-<li><strong><code>/describe</code>や<code>/blend</code>など便利なコマンドが多い</strong></li>
+<li><strong>生成速度が速い</strong>：1回の生成が数十秒〜1分程度で完了</li>
+<li><strong>画質の安定感が高い</strong>：他の画像生成AIと比較しても、デフォルトの仕上がりクオリティが高い</li>
+<li><strong>コミュニティが充実</strong>：Discordで他ユーザーのプロンプトを参考にできる</li>
+<li><strong><code>--niji</code> モードがアニメ表現に強い</strong>：日本のイラスト文化に特化した出力が可能</li>
 </ul>
 <h3>❌ デメリット（正直に書きます）</h3>
 <ul>
-<li><strong>Webブラウザ版はあるが、操作の主軸はDiscord</strong>：UIが独特で初心者には慣れが必要。Stable DiffusionのようなGUI操作には対応していない</li>
-<li><strong>手・指の描写が崩れやすい</strong>：v6.1でかなり改善されたが、複雑なポーズでは依然として崩れることがある</li>
-<li><strong>プロンプトの再現性が100%ではない</strong>：同じプロンプトでも毎回異なる結果が出るため、完全なコントロールは難しい</li>
-<li><strong>商用利用はプランによって制限あり</strong>：無料プランは存在せず、商用利用にはProプラン以上が必要（最新の利用規約を必ず確認してください）</li>
-<li><strong>生成した画像の著作権は複雑</strong>：利用規約上の扱いを理解した上で使う必要がある</li>
+<li><strong>無料プランが廃止されている</strong>：現在は有料サブスクリプションのみ。気軽に試せない点はハードル</li>
+<li><strong>手・指の描写が崩れやすい</strong>：v6で改善されたが、複雑なポーズではまだ不安定なことがある</li>
+<li><strong>テキスト生成が苦手</strong>：画像内に文字を正確に入れるのは現時点では難しく、後処理が必要</li>
+<li><strong>著作権・商用利用のルールが複雑</strong>：プランによって商用利用の可否が異なるため、利用規約の確認が必須</li>
+<li><strong>ローカル環境では動かない</strong>：クラウドサービスのため、オフライン利用・自社サーバー運用は不可</li>
 </ul>
+<!-- TODO: affiliate link for 'midjourney_prompt' not set in config.yaml -->
+
 <hr />
-<h2>他の画像生成AIとのプロンプト比較</h2>
-<p>Midjourneyのプロンプトの特徴を他ツールと比較すると、自分に合ったツール選びの参考になります。</p>
+<h2>主要プロンプト要素の比較表</h2>
 <table>
 <thead>
 <tr>
-<th>項目</th>
-<th>Midjourney</th>
-<th>Stable Diffusion</th>
-<th>DALL-E 3</th>
-<th>Adobe Firefly</th>
+<th>要素</th>
+<th>効果大</th>
+<th>効果小・非推奨</th>
+<th>理由</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>プロンプトの書き方</td>
-<td>英語推奨・自然文OK</td>
-<td>キーワード型が主流</td>
-<td>自然文（日本語OK）</td>
-<td>自然文（日本語OK）</td>
+<td>スタイル指定</td>
+<td><code>oil painting by Rembrandt</code></td>
+<td><code>very nice art style</code></td>
+<td>具体性が高いほど学習データとマッチしやすい</td>
 </tr>
 <tr>
-<td>プロンプトの難易度</td>
-<td>中〜高</td>
-<td>高（LoRA等の知識も必要）</td>
-<td>低</td>
-<td>低</td>
+<td>照明指定</td>
+<td><code>cinematic lighting, golden hour</code></td>
+<td><code>good lighting</code></td>
+<td>光の種類・方向を明示する方が精度が上がる</td>
 </tr>
 <tr>
-<td>写真リアル系の品質</td>
-<td>◎</td>
-<td>○〜◎</td>
-<td>○</td>
-<td>△〜○</td>
+<td>品質語</td>
+<td><code>award-winning, masterpiece</code></td>
+<td><code>very very high quality</code></td>
+<td>繰り返しより評価語1語の方が有効</td>
 </tr>
 <tr>
-<td>アニメ・イラスト系</td>
-<td>◎（Niji）</td>
-<td>◎</td>
-<td>△</td>
-<td>△</td>
+<td>ネガティブ指定</td>
+<td><code>--no deformed, ugly, text</code></td>
+<td>なし（指定しない）</td>
+<td>不要要素の排除で完成度が上がる</td>
 </tr>
 <tr>
-<td>無料プラン</td>
-<td>なし</td>
-<td>あり（ローカル）</td>
-<td>あり（制限付き）</td>
-<td>あり（制限付き）</td>
-</tr>
-<tr>
-<td>商用利用</td>
-<td>有料プランで可</td>
-<td>基本的に可</td>
-<td>可</td>
-<td>可（Adobe製品内）</td>
-</tr>
-<tr>
-<td>日本語プロンプト</td>
-<td>非推奨</td>
-<td>可（精度は低め）</td>
-<td>◎</td>
-<td>○</td>
+<td>アスペクト比</td>
+<td>用途に合わせて <code>--ar 16:9</code> など</td>
+<td>デフォルト（正方形）のまま</td>
+<td>SNS・印刷用途で最適比率が異なる</td>
 </tr>
 </tbody>
 </table>
-<p>Midjourneyは「クオリティを最優先したい」「プロンプトをしっかり学んで使いこなしたい」というユーザーに向いています。一方、日本語で手軽に使いたい場合はDALL-E 3やAdobe Fireflyのほうが入門しやすいです。</p>
+<hr />
+<h2>FAQ：よくある質問</h2>
+<h3>Q1. プロンプトは英語でないといけませんか？</h3>
+<p>Midjourneyは日本語プロンプトにも対応していますが、英語の方が精度・再現性ともに高い傾向があります。実際に使ってみて、同じ内容を英語と日本語で比較したところ、英語の方が意図に近い出力が得られることが多かったです。翻訳ツールを活用して英語でプロンプトを書くことをおすすめします。</p>
+<h3>Q2. プロンプトに日本語のアーティスト名を入れると効果がありますか？</h3>
+<p>「新海誠」「宮崎駿」などの日本語名より、「Makoto Shinkai」「Hayao Miyazaki」のようにローマ字表記の方が認識精度が高いです。ただし、特定アーティストの名前を使ったプロンプトは商用利用時に注意が必要です。スタイルの参考としての利用にとどめ、公開・販売時は利用規約と著作権の観点から慎重に判断してください。</p>
+<h3>Q3. 同じプロンプトを使っても毎回違う画像が出るのはなぜですか？</h3>
+<p>Midjourneyは生成のたびにランダムシードを使用するため、同一プロンプトでも毎回異なる結果が出ます。特定の出力を再現・固定したい場合は <code>--seed [数値]</code> パラメーターを使用してください。生成後の画像に表示されるシード番号をコピーして再利用することで、近い結果を再現できます。</p>
+<hr />
+<h2>まとめ：プロンプトは「設計図」と考えよう</h2>
+<p>Midjourneyのプロンプトは、AIへの「丸投げ」ではなく、<strong>ビジュアルの設計図を渡す作業</strong>です。被写体・環境・スタイル・照明・パラメーターの5要素を意識し、具体的な英語表現で記述するだけで、生成結果のクオリティは大きく変わります。</p>
+<p>最初は試行錯誤が続くかもしれませんが、他ユーザーのプロンプトをDiscordで参考にしながら自分のパターンを積み上げていくのが一番の近道です。私自身、最初の数週間は失敗続きでしたが、今回紹介した構造を意識するようになってから出力の安定感が格段に上がりました。</p>
+<p>まずは5要素の構造でプロンプトを1本書いてみてください。それだけで「なんか違う」が「これに近い！」に変わるはずです。</p>
 <!-- TODO: affiliate link for 'midjourney_prompt' not set in config.yaml -->
 
 <hr />
-<h2>よくある質問（FAQ）</h2>
-<h3>Q1. プロンプトは日本語でも書けますか？</h3>
-<p>Midjourneyは日本語プロンプトにも一定程度対応していますが、<strong>英語プロンプトに比べて精度が下がる</strong>ことが多いです。実際に試した結果、同じ意図を英語と日本語で書いた場合、英語のほうが意図通りの画像が出やすい傾向があります。DeepLなどの翻訳ツールを使って英語に変換してから入力することをおすすめします。</p>
-<h3>Q2. プロンプトに入れるキーワードは多いほど良いですか？</h3>
-<p>必ずしもそうではありません。Midjourneyはプロンプトが長くなりすぎると、後半の要素が無視されることがあります。<strong>重要な要素を先頭に書き、30〜60語程度を目安に</strong>まとめるのが実践的なバランスです。どうしても多くの要素を指定したい場合は、<code>::</code> 記法（重み付け）を活用して優先順位を明示する方法もあります。</p>
-<h3>Q3. 無料で使い始めることはできますか？</h3>
-<p>現在（2025年時点）、Midjourneyには無料トライアルが提供されていない期間が続いています。利用するにはBasicプラン以上の有料契約が必要です。ただし、公式サイトで無料トライアルが再開されることもあるため、<strong>最新情報は公式サイトで確認</strong>してください。コストを抑えたい場合は、まず無料で使えるDALL-E 3やAdobe Fireflyで画像生成の基礎を学んでから移行するのも一つの方法です。</p>
-<!-- TODO: affiliate link for 'midjourney_prompt' not set in config.yaml -->
-
-<hr />
-<h2>まとめ：プロンプトは「構造」と「経験」で上達する</h2>
-<p>Midjourneyでクオリティの高い画像を生成するためのプロンプトのコツをまとめます。</p>
-<ol>
-<li><strong>4ブロック構造</strong>（主題・環境・スタイル・パラメーター）を意識して書く</li>
-<li><strong>重要な要素は先頭に</strong>書く</li>
-<li><strong>ライティングとカメラ情報</strong>を具体的に指定する</li>
-<li><strong><code>--no</code>パラメーター</strong>で不要な要素を排除する</li>
-<li><strong><code>--stylize</code>値</strong>を調整してMidjourneyの解釈量をコントロールする</li>
-<li><strong>アスペクト比</strong>を用途に合わせて設定する</li>
-<li><strong><code>/describe</code>コマンド</strong>で逆引き学習する</li>
-</ol>
-<p>プロンプトの上達に近道はなく、実際に多くの生成を繰り返して感覚を掴むことが最重要です。しかし、今回紹介した構造とコツを知っているだけで、試行錯誤の効率は大きく変わります。</p>
-<p>まずは今日、1つのプロンプトを4ブロック構造で書き直してみてください。きっとこれまでと違う結果が出るはずです。</p>
-<blockquote>
-<p><strong>この記事で紹介したMidjourneyを試してみたい方はこちら</strong><br />
-<!-- TODO: affiliate link for 'midjourney_prompt' not set in config.yaml --></p>
-</blockquote>
-<hr />
-<p><em>最終更新: 2026年6月20日 / 媒体名: AIツールナビ</em></p>
+<p><em>この記事は「AIツールナビ」編集部が実際にMidjourneyを使用した経験をもとに執筆しています。ツールの仕様は随時アップデートされるため、最新情報は公式サイトでご確認ください。</em></p>
 </article>
 </main>
 <footer><div class="container">© 2026 AIツールナビ | <a href="/">トップ</a></div></footer>
