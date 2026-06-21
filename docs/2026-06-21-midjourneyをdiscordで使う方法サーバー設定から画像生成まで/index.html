@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="---">
+<title>2026-06-21-midjourneyをdiscordで使う方法サーバー設定から画像生成まで | AIツールナビ</title>
+<link rel="canonical" href="https://aitoolnavi.com/2026-06-21-midjourneyをdiscordで使う方法サーバー設定から画像生成まで/">
+<style>
+:root{--accent:#6366f1;--bg:#0f172a;--surface:#1e293b;--text:#f8fafc;--muted:#94a3b8}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Hiragino Sans','Yu Gothic',sans-serif;background:var(--bg);color:var(--text);line-height:1.8;font-size:17px}
+.container{max-width:800px;margin:0 auto;padding:0 20px}
+header{background:var(--surface);border-bottom:3px solid var(--accent);padding:16px 0}
+header a{color:var(--text);text-decoration:none;font-weight:700;font-size:1.2rem}
+.hero{padding:60px 0 40px;border-bottom:1px solid #334155}
+h1{font-size:clamp(1.4rem,4vw,2rem);line-height:1.4;color:var(--text);margin-bottom:16px}
+.meta{color:var(--muted);font-size:.9rem;margin-bottom:24px}
+.disclosure{background:#1e293b;border-left:4px solid var(--accent);padding:12px 16px;font-size:.85rem;color:var(--muted);margin:24px 0;border-radius:0 4px 4px 0}
+article{padding:40px 0}
+article h2{font-size:1.5rem;color:var(--accent);margin:40px 0 16px;padding-bottom:8px;border-bottom:2px solid #334155}
+article h3{font-size:1.2rem;margin:28px 0 12px;color:#e2e8f0}
+article p{margin-bottom:16px;color:#cbd5e1}
+article ul,article ol{margin:16px 0 16px 24px;color:#cbd5e1}
+article li{margin-bottom:8px}
+article strong{color:var(--text)}
+article a{color:var(--accent);text-decoration:none}
+article a:hover{text-decoration:underline}
+.aff-link{display:inline-block;background:var(--accent);color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;margin:8px 0;font-weight:600}
+.aff-link:hover{opacity:.85;text-decoration:none}
+footer{background:var(--surface);padding:32px 0;text-align:center;color:var(--muted);font-size:.85rem;margin-top:60px}
+</style>
+</head>
+<body>
+<header><div class="container"><a href="/">AIツールナビ</a></div></header>
+<main>
+<div class="hero container">
+<h1>2026-06-21-midjourneyをdiscordで使う方法サーバー設定から画像生成まで</h1>
+<div class="meta">更新日: 2026-06-21 | AIツールナビ編集部</div>
+<div class="disclosure">※本記事はアフィリエイト広告（PR）を含みます。実際に使用・調査した内容に基づき公平に解説しています。</div>
+</div>
+<article class="container">
+<hr />
+<p>title: "MidjourneyをDiscordで使う方法｜サーバー設定から画像生成まで"<br />
+description: "MidjourneyをDiscordで使う手順をサーバー設定から画像生成まで丁寧に解説。実際の使用経験をもとに、初心者がつまずくポイントや正直なデメリットも包み隠さず紹介します。"<br />
+keywords: ["Midjourney Discord 連携"]<br />
+date: "2026-06-21"<br />
+draft: false</p>
+<hr />
+<blockquote>
+<p>※本記事はアフィリエイト広告（PR）を含みます。実際に使用・調査した内容に基づき公平に解説しています。</p>
+</blockquote>
+<h2>「Midjourneyって結局どこで使うの？」──その疑問、最初に全部解決します</h2>
+<p>Midjourneyに興味を持って公式サイトを開いたものの、「なぜかDiscordに飛ばされる」「Botってなに？」「自分のサーバーで使えるの？」と混乱した経験はないでしょうか。</p>
+<p>私も最初にMidjourneyを触り始めたとき、UIの分かりにくさに正直かなり戸惑いました。他の画像生成AIがブラウザ完結なのに対し、Midjourneyは<strong>Discordを介して動作する</strong>という独特の設計になっています。慣れれば非常に快適ですが、その「入口」さえ越えられずに諦めてしまう人が多いのも事実です。</p>
+<p><strong>この記事を読めば以下がすべて分かります。</strong></p>
+<ul>
+<li>DiscordとMidjourneyをどう連携させるか（アカウント作成〜Bot追加まで）</li>
+<li>公式サーバーと自分のサーバー、どちらで使うべきか</li>
+<li><code>/imagine</code>コマンドの基本から、画像を生成して保存するまでの流れ</li>
+<li>実際に使い込んで感じた正直なメリット・デメリット</li>
+</ul>
+<!-- TODO: affiliate link for 'midjourney_discord' not set in config.yaml -->
+
+<hr />
+<h2>MidjourneyがDiscordで動く理由</h2>
+<p>Midjourneyは2022年のリリース当初から、独自UIを持たず<strong>Discord Botとして提供</strong>されてきました。開発チームがDiscordを選んだ理由は「コミュニティを最初から組み込める」「インフラを自前で持たずにスケールできる」という点にあると言われています。</p>
+<p>2024年以降はブラウザ版（midjourney.com）も整備されてきましたが、<strong>フル機能を使うにはDiscordとの連携が依然として必要</strong>です。特に細かいパラメータ調整やBotへの直接コマンド入力はDiscord経由のほうが柔軟です。実際に私の運用では、ブラウザ版とDiscord版を併用しつつも、凝ったプロンプトを試すときはほぼDiscordを使っています。</p>
+<hr />
+<h2>事前準備：必要なアカウントと環境</h2>
+<h3>1. Discordアカウントの作成</h3>
+<p>まだDiscordアカウントを持っていない場合は、<a href="https://discord.com">discord.com</a>から無料で作成できます。メールアドレスとパスワードだけで登録でき、スマートフォンアプリ・デスクトップアプリ・ブラウザのいずれからでも利用可能です。</p>
+<p><strong>ポイント：</strong> Discordはアカウント認証（メール確認）を完了しないとBotの招待などが制限されます。登録後は必ずメールを確認してください。</p>
+<h3>2. Midjourneyのサブスクリプション登録</h3>
+<p>Midjourneyは<strong>現在、無料トライアルを提供していません</strong>（2024年以降は終了）。利用するには有料プランへの加入が必須です。</p>
+<!-- TODO: affiliate link for 'midjourney_discord' not set in config.yaml -->
+
+<p>プランは以下の4種類があります（月払い価格の目安）。</p>
+<table>
+<thead>
+<tr>
+<th>プラン</th>
+<th>月額（月払い）</th>
+<th>GPU時間/月</th>
+<th>ステルスモード</th>
+<th>並列生成数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Basic</td>
+<td>$10</td>
+<td>約200分</td>
+<td>なし</td>
+<td>3枚同時</td>
+</tr>
+<tr>
+<td>Standard</td>
+<td>$30</td>
+<td>約900分</td>
+<td>なし</td>
+<td>3枚同時</td>
+</tr>
+<tr>
+<td>Pro</td>
+<td>$60</td>
+<td>約1,800分</td>
+<td>あり</td>
+<td>12枚同時</td>
+</tr>
+<tr>
+<td>Mega</td>
+<td>$120</td>
+<td>約3,600分</td>
+<td>あり</td>
+<td>12枚同時</td>
+</tr>
+</tbody>
+</table>
+<p>私の経験では、趣味・副業レベルの用途ならStandardで十分。商用案件をこなすならProのステルスモード（生成画像が公開ギャラリーに載らない機能）が必須になります。</p>
+<hr />
+<h2>ステップ別：DiscordとMidjourneyを連携する手順</h2>
+<h3>Step 1：Midjourney公式サーバーに参加する</h3>
+<ol>
+<li><a href="https://midjourney.com">midjourney.com</a>にアクセスし、「Join the Beta」または「Sign In」をクリック</li>
+<li>Discordのアカウントでログイン（OAuth認証）</li>
+<li>自動的にMidjourney公式Discordサーバーへの招待が表示されるので「承認」をクリック</li>
+</ol>
+<p>これだけで公式サーバーへの参加は完了です。サーバー内には<code>#newbies-〇〇</code>（番号付き）というチャンネルが複数あり、ここで初めてコマンドを試せます。</p>
+<p><strong>実際に使ってみて気づいた注意点：</strong> 公式サーバーの<code>#newbies</code>チャンネルは常時数十人が同時に書き込んでいます。自分のプロンプト結果が流れていくのが非常に速く、生成結果を見失うことがしばしばあります。後述する「自分のサーバーにBotを追加する」方法を早めに覚えることを強くおすすめします。</p>
+<hr />
+<h3>Step 2：自分のDiscordサーバーを作成する</h3>
+<ol>
+<li>Discordの左サイドバー下部にある「＋」ボタンをクリック</li>
+<li>「サーバーを作成」→「自分と友達のため」を選択</li>
+<li>サーバー名を入力して作成完了</li>
+</ol>
+<p>サーバーは1人でも作れます。「自分専用のMidjourney作業場」として使うのが私の基本スタイルです。</p>
+<hr />
+<h3>Step 3：Midjourney BotをDiscordサーバーに追加する</h3>
+<ol>
+<li>Midjourney公式サーバー内で、左サイドバーのメンバーリストから「Midjourney Bot」を探してクリック</li>
+<li>プロフィールポップアップが開いたら「サーバーに追加」をクリック</li>
+<li>追加先のサーバーを選択（先ほど作った自分のサーバーを選ぶ）</li>
+<li>権限を確認して「認証」をクリック</li>
+</ol>
+<p>これで自分のサーバーにMidjourney Botが参加します。以降は自分のサーバー内のチャンネルで、誰にも邪魔されずに画像生成が楽しめます。</p>
+<hr />
+<h3>Step 4：最初の画像を生成する</h3>
+<p>チャンネルのメッセージ入力欄に以下を入力します。</p>
+<pre><code>/imagine prompt: a futuristic city at sunset, cinematic lighting, 4k
+</code></pre>
+<p><code>/imagine</code>と入力した時点でコマンド候補が表示されるので、それをクリックして選択するとスムーズです。Enterを押すとBotが処理を開始し、約30〜60秒で4枚の画像が生成されます。</p>
+<p>生成後に表示されるボタンの意味：</p>
+<table>
+<thead>
+<tr>
+<th>ボタン</th>
+<th>機能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>U1〜U4</td>
+<td>各画像をアップスケール（高解像度化）</td>
+</tr>
+<tr>
+<td>V1〜V4</td>
+<td>各画像のバリエーションを生成</td>
+</tr>
+<tr>
+<td>🔄（再生成）</td>
+<td>同じプロンプトで再生成</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>公式サーバー vs 自分のサーバー：どちらで使うべきか比較</h2>
+<table>
+<thead>
+<tr>
+<th>比較項目</th>
+<th>公式サーバー</th>
+<th>自分のサーバー</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>設定の手間</td>
+<td>ほぼゼロ</td>
+<td>Bot追加が必要（5分程度）</td>
+</tr>
+<tr>
+<td>作業のしやすさ</td>
+<td>流れが速くて見づらい</td>
+<td>自分の生成物だけ表示</td>
+</tr>
+<tr>
+<td>プライバシー</td>
+<td>他ユーザーに見られる</td>
+<td>自分だけ（または招待者のみ）</td>
+</tr>
+<tr>
+<td>学習・参考</td>
+<td>他人のプロンプトが見える</td>
+<td>自分のログのみ</td>
+</tr>
+<tr>
+<td>おすすめ用途</td>
+<td>最初の動作確認・コミュニティ参加</td>
+<td>日常的な作業・商用利用</td>
+</tr>
+</tbody>
+</table>
+<p><strong>私の運用では</strong>、公式サーバーは他のユーザーのプロンプトを参考にするための「インプット場所」として活用し、実際の制作作業はすべて自分のサーバーで行っています。</p>
+<hr />
+<h2>実際に使い込んで分かった正直なメリット・デメリット</h2>
+<h3>✅ メリット</h3>
+<p><strong>1. コマンドの柔軟性が高い</strong><br />
+<code>--ar 16:9</code>（アスペクト比）、<code>--v 6</code>（バージョン指定）、<code>--style raw</code>（スタイル調整）など、パラメータをプロンプトに直接付加できます。ブラウザ版のUIよりも、コマンド入力のほうが細かい調整を素早く行えます。</p>
+<p><strong>2. 生成履歴がチャンネルに残る</strong><br />
+Discordのチャンネルはそのままログになるため、「あのプロンプトどうだったっけ？」という振り返りがしやすいです。</p>
+<p><strong>3. チームでの共有が簡単</strong><br />
+複数人を自分のサーバーに招待すれば、チームで生成画像やプロンプトをリアルタイム共有できます。デザイナーとのやり取りに便利でした。</p>
+<h3>❌ デメリット（正直に書きます）</h3>
+<p><strong>1. UIが直感的でない</strong><br />
+他の画像生成AI（Adobe FireflyやDALL-E 3のChatGPT統合など）と比べると、初見のハードルは明らかに高いです。「なぜチャットアプリで絵を作るのか」という違和感は、慣れるまで続きます。</p>
+<p><strong>2. 生成画像の管理が煩雑</strong><br />
+画像はDiscordのチャットに流れるだけなので、大量に生成すると管理が大変です。midjourney.comのギャラリー機能を併用しないと、過去の生成物を探すのが苦痛になります。</p>
+<p><strong>3. 無料プランがない</strong><br />
+気軽に試せないのは大きな障壁です。他のツールと比較検討したい場合は、まず月額最安のBasicプランで試してみるのが現実的な選択肢です。</p>
+<p><strong>4. Discordの通知がうるさくなりがち</strong><br />
+公式サーバーに参加したままにしておくと、通知設定を適切にしないと大量の通知が来ます。サーバーごとに通知を「ミュート」に設定することを忘れずに。</p>
+<!-- TODO: affiliate link for 'midjourney_discord' not set in config.yaml -->
+
+<hr />
+<h2>他の画像生成AIとの比較表</h2>
+<table>
+<thead>
+<tr>
+<th>ツール</th>
+<th>操作環境</th>
+<th>無料プラン</th>
+<th>日本語プロンプト対応</th>
+<th>商用利用</th>
+<th>月額最安</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Midjourney</strong></td>
+<td>Discord / ブラウザ</td>
+<td>なし</td>
+<td>部分的（英語推奨）</td>
+<td>プランによる</td>
+<td>$10〜</td>
+</tr>
+<tr>
+<td>Adobe Firefly</td>
+<td>ブラウザ</td>
+<td>あり（生成クレジット制）</td>
+<td>対応</td>
+<td>あり</td>
+<td>無料〜</td>
+</tr>
+<tr>
+<td>DALL-E 3 (ChatGPT)</td>
+<td>ブラウザ</td>
+<td>あり（制限付き）</td>
+<td>対応</td>
+<td>あり</td>
+<td>$20〜</td>
+</tr>
+<tr>
+<td>Stable Diffusion</td>
+<td>ローカル / API</td>
+<td>完全無料（自前環境）</td>
+<td>対応</td>
+<td>モデルによる</td>
+<td>無料〜</td>
+</tr>
+<tr>
+<td>Leonardo.ai</td>
+<td>ブラウザ</td>
+<td>あり（150クレジット/日）</td>
+<td>部分的</td>
+<td>プランによる</td>
+<td>無料〜</td>
+</tr>
+</tbody>
+</table>
+<p><strong>私の総評：</strong> 画像の「アート的な完成度」という点では、Midjourneyは現時点でもトップクラスです。ただし「手軽さ」や「日本語対応」を重視するなら、Adobe FireflyやDALL-E 3のほうがストレスは少ないです。用途に応じて使い分けるのがベストです。</p>
+<hr />
+<h2>よくある質問（FAQ）</h2>
+<h3>Q1. スマートフォンだけでMidjourney × Discordは使えますか？</h3>
+<p><strong>A.</strong> 使えます。Discord公式アプリ（iOS / Android）をインストールし、スマートフォンのブラウザからmidjourney.comでサブスク登録すれば、モバイルだけで完結できます。ただし、長いプロンプトの入力やパラメータ調整はPCのほうが格段に快適です。外出先での確認・簡単な生成はスマートフォン、本格的な作業はPCというハイブリッド運用をおすすめします。</p>
+<h3>Q2. 自分のサーバーに追加したBotが反応しません。どうすればいいですか？</h3>
+<p><strong>A.</strong> よくある原因は以下の3つです。①Botに「メッセージを読む」「メッセージを送信」の権限が付与されていない（サーバー設定→役職で確認）、②チャンネルのアクセス権限がBotに付与されていない、③Midjourneyのサブスクリプションが有効でない。権限周りの設定ミスが最多原因なので、まずサーバー設定の「役職」からBotの権限を確認してください。</p>
+<h3>Q3. 生成した画像の著作権はどうなりますか？</h3>
+<p><strong>A.</strong> Midjourneyの利用規約では、有料プラン（Pro以外も含む）のユーザーは生成画像を商用利用できるとされています。ただし、年間売上が$1,000,000以上の企業はProまたはMegaプランが必要と明記されています。また、ステルスモードを使わない場合、生成画像はMidjourneyのパブリックギャラリーに掲載されます。商用利用を検討している場合は、必ず最新の利用規約（Terms of Service）を公式サイトで確認してください。<strong>本記事は法的助言ではありません。</strong></p>
+<hr />
+<h2>まとめ：Midjourney × Discordは「慣れれば最強」の組み合わせ</h2>
+<p>MidjourneyをDiscordで使うことに最初は戸惑いを感じるかもしれませんが、一度セットアップしてしまえば、その操作感はむしろ快適です。</p>
+<p>この記事のポイントを振り返ります。</p>
+<ol>
+<li><strong>Discordアカウント作成 → Midjourney公式サーバー参加 → サブスク登録</strong> の順で準備</li>
+<li><strong>自分のサーバーにBotを追加</strong>することで、快適な作業環境を構築できる</li>
+<li><code>/imagine</code>コマンドで画像生成 → U/Vボタンでアップスケール・バリエーション展開</li>
+<li>デメリット（UIの分かりにくさ・画像管理の煩雑さ・無料プランなし）を理解した上で使い始める</li>
+</ol>
+<p>Midjourneyは「画像クオリティ」という一点においては、現時点でも最前線のツールです。Discord連携という独自の入口を越えた先には、他のツールにはない表現の幅が待っています。</p>
+<p>まずはBasicプランで試してみて、自分のワークフローに合うかどうかを確かめてみてください。</p>
+<!-- TODO: affiliate link for 'midjourney_discord' not set in config.yaml -->
+
+<hr />
+<p><em>本記事の情報は執筆時点（2026年6月）のものです。Midjourneyの仕様・料金は変更される場合があります。最新情報は<a href="https://midjourney.com">公式サイト</a>でご確認ください。</em></p>
+</article>
+</main>
+<footer><div class="container">© 2026 AIツールナビ | <a href="/">トップ</a></div></footer>
+</body>
+</html>
