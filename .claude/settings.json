@@ -19,6 +19,15 @@
       "Bash(*python* *wp_publisher.py*)",
       "Bash(*python* *traffic/*.py*)",
       "Bash(git push *)",
+      "Bash(git -C * push*)",
+      "PowerShell(*python* *run_daily.py*)",
+      "PowerShell(*python* *generate_article.py*)",
+      "PowerShell(*python* *keyword_research.py*)",
+      "PowerShell(*python* *sns_repurpose.py*--post*)",
+      "PowerShell(*python* *wp_publisher.py*)",
+      "PowerShell(*python* *traffic*.py*)",
+      "PowerShell(git push *)",
+      "PowerShell(git -C * push*)",
       "Edit(./docs/**)"
     ],
     "deny": [
