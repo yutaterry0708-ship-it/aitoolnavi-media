@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "env": {
+    "PYTHONUTF8": "1"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(python setup_check.py)",
+      "Bash(python src/setup_check.py)",
+      "Bash(python static_publisher.py)",
+      "Bash(python src/static_publisher.py)",
+      "Bash(ruff check --no-cache *)"
+    ],
+    "ask": [
+      "Bash(*python* *run_daily.py*)",
+      "Bash(*python* *generate_article.py*)",
+      "Bash(*python* *keyword_research.py*)",
+      "Bash(*python* *sns_repurpose.py*--post*)",
+      "Bash(*python* *wp_publisher.py*)",
+      "Bash(*python* *traffic/*.py*)",
+      "Bash(git push *)",
+      "Edit(./docs/**)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Edit(./.env)",
+      "Read(**/*.pem)",
+      "Read(**/secrets.yml)",
+      "Bash(rm -rf *)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"$CLAUDE_PROJECT_DIR/.claude/hooks/check_python.py\"",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}
