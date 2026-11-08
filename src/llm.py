@@ -3,6 +3,7 @@
 Run scripts from this src/ directory so `import llm` resolves.
 """
 import os
+import inspect
 import json
 import time
 import re
@@ -29,8 +30,12 @@ def call_claude(prompt, model="claude-sonnet-4-6", system=None,
     last_err = None
     for attempt in range(retries):
         try:
-            kwargs = dict(model=model, max_tokens=max_tokens, temperature=temperature,
+            kwargs = dict(model=model, max_tokens=max_tokens,
                           messages=[{"role": "user", "content": prompt}])
+            # 新しい anthropic SDK は temperature 引数を受け付けない（TypeError になる）。
+            # CI は SDK を固定せず最新を入れるので、対応しているときだけ渡す。
+            if "temperature" in inspect.signature(client.messages.create).parameters:
+                kwargs["temperature"] = temperature
             if system:
                 kwargs["system"] = system
             resp = client.messages.create(**kwargs)
