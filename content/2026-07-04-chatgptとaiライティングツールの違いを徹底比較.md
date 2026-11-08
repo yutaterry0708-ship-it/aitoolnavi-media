@@ -73,9 +73,9 @@ ChatGPTは「白紙のキャンバスに何でも描ける」ツールです。�
 - **ロングフォーム記事の一括生成**：タイトル→アウトライン→本文→メタ情報まで一気通貫
 - **チームコラボ機能**：複数ライターでの共同編集・承認フロー
 
-<!-- TODO: affiliate link for 'jasper-ai' not set in config.yaml -->
+[[AFF:jasper-ai]]
 
-<!-- TODO: affiliate link for 'transcope' not set in config.yaml -->
+[[AFF:transcope]]
 
 ---
 
@@ -134,7 +134,7 @@ ChatGPTは「白紙のキャンバスに何でも描ける」ツールです。�
 **3. 非エンジニアでも使いやすいUI**
 テンプレートを選んで必要事項を入力するだけで、それなりの品質の文章が出力されます。プロンプトを書く知識がなくても始められます。
 
-<!-- TODO: affiliate link for 'writesonic' not set in config.yaml -->
+[[AFF:writesonic]]
 
 ### 専用AIライティングツールのデメリット
 
@@ -165,7 +165,7 @@ ChatGPTは「白紙のキャンバスに何でも描ける」ツールです。�
 - ブランドトーンの統一が重要なビジネス用途
 - プロンプトを考える時間を省いて、すぐ使い始めたい
 
-<!-- TODO: affiliate link for 'jasper-ai' not set in config.yaml -->
+[[AFF:jasper-ai]]
 
 ---
 
@@ -196,7 +196,7 @@ ChatGPTと専用AIライティングツールの違いを整理すると、**「
 
 個人で始めるならChatGPTからスタートして、業務が拡大したら専用ツールへの移行を検討するという順序が、実際のユーザーには多いパターンです。まずは各ツールの無料トライアルを活用して、自分のワークフローに合うかどうかを実際に体験してみてください。
 
-<!-- TODO: affiliate link for 'transcope' not set in config.yaml -->
+[[AFF:transcope]]
 
 ---
 

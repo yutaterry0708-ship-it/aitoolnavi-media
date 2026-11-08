@@ -27,7 +27,7 @@ ChatGPTとGeminiが話題をさらう中、Anthropicが2024年3月にリリー�
 
 この判断軸を頭に入れた上で、以下を読み進めてください。
 
-<!-- TODO: affiliate link for 'claude3_guide' not set in config.yaml -->
+[[AFF:claude3_guide]]
 
 ---
 
@@ -77,7 +77,7 @@ Opusは現時点でAnthropicが提供する最高性能モデルです。実際�
 - カスタマーサポートの返信文案
 - 中程度の複雑さのコード補助
 
-<!-- TODO: affiliate link for 'claude3_guide' not set in config.yaml -->
+[[AFF:claude3_guide]]
 
 ---
 
@@ -127,7 +127,7 @@ Claude 3は指示の明確さに素直に反応します。私の運用で効果
 - **出力形式を指定する：** 「箇条書きで5点にまとめて」
 - **制約を明示する：** 「専門用語は使わず、中学生でも理解できる言葉で」
 
-<!-- TODO: affiliate link for 'claude3_guide' not set in config.yaml -->
+[[AFF:claude3_guide]]
 
 ---
 
@@ -182,7 +182,7 @@ GPT-4oやGemini 1.5 Proの進化も速く、「Claude 3 Opusが最強」とい�
 
 **A.** **Claude.ai**はブラウザから直接使えるチャットUI（一般ユーザー向け）、**API**は自社システムやアプリにClaude 3を組み込むための開発者向けインターフェースです。個人利用・業務での文章作成ならClaude.aiで十分。自動化・プロダクト開発・大量処理が目的ならAPIの利用を検討してください。
 
-<!-- TODO: affiliate link for 'claude3_guide' not set in config.yaml -->
+[[AFF:claude3_guide]]
 
 ---
 
@@ -204,7 +204,7 @@ Claude 3は、正しく使えば現時点でトップクラスの生産性向上
 
 本格的な業務活用や開発用途への組み込みを検討している方は、下のリンクからAPI・Proプランの詳細を確認してみてください。
 
-<!-- TODO: affiliate link for 'claude3_guide' not set in config.yaml -->
+[[AFF:claude3_guide]]
 
 ---
 

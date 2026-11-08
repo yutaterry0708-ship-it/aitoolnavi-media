@@ -22,7 +22,7 @@ draft: false
 
 リアルタイムWeb検索とAI回答を一画面で完結させ、出典リンクまで自動表示してくれる──私が実際にAndroid・iOSの両環境で数ヶ月使い込んで感じた「これは手放せない」というレベルの使い勝手を、この記事で余すことなく伝えます。
 
-<!-- TODO: affiliate link for 'perplexity_mobile_app' not set in config.yaml -->
+[[AFF:perplexity_mobile_app]]
 
 ---
 
@@ -46,7 +46,7 @@ Perplexity AIは2022年に米国でリリースされたAIサービスで、モ�
 
 無料プランでも日常的なリサーチ用途なら十分実用的です。私の運用では、週に数回「深掘り調査」をしたいときだけProを使うという使い方が一番コスパが良いと感じています。
 
-<!-- TODO: affiliate link for 'perplexity_mobile_app' not set in config.yaml -->
+[[AFF:perplexity_mobile_app]]
 
 ---
 
@@ -154,7 +154,7 @@ AIの回答はハルシネーション（事実誤認）のリスクがありま
 **③ Proプランのコストパフォーマンスは人を選ぶ**
 月額費用を払ってGPT-4o等の高度モデルをフル活用したい人には価値がありますが、たまにしか使わない人には割高に感じる可能性があります。まずは無料プランで自分の利用頻度を確認してから課金を検討するのが賢明です。
 
-<!-- TODO: affiliate link for 'perplexity_mobile_app' not set in config.yaml -->
+[[AFF:perplexity_mobile_app]]
 
 ---
 
@@ -185,7 +185,7 @@ Perplexity AIのモバイルアプリを実際に使い込んで分かったこ�
 
 「とりあえずGoogle検索」という習慣を少しずつPerplexity AIに置き換えていくだけで、情報収集の質とスピードが変わります。難しい設定は一切不要なので、今日インストールして試してみてください。
 
-<!-- TODO: affiliate link for 'perplexity_mobile_app' not set in config.yaml -->
+[[AFF:perplexity_mobile_app]]
 
 ---
 

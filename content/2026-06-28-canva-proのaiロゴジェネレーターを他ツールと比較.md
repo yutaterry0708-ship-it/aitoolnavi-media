@@ -24,7 +24,7 @@ draft: false
 
 Canvaは世界1億5,000万ユーザー超を誇るデザインプラットフォームです。無料プランでも使えますが、**Pro（月額約1,500円〜、年払いで割安）**にアップグレードすると、AIを活用したロゴ生成機能「ロゴメーカー」と、画像生成AI「Magic Media」が本格的に使えるようになります。
 
-<!-- TODO: affiliate link for 'canva_ai_logo_compare' not set in config.yaml -->
+[[AFF:canva_ai_logo_compare]]
 
 ### Canva Proのロゴ生成の仕組み
 
@@ -68,7 +68,7 @@ Canvaのロゴ生成は大きく2つのアプローチがあります。
 
 **こんな人に向く：** すでにCanvaを日常的に使っている人、ロゴ以外のデザイン作業も一括管理したい人、月額コストを抑えたい人。
 
-<!-- TODO: affiliate link for 'canva_ai_logo_compare' not set in config.yaml -->
+[[AFF:canva_ai_logo_compare]]
 
 ---
 
@@ -124,7 +124,7 @@ Adobe ExpressはFirefly AIを搭載し、テキストからロゴ風のグラフ
 
 **こんな人に向く：** すでにAdobe CCを契約している人、Illustratorで後から編集する前提の人。
 
-<!-- TODO: affiliate link for 'canva_ai_logo_compare' not set in config.yaml -->
+[[AFF:canva_ai_logo_compare]]
 
 ---
 
@@ -152,7 +152,7 @@ Adobe ExpressはFirefly AIを搭載し、テキストからロゴ風のグラフ
 
 はい、無料プランでもテンプレートを使ったロゴ制作は可能です。ただし、**PNG書き出し時に透過背景が使えない・SVG書き出しができない・使えるテンプレートが限定される**など制約があります。商用利用する場合はProへのアップグレードを強く推奨します。
 
-<!-- TODO: affiliate link for 'canva_ai_logo_compare' not set in config.yaml -->
+[[AFF:canva_ai_logo_compare]]
 
 ### Q2. Canva Proで作ったロゴの商用利用は問題ありませんか？
 

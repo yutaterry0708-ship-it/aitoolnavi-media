@@ -109,7 +109,7 @@ Copilotが数秒で文面を生成します。私の運用では、生成され�
 
 **→ 個人・中小企業のメール効率化ならCopilot in Outlookが最もコスパが高い選択肢**と言えます。ただし、後述するライセンスコストは無視できません。
 
-<!-- TODO: affiliate link for 'Microsoft365Copilot' not set in config.yaml -->
+[[AFF:Microsoft365Copilot]]
 
 ---
 
@@ -136,7 +136,7 @@ Outlookの既存UIに自然に溶け込んでいるため、特別なトレー�
 **1. 追加ライセンスコストが高い**
 Microsoft 365 Copilotは、既存のMicrosoft 365サブスクリプションに**追加でユーザーあたり月額料金**が発生します（2025年時点で法人向けは月額約4,500円前後／ユーザー）。個人や小規模チームには重い出費になりえます。
 
-<!-- TODO: affiliate link for 'Microsoft365Business' not set in config.yaml -->
+[[AFF:Microsoft365Business]]
 
 **2. 完全な「自動送信」ではない**
 返信ドラフト生成はあくまで「案」の提示であり、人間が確認して送信ボタンを押す必要があります。「AIが勝手に返信してくれる」と期待すると拍子抜けします（これは安全性の観点からは正しい設計ですが）。
@@ -156,11 +156,11 @@ Copilotの全機能はOutlook New版（Web版・新デスクトップ版）で�
 
 Copilot in Outlookだけでなく、メール生産性を高めるSaaSは複数あります。用途に応じて組み合わせるのも一手です。
 
-<!-- TODO: affiliate link for 'email_productivity_tool' not set in config.yaml -->
+[[AFF:email_productivity_tool]]
 
 たとえば、CRMと連携してメール履歴を自動ログしたい場合や、チーム全体でメールテンプレートを共有・管理したい場合は、専用ツールの導入も検討に値します。Copilot in Outlookはあくまで「個人の返信効率化」に特化しており、チーム運用の仕組み化には別途ツールが必要になることを覚えておいてください。
 
-<!-- TODO: affiliate link for 'CRM_email_integration' not set in config.yaml -->
+[[AFF:CRM_email_integration]]
 
 ---
 
@@ -194,7 +194,7 @@ Copilot in Outlookの自動返信・返信ドラフト生成機能を使い込�
 
 メール生産性を本気で上げたい方は、まず30日間の試用期間（Microsoft 365 Copilotトライアル）で自分のワークフローに合うか確かめてみることをおすすめします。
 
-<!-- TODO: affiliate link for 'Microsoft365Copilot' not set in config.yaml -->
+[[AFF:Microsoft365Copilot]]
 
 ---
 

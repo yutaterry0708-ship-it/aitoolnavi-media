@@ -45,7 +45,7 @@ Perplexity AIの強みは、**回答と出典が一体化している**点です
 
 ただし、**出典の質にバラつきがある**点は正直なデメリットとして挙げておく必要があります。信頼性の低いサイトを引用してしまうこともあり、重要な判断に使う場合は必ず出典元を自分で確認する習慣が必要です。
 
-<!-- TODO: affiliate link for 'perplexity_pro' not set in config.yaml -->
+[[AFF:perplexity_pro]]
 
 ### ChatGPTの検索精度
 
@@ -53,7 +53,7 @@ ChatGPT（GPT-4o）は、有料プランでWeb検索機能（Browse）が使え�
 
 実際に使ってみて、「最新情報を調べる」という目的では Perplexity AIの方がレスポンスも速く、出典も整理されていると感じます。一方、「調べた内容をもとに企画書を書く」「複数の情報を統合して長文を生成する」用途ではChatGPTが圧倒的に使いやすいです。
 
-<!-- TODO: affiliate link for 'chatgpt_plus' not set in config.yaml -->
+[[AFF:chatgpt_plus]]
 
 ---
 
@@ -126,7 +126,7 @@ ChatGPT（GPT-4o）は、有料プランでWeb検索機能（Browse）が使え�
 
 この2つを**「調査フェーズ → 生成フェーズ」で分けて使う**のが最も効率的だと感じています。Perplexityで情報を集め、それをChatGPTに渡して文章化する、というワークフローです。
 
-<!-- TODO: affiliate link for 'perplexity_vs_chatgpt' not set in config.yaml -->
+[[AFF:perplexity_vs_chatgpt]]
 
 ---
 
@@ -163,7 +163,7 @@ Perplexity AIとChatGPTは「競合ツール」というより、**異なる目�
 
 まずは両方を無料で試してみてください。
 
-<!-- TODO: affiliate link for 'perplexity_pro_signup' not set in config.yaml -->
+[[AFF:perplexity_pro_signup]]
 
 ---
 

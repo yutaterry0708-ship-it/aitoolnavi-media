@@ -16,7 +16,7 @@ draft: false
 
 **結論を先に言うと：**Canva ProのAI魔法編集ツールは「デザイン作業全体のスピードを上げる補助エンジン」として非常に優秀です。ただし、プロレベルの精密な合成や高解像度印刷物には限界があります。用途を絞れば**コスパ最強クラス**のAI編集体験が得られます。
 
-<!-- TODO: affiliate link for 'canva_ai_magic_edit' not set in config.yaml -->
+[[AFF:canva_ai_magic_edit]]
 
 ---
 
@@ -119,7 +119,7 @@ Magic Eraserは正直、**Canva Pro契約の元を取れる機能No.1**だと思
 
 逆に、**広告代理店のデザイナーや印刷物メインのプロ**には、Adobe CCの方が適しているケースが多いでしょう。
 
-<!-- TODO: affiliate link for 'canva_ai_magic_edit' not set in config.yaml -->
+[[AFF:canva_ai_magic_edit]]
 
 ---
 
@@ -129,7 +129,7 @@ Magic Eraserは正直、**Canva Pro契約の元を取れる機能No.1**だと思
 
 **A.** はい、試せます。Canva Proは30日間の無料トライアルが提供されており（時期によって変動あり）、その期間中はMagic EraserやBackground Removerを含むPro限定AI機能が利用できます。ただしAI生成のクレジット数には上限があるため、試したい機能を優先的に試すことをおすすめします。
 
-<!-- TODO: affiliate link for 'canva_ai_magic_edit' not set in config.yaml -->
+[[AFF:canva_ai_magic_edit]]
 
 ### Q2. Magic Editで生成した画像は商用利用できますか？
 
@@ -153,7 +153,7 @@ Magic Eraserと背景リムーバルは即戦力として使えるレベル。Ma
 
 まずは30日間の無料トライアルで、自分の用途に合うかどうか試してみることをおすすめします。
 
-<!-- TODO: affiliate link for 'canva_ai_magic_edit' not set in config.yaml -->
+[[AFF:canva_ai_magic_edit]]
 
 ---
 

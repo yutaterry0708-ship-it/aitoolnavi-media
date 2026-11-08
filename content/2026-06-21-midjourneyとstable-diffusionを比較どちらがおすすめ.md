@@ -31,7 +31,7 @@ MidjourneyはDiscordのボットを通じて画像を生成するクラウド型
 
 実際に使ってみて感じるのは、**「何も考えなくても絵になる」という圧倒的な敷居の低さ**です。「fantasy castle at sunset, cinematic lighting」と入力するだけで、映画のワンシーンのような画像が4枚生成されます。
 
-<!-- TODO: affiliate link for 'midjourney_comparison' not set in config.yaml -->
+[[AFF:midjourney_comparison]]
 
 ### Stable Diffusionとは
 
@@ -79,7 +79,7 @@ Midjourneyは「使い始めて5分で作品ができる」体験を提供しま
 
 **Stable Diffusion**はオープンソースのため、ローカル環境なら**ランニングコストゼロ**。ただしGPUを持っていない場合はGoogle ColabやRunDiffusionなどのクラウドGPUサービスを使うことになり、使用量に応じたコストが発生します。それでもMidjourneyの月額と比べれば大幅に安く抑えられるケースが多いです。
 
-<!-- TODO: affiliate link for 'midjourney_comparison' not set in config.yaml -->
+[[AFF:midjourney_comparison]]
 
 ---
 
@@ -141,7 +141,7 @@ Midjourneyにも`--cref`（キャラクター参照）や`--sref`（スタイル
 - 細かい構図・ポーズ指定が苦手
 - 月額コストが積み重なるとかなりの金額になる
 
-<!-- TODO: affiliate link for 'midjourney_comparison' not set in config.yaml -->
+[[AFF:midjourney_comparison]]
 
 ### Stable Diffusionのメリット
 - オープンソースで基本無料
@@ -174,7 +174,7 @@ Midjourneyにも`--cref`（キャラクター参照）や`--sref`（スタイル
 - プライバシーを重視してローカルで完結させたい
 - ControlNetで構図やポーズを精密にコントロールしたい
 
-<!-- TODO: affiliate link for 'midjourney_comparison' not set in config.yaml -->
+[[AFF:midjourney_comparison]]
 
 ---
 
@@ -206,7 +206,7 @@ MidjourneyとStable Diffusionは「どちらが優れているか」ではなく
 どちらのツールも急速に進化しており、今後の機能差は縮まっていく可能性もあります。まずは自分の目的に合った一歩を踏み出してみてください。
 
 > 📌 **Midjourneyを試してみたい方はこちら**
-> <!-- TODO: affiliate link for 'midjourney_comparison' not set in config.yaml -->
+> [[AFF:midjourney_comparison]]
 
 ---
 

@@ -29,7 +29,7 @@ draft: false
 
 ## Midjourneyのプラン別・商用利用ライセンスの条件
 
-<!-- TODO: affiliate link for 'midjourney_commercial' not set in config.yaml -->
+[[AFF:midjourney_commercial]]
 
 ### 有料プランなら商用利用OK——ただし規模に注意
 
@@ -76,7 +76,7 @@ Midjourneyの利用規約では、有料ユーザーが生成した画像につ�
 
 ## 他のAI画像生成ツールとのライセンス比較
 
-<!-- TODO: affiliate link for 'midjourney_commercial' not set in config.yaml -->
+[[AFF:midjourney_commercial]]
 
 商用利用の観点で、主要な競合ツールと比較してみましょう。
 
@@ -121,7 +121,7 @@ Midjourneyの利用規約では、有料ユーザーが生成した画像につ�
 - [ ] クライアントへの納品時に「AI生成素材を使用している」旨を開示しているか
 - [ ] 年間売上が$1,000,000を超える場合はエンタープライズライセンスを確認
 
-<!-- TODO: affiliate link for 'midjourney_commercial' not set in config.yaml -->
+[[AFF:midjourney_commercial]]
 
 ---
 
@@ -159,7 +159,7 @@ Midjourneyは商用利用できる強力なツールですが、「有料プラ�
 
 まずは有料プランから始めて、利用規約を正確に理解した上で商用利用を進めてください。
 
-<!-- TODO: affiliate link for 'midjourney_commercial' not set in config.yaml -->
+[[AFF:midjourney_commercial]]
 
 ---
 

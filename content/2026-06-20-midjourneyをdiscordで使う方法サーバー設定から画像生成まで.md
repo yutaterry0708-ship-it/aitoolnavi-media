@@ -18,7 +18,7 @@ Midjourneyに興味を持ってサイトを開いたとき、「なぜか見慣�
 
 **この記事では、MidjourneyとDiscordの連携を「サーバー招待→ボット追加→画像生成→プライベート運用」まで一気通貫で解説します。** 初心者がつまずきやすいポイントも正直に書いているので、最後まで読めば迷わずスタートできます。
 
-<!-- TODO: affiliate link for 'midjourney_discord' not set in config.yaml -->
+[[AFF:midjourney_discord]]
 
 ---
 
@@ -66,7 +66,7 @@ Discordを採用した理由として公式は明言していませんが、**�
 
 私の運用では**Standardプランが最もコスパが良い**と感じています。月15時間のFast GPU時間があれば、1日30〜50枚程度の生成を無理なく回せます。
 
-<!-- TODO: affiliate link for 'midjourney_discord' not set in config.yaml -->
+[[AFF:midjourney_discord]]
 
 ### STEP 4｜自分のDiscordサーバーにMidjourneyボットを追加する
 
@@ -136,7 +136,7 @@ Enterを押すと、Midjourney Botが処理を開始し、約30〜60秒で4枚�
 - **日本語プロンプトの精度が不安定：** 英語プロンプトに比べて日本語は解釈のブレが大きい。私の経験では英語で書いた方が意図通りになりやすい
 - **公開チャンネルでの生成はプライバシーリスク：** Basicプランはステルスモード（非公開生成）が使えず、全画像が他ユーザーに見える
 
-<!-- TODO: affiliate link for 'midjourney_discord' not set in config.yaml -->
+[[AFF:midjourney_discord]]
 
 ---
 
@@ -188,7 +188,7 @@ Discordとの連携は最初こそ戸惑いますが、一度設定してしま�
 
 まずは有料プランに登録して、自分のペースで試してみてください。
 
-<!-- TODO: affiliate link for 'midjourney_discord' not set in config.yaml -->
+[[AFF:midjourney_discord]]
 
 ---
 

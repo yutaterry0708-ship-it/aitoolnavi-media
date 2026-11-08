@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="---">
-<title>2026-06-19-chatgptでdall-eを使った画像生成プラグイン設定と活用法 | AIツールナビ</title>
+<meta name="description" content="ChatGPTでDALL-Eを使って画像生成する方法を実体験ベースで解説。プラン別の使い方・プロンプト例・Midjourneyとの比較・正直なデメリットまで網羅。">
+<title>ChatGPTでDALL-Eを使った画像生成｜プラグイン設定と活用法 | AIツールナビ</title>
 <link rel="canonical" href="https://aitoolnavi.com/2026-06-19-chatgptでdall-eを使った画像生成プラグイン設定と活用法/">
 <style>
 :root{--accent:#6366f1;--bg:#0f172a;--surface:#1e293b;--text:#f8fafc;--muted:#94a3b8}
@@ -35,21 +35,11 @@ footer{background:var(--surface);padding:32px 0;text-align:center;color:var(--mu
 <header><div class="container"><a href="/">AIツールナビ</a></div></header>
 <main>
 <div class="hero container">
-<h1>2026-06-19-chatgptでdall-eを使った画像生成プラグイン設定と活用法</h1>
+<h1>ChatGPTでDALL-Eを使った画像生成｜プラグイン設定と活用法</h1>
 <div class="meta">更新日: 2026-06-19 | AIツールナビ編集部</div>
 <div class="disclosure">※本記事はアフィリエイト広告（PR）を含みます。実際に使用・調査した内容に基づき公平に解説しています。</div>
 </div>
 <article class="container">
-<hr />
-<p>title: "ChatGPTでDALL-Eを使った画像生成｜プラグイン設定と活用法"<br />
-description: "ChatGPTでDALL-Eを使って画像生成する方法を実体験ベースで解説。プラン別の使い方・プロンプト例・Midjourneyとの比較・正直なデメリットまで網羅。"<br />
-keywords: ["ChatGPT 画像生成 DALL-E 連携"]<br />
-date: "2026-06-19"<br />
-draft: false</p>
-<hr />
-<blockquote>
-<p>※本記事はアフィリエイト広告（PR）を含みます。実際に使用・調査した内容に基づき公平に解説しています。</p>
-</blockquote>
 <h2>「ChatGPTで画像も作れるって聞いたけど、どうやるの？」——その疑問、ぜんぶ答えます</h2>
 <p>「テキスト生成だけじゃなくて、画像もChatGPTで完結させたい」「DALL-Eってそもそも何？ ChatGPTのどこにあるの？」——こういった疑問を持つ方は多いはずです。</p>
 <p>私自身、AIツールを日常的に使い倒す中で、<strong>最初にDALL-Eを試したときは設定画面を探し回って10分以上ロスしました</strong>。今となっては笑い話ですが、公式ドキュメントが英語中心で、日本語の実用情報が少ないのが現実です。</p>
@@ -100,7 +90,7 @@ draft: false</p>
 <hr />
 <h2>ChatGPT × DALL-E 3の基本的な使い方</h2>
 <h3>Step 1：ChatGPTにログインしてチャットを開く</h3>
-<p>まずは <!-- TODO: affiliate link for 'ChatGPT Plus' not set in config.yaml --> にアクセスし、アカウントにログインします。Plusプランの場合、モデル選択で「GPT-4o」を選んでおけばDALL-E 3が使える状態です。</p>
+<p>まずは  にアクセスし、アカウントにログインします。Plusプランの場合、モデル選択で「GPT-4o」を選んでおけばDALL-E 3が使える状態です。</p>
 <h3>Step 2：日本語でそのまま依頼する</h3>
 <p>特別なコマンドは不要です。チャット欄に以下のように入力するだけです。</p>
 <pre><code>「夕暮れ時の東京の街並みを、水彩画風で描いてください」
@@ -219,15 +209,15 @@ DALL-E 3からテキスト描画の精度が大幅に向上しました。「AI�
 <p><strong>1. Midjourneyと比べるとアート的な「映え」では劣る</strong><br />
 フォトリアルな人物写真や、芸術的に洗練されたビジュアルを求めるなら、Midjourneyのほうが一段上です。ChatGPT + DALL-E 3は「実用的に十分」なクオリティですが、ポートフォリオ作品レベルを求めるなら物足りないかもしれません。</p>
 <p><strong>2. 生成枚数の上限が不透明</strong><br />
-Plusプランでも「何枚まで」という明確な数字が公開されていません。ヘビーに使うと突然「しばらく待ってください」と表示されることがあります。業務で大量生成が必要なら、APIを別途契約する方が安定します。<!-- TODO: affiliate link for 'OpenAI API' not set in config.yaml --></p>
+Plusプランでも「何枚まで」という明確な数字が公開されていません。ヘビーに使うと突然「しばらく待ってください」と表示されることがあります。業務で大量生成が必要なら、APIを別途契約する方が安定します。</p>
 <p><strong>3. 細部のコントロールが難しい</strong><br />
 「右手の指を5本にして」「背景だけ変えて」といった部分的な修正は、まだ苦手です。Photoshopの生成塗りつぶしやAdobe Fireflyの方が局所的な編集には向いています。</p>
 <p><strong>4. プロンプト次第でポリシー違反になりやすい</strong><br />
 暴力・成人向けコンテンツはもちろん、実在の人物に似たキャラクターや特定ブランドのロゴなどはブロックされます。コンテンツポリシーは厳しめで、商業用途では制約を感じる場面があります。</p>
 <hr />
 <h2>ChatGPT Plus以外の選択肢も検討しよう</h2>
-<p>DALL-E 3をChatGPT経由ではなくAPIで使いたい場合は、<!-- TODO: affiliate link for 'OpenAI API' not set in config.yaml --> から直接呼び出すことができます。開発者やn8n・Makeなどのノーコードツールと組み合わせて自動化したい方にはAPIの方が柔軟です。</p>
-<p>また、画像生成に特化したサービスを探しているなら <!-- TODO: affiliate link for 'Midjourney' not set in config.yaml --> も比較検討の価値があります。用途によって使い分けるのが現実的なアプローチです。</p>
+<p>DALL-E 3をChatGPT経由ではなくAPIで使いたい場合は、 から直接呼び出すことができます。開発者やn8n・Makeなどのノーコードツールと組み合わせて自動化したい方にはAPIの方が柔軟です。</p>
+<p>また、画像生成に特化したサービスを探しているなら  も比較検討の価値があります。用途によって使い分けるのが現実的なアプローチです。</p>
 <hr />
 <h2>よくある質問（FAQ）</h2>
 <h3>Q1. 無料プランでもDALL-E 3は使えますか？</h3>
@@ -246,7 +236,7 @@ Plusプランでも「何枚まで」という明確な数字が公開されて�
 <li><strong>アート的クオリティではMidjourneyに劣る</strong>のは正直なところ</li>
 <li><strong>大量生成・細部編集・APIとの連携</strong>はそれぞれ別ツールとの組み合わせが現実的</li>
 </ul>
-<p>「とにかく今日から試してみたい」という方は、まず <!-- TODO: affiliate link for 'ChatGPT Plus' not set in config.yaml --> の無料トライアル（提供状況は時期による）か月額プランから始めてみてください。テキスト生成と画像生成が一つの画面で完結する体験は、一度慣れると手放せなくなります。</p>
+<p>「とにかく今日から試してみたい」という方は、まず  の無料トライアル（提供状況は時期による）か月額プランから始めてみてください。テキスト生成と画像生成が一つの画面で完結する体験は、一度慣れると手放せなくなります。</p>
 <p>AIツールは「完璧な一つ」を探すより、<strong>用途に応じて複数を使い分ける</strong>のが現実的な正解です。この記事が、あなたの画像生成ワークフロー構築の参考になれば幸いです。</p>
 <hr />
 <p><em>最終更新：2026年6月 ／ 執筆：AIツールナビ編集部</em></p>

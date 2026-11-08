@@ -34,7 +34,7 @@ AIコーディング支援ツールを試してみたいけれど、**GitHub Cop
 | **Copilot Pro** | $10 | $8.33（年払い$100） | 補完・チャット無制限、Claude 3.5 Sonnet等も利用可 |
 | **Copilot Pro+** | $39 | $39（年払いなし） | Pro+全機能＋プレミアムモデル（o1・Claude 3.7等）優先アクセス |
 
-> **注意：** 料金はUSD表記です。日本円換算は為替レートにより変動します。GitHubの公式ページで最新の円建て価格を必ず確認してください。<!-- TODO: affiliate link for 'copilot_pricing' not set in config.yaml -->
+> **注意：** 料金はUSD表記です。日本円換算は為替レートにより変動します。GitHubの公式ページで最新の円建て価格を必ず確認してください。[[AFF:copilot_pricing]]
 
 ### Copilot Free：本当に無料で使えるのか？
 
@@ -69,7 +69,7 @@ GitHub Copilotだけを見ていても判断できません。現在の主要AI�
 | **Tabnine** | あり | Pro $12/月〜 | 独自モデル＋外部LLM | VS Code, JetBrains等 | プライバシー重視・ローカル実行可 |
 | **Codeium (Windsurf)** | あり（無制限補完） | Pro $15/月〜 | 独自モデル＋外部LLM | VS Code, JetBrains等 | 無料でも補完無制限が強み |
 
-<!-- TODO: affiliate link for 'copilot_pricing' not set in config.yaml -->
+[[AFF:copilot_pricing]]
 
 ### 各ツールの使い分け：実際に試して感じたこと
 
@@ -104,7 +104,7 @@ GitHub Copilotだけを見ていても判断できません。現在の主要AI�
 
 ### Q1. 学生・オープンソース開発者は無料で使えますか？
 
-はい。GitHubは**GitHub Education（学生・教職員向け）** および**認定オープンソースメンテナー向け**に、Copilot Proを無料で提供しています。GitHubの公式ページから申請できますので、対象者は必ず確認してください。<!-- TODO: affiliate link for 'copilot_pricing' not set in config.yaml -->
+はい。GitHubは**GitHub Education（学生・教職員向け）** および**認定オープンソースメンテナー向け**に、Copilot Proを無料で提供しています。GitHubの公式ページから申請できますので、対象者は必ず確認してください。[[AFF:copilot_pricing]]
 
 ### Q2. 年払いと月払い、どちらがお得ですか？
 
@@ -130,7 +130,7 @@ GitHub Copilotの個人向け料金プランを整理すると、以下のよう
 
 AIコーディングツール市場は急速に進化しており、今後もプランや機能が変わる可能性があります。**最新の料金・機能は必ずGitHub公式ページで確認**することをおすすめします。
 
-<!-- TODO: affiliate link for 'copilot_pricing' not set in config.yaml -->
+[[AFF:copilot_pricing]]
 
 ---
 

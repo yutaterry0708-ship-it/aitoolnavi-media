@@ -31,7 +31,7 @@ Notion AIは、プロジェクト管理・ドキュメント管理ツール「No
 
 最大の特徴は「**Notionのページやデータベースの中にいながらAIを使える**」こと。議事録の要約、タスクリストの自動生成、文章のトーン変更などが、ページを離れることなく完結します。
 
-<!-- TODO: affiliate link for 'notion_ai_comparison' not set in config.yaml -->
+[[AFF:notion_ai_comparison]]
 
 ### ChatGPTとは
 
@@ -107,7 +107,7 @@ ChatGPTにはデータベース管理機能そのものがないため、Zapier�
 - **外部情報へのアクセス不可**：最新情報が必要なタスクには対応できない
 - **料金がやや複雑**：NotionのプランとAIアドオンの組み合わせで、コストが見えにくい
 
-<!-- TODO: affiliate link for 'notion_ai_comparison' not set in config.yaml -->
+[[AFF:notion_ai_comparison]]
 
 ---
 
@@ -127,7 +127,7 @@ ChatGPTにはデータベース管理機能そのものがないため、Zapier�
 - **情報の正確性に注意が必要**：ハルシネーション（事実と異なる回答）が発生することがある。特に数値・固有名詞は必ず一次情報で確認を
 - **月額$20は人によってはコスト感がある**：無料版との機能差が大きく、本格活用にはPlusが事実上必須
 
-<!-- TODO: affiliate link for 'notion_ai_comparison' not set in config.yaml -->
+[[AFF:notion_ai_comparison]]
 
 ---
 
@@ -153,7 +153,7 @@ ChatGPTにはデータベース管理機能そのものがないため、Zapier�
 
 ツールを「どちらか一方に絞る」という発想よりも、**予算と用途に応じて組み合わせを考える**視点が実務では有効です。
 
-<!-- TODO: affiliate link for 'notion_ai_comparison' not set in config.yaml -->
+[[AFF:notion_ai_comparison]]
 
 ---
 

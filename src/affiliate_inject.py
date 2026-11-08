@@ -1,6 +1,8 @@
 """Replace [[AFF:name]] placeholders with real affiliate links from config.
 
-Unmatched tags become an HTML comment TODO so they are easy to spot.
+Placeholders whose URL is not set yet are left untouched (never destroyed), so
+adding the URL to config.yaml later fills them in on the next run.
+static_publisher.py hides unresolved placeholders from the public pages.
 
 Usage:
     python affiliate_inject.py
@@ -24,7 +26,7 @@ def inject(text, links):
         name = m.group(1).strip()
         url = links.get(name)
         if not url:
-            return f"<!-- TODO: affiliate link for '{name}' not set in config.yaml -->"
+            return m.group(0)
         return (f'<a href="{url}" rel="sponsored nofollow noopener" '
                 f'target="_blank">{name}を公式サイトで見る</a>')
     return re.sub(r"\[\[AFF:(.*?)\]\]", repl, text)

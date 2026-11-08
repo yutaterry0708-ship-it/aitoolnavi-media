@@ -70,7 +70,7 @@ GitHub Copilot Chat機能が普及するにつれて、**悪意あるコメン�
 
 繰り返しになりますが、業務利用は必ずCopilot BusinessまたはEnterpriseを選択してください。コードスニペットの学習利用が行われないこと、管理者による一元管理が可能なことが最大の理由です。
 
-<!-- TODO: affiliate link for 'copilot_security' not set in config.yaml -->
+[[AFF:copilot_security]]
 
 ### 対策2：組織ポリシーで設定を統制する
 
@@ -98,7 +98,7 @@ Copilotが生成したコードを、静的解析ツール（SAST）やソフト
 
 私の運用では、PRを出す際にGitHub Advanced SecurityとSnykの両方が自動でスキャンを走らせる設定にしています。Copilot生成コードだからといって特別扱いせず、**すべてのコードを同じゲートウェイに通す**のが基本です。
 
-<!-- TODO: affiliate link for 'copilot_security' not set in config.yaml -->
+[[AFF:copilot_security]]
 
 ### 対策4：シークレット情報をコードに書かない運用ルール
 
@@ -140,7 +140,7 @@ GitHub Copilotの機能・ポリシーは頻繁にアップデートされます
 
 **ポイント**：セキュリティ重視でオンプレミス展開が必要な場合はTabnine Enterpriseが有力候補。ライセンス透明性ではAmazon CodeWhispererが一歩リード。GitHub Copilotはエコシステムとの統合度の高さが強みです。
 
-<!-- TODO: affiliate link for 'copilot_security' not set in config.yaml -->
+[[AFF:copilot_security]]
 
 ---
 
@@ -194,7 +194,7 @@ GitHub Copilotのセキュリティリスクは実在しますが、「だから
 
 セキュリティを理由にAI活用を止めるのではなく、セキュリティを確保しながらAIを活用する——その両立を目指すチームにとって、本記事が参考になれば幸いです。
 
-<!-- TODO: affiliate link for 'copilot_security' not set in config.yaml -->
+[[AFF:copilot_security]]
 
 ---
 

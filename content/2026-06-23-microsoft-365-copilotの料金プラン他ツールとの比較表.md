@@ -41,7 +41,7 @@ Microsoft 365 Copilotの導入を検討しているあなたは、おそらく�
 
 > ※上記はMicrosoftの公式価格を参考にした目安です。CSP（クラウドソリューションプロバイダー）経由や年間契約では変動します。最新価格は必ず公式サイトでご確認ください。
 
-<!-- TODO: affiliate link for 'Microsoft365公式' not set in config.yaml -->
+[[AFF:Microsoft365公式]]
 
 #### Copilot Proとの違いを整理する
 
@@ -70,7 +70,7 @@ Microsoft 365 Copilotの導入を検討しているあなたは、おそらく�
 
 **◎=非常に優秀 ○=十分 △=制限あり ✕=非対応**
 
-<!-- TODO: affiliate link for 'ChatGPTTeam公式' not set in config.yaml -->
+[[AFF:ChatGPTTeam公式]]
 
 ### 比較して分かったポイント
 
@@ -96,7 +96,7 @@ Microsoft 365 Copilotの導入を検討しているあなたは、おそらく�
 
 法人向けツールとして、**組織のデータがモデルの学習に使われない**ことが明示されています。金融・医療・官公庁など機密性の高い業種では、この点がChatGPTやGeminiとの大きな差別化ポイントになります。
 
-<!-- TODO: affiliate link for 'Microsoft365Copilot詳細' not set in config.yaml -->
+[[AFF:Microsoft365Copilot詳細]]
 
 ---
 
@@ -131,7 +131,7 @@ ChatGPT（GPT-4o）と比較すると、**長文の日本語コンテンツ生�
 | 個人でOfficeを使いたい | **Copilot Pro** |
 | 少人数でコストを抑えたい | **ChatGPT Team または Gemini** |
 
-<!-- TODO: affiliate link for 'Gemini_for_Workspace公式' not set in config.yaml -->
+[[AFF:Gemini_for_Workspace公式]]
 
 ---
 

@@ -18,7 +18,7 @@ GitHub Copilot を導入したものの、「なんか的外れな補完ばか�
 
 この記事では、実際の運用で効果を感じたプロンプト作成のコツを体系的にまとめます。設定面の見直しから、コメントの書き方、Copilot Chat との使い分けまで、すぐ実践できる内容に絞って解説します。
 
-<!-- TODO: affiliate link for 'copilot_accuracy' not set in config.yaml -->
+[[AFF:copilot_accuracy]]
 
 ---
 
@@ -110,7 +110,7 @@ DB: PostgreSQL
 
 このフローにしてから、補完の手戻りが明らかに減りました。
 
-<!-- TODO: affiliate link for 'copilot_accuracy' not set in config.yaml -->
+[[AFF:copilot_accuracy]]
 
 ---
 
@@ -130,7 +130,7 @@ DB: PostgreSQL
 
 Copilot の強みは **IDE との統合成熟度とエコシステムの広さ**です。VS Code・JetBrains・Neovim など対応エディタが多く、`copilot-instructions.md` によるプロジェクト単位のカスタマイズも可能です。一方、リポジトリ全体を横断したコンテキスト把握は Cursor の方が優れている場面があります。
 
-<!-- TODO: affiliate link for 'copilot_accuracy' not set in config.yaml -->
+[[AFF:copilot_accuracy]]
 
 ---
 
@@ -186,7 +186,7 @@ GitHub Copilot の補完精度が低く感じる原因のほとんどは、**モ
 
 Copilot の導入・プラン選択については、以下のリンクから詳細を確認できます。
 
-<!-- TODO: affiliate link for 'copilot_accuracy' not set in config.yaml -->
+[[AFF:copilot_accuracy]]
 
 ---
 

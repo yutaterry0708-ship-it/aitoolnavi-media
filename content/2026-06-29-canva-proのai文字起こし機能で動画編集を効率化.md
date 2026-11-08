@@ -48,7 +48,7 @@ Canva Proには「動画編集」機能が内蔵されており、その中に**
 
 私の運用では、10分程度の動画であれば文字起こし自体は1〜2分以内に完了します。その後の確認・修正に10〜15分ほど使うのが典型的な流れです。従来の手動字幕と比べると、体感で作業時間が60〜70%削減されました（あくまで私の感覚値です）。
 
-<!-- TODO: affiliate link for 'canva_ai_transcription' not set in config.yaml -->
+[[AFF:canva_ai_transcription]]
 
 ---
 
@@ -96,7 +96,7 @@ Canva ProのAI文字起こしを、競合ツールと比較します。
 
 **総評：** Canva Proは「動画編集＋デザイン＋文字起こし」をワンストップで完結させたいユーザーに最適です。純粋な文字起こし精度だけを求めるならNottaやAdobe、映像クオリティ最優先ならPremiere Proが上です。
 
-<!-- TODO: affiliate link for 'canva_ai_transcription' not set in config.yaml -->
+[[AFF:canva_ai_transcription]]
 
 ---
 
@@ -143,7 +143,7 @@ Premiere ProやDaVinci Resolveと比べると、書き出しオプションが�
 
 逆に、映像制作をメインの仕事にしているプロや、ドキュメンタリー・インタビュー動画など高精度な文字起こしが必須の方は、専用ツールとの併用を検討することをおすすめします。
 
-<!-- TODO: affiliate link for 'canva_ai_transcription' not set in config.yaml -->
+[[AFF:canva_ai_transcription]]
 
 ---
 
@@ -178,7 +178,7 @@ Canva ProのAI文字起こし機能を一言で表すなら、「精度より利
 
 まずは無料トライアルで、自分のコンテンツに合うかどうか確かめてみてください。
 
-<!-- TODO: affiliate link for 'canva_ai_transcription' not set in config.yaml -->
+[[AFF:canva_ai_transcription]]
 
 ---
 

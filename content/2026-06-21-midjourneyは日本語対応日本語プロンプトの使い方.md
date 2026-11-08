@@ -18,7 +18,7 @@ Midjourneyを使い始めたとき、多くの方が最初に壁にぶつかる�
 
 私自身、Midjourneyを日常的に使い込む中で、日本語プロンプト・英語プロンプト・ハイブリッド運用の3パターンをすべて試してきました。この記事では、その実体験をもとに「日本語でどこまで使えるか」を正直にお伝えします。
 
-<!-- TODO: affiliate link for 'midjourney_japanese' not set in config.yaml -->
+[[AFF:midjourney_japanese]]
 
 ---
 
@@ -93,7 +93,7 @@ Midjourneyはバージョンアップを重ねており、V5以降は多言語�
 
 日本語で書きたいイメージを箇条書きにして、ChatGPTに「Midjourney用の英語プロンプトに変換して」と依頼する方法も非常に有効です。私の運用では、複雑なシーンや感情表現を含む画像を作るときにこのフローをよく使います。
 
-<!-- TODO: affiliate link for 'midjourney_japanese' not set in config.yaml -->
+[[AFF:midjourney_japanese]]
 
 ---
 
@@ -131,7 +131,7 @@ Midjourneyだけでなく、他のツールの日本語対応状況も把握し�
 - **公式UIが英語のみ**：MidjourneyのWebサイト・設定画面は英語で、日本語UIは存在しない
 - **コミュニティ・情報が英語中心**：困ったときの情報収集が英語になりがち
 
-<!-- TODO: affiliate link for 'midjourney_japanese' not set in config.yaml -->
+[[AFF:midjourney_japanese]]
 
 ---
 
@@ -165,7 +165,7 @@ Midjourneyの日本語対応について整理すると、こうなります。
 
 Midjourneyの圧倒的なアート品質は、少しの工夫で日本語ユーザーでも十分享受できます。まずは有料プランでじっくり試してみてください。
 
-<!-- TODO: affiliate link for 'midjourney_japanese' not set in config.yaml -->
+[[AFF:midjourney_japanese]]
 
 ---
 

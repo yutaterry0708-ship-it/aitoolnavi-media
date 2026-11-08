@@ -16,7 +16,7 @@ AIツールを仕事で使い倒してきた筆者も、まったく同じ壁に
 
 **結論を先に言うと：Perplexity AIの検索精度は「リアルタイム性」と「出典明示」において現時点で最高クラス。ただし専門性の深さや日本語精度には課題もあり、用途を選んで使うことが重要です。**
 
-<!-- TODO: affiliate link for 'perplexity_accuracy_review' not set in config.yaml -->
+[[AFF:perplexity_accuracy_review]]
 
 ---
 
@@ -79,7 +79,7 @@ Perplexityには検索対象を絞る「**Focus**」機能があります。
 
 **総評**：情報収集・リサーチ用途ならPerplexity、深い文章生成・推論はChatGPTやClaudeと使い分けるのが現時点でのベストプラクティスです。
 
-<!-- TODO: affiliate link for 'perplexity_accuracy_review' not set in config.yaml -->
+[[AFF:perplexity_accuracy_review]]
 
 ---
 
@@ -136,7 +136,7 @@ X（旧Twitter）やReddit、国内テックコミュニティの声を調査す
 - 日本語特有のニュアンスや文化的文脈が重要な作業をする人
 - 完全無料で使い続けたい人（ヘビーユーズには制限が壁になる）
 
-<!-- TODO: affiliate link for 'perplexity_accuracy_review' not set in config.yaml -->
+[[AFF:perplexity_accuracy_review]]
 
 ---
 
@@ -172,7 +172,7 @@ Perplexity AIの検索精度を実際に使い込んで検証した結論は以�
 
 まずは無料プランで試してみて、リサーチ業務に合うと感じたらProへのアップグレードを検討してみてください。
 
-<!-- TODO: affiliate link for 'perplexity_accuracy_review' not set in config.yaml -->
+[[AFF:perplexity_accuracy_review]]
 
 ---
 

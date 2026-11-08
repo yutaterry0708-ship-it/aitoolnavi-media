@@ -18,7 +18,7 @@ draft: false
 
 この記事では、**Canva ProのAI背景削除機能の具体的な使い方・コツ・正直なデメリット**、そして他ツールとの比較まで、実際の運用経験をもとに徹底解説します。「Canva Proを契約するか迷っている」方にも参考になるよう、機能の限界も隠さず書きます。
 
-<!-- TODO: affiliate link for 'canva_ai_bg_removal' not set in config.yaml -->
+[[AFF:canva_ai_bg_removal]]
 
 ---
 
@@ -111,7 +111,7 @@ Ctrl＋Z（Mac：Cmd＋Z）で操作を戻せます。ブラシで消しすぎ�
 
 **結論として：** 純粋な背景削除の精度だけを見ればRemove.bgやPhotoshopに一歩譲る場面もありますが、**「デザイン作業全体の効率」という観点ではCanva Proが最もバランスが良い**と感じています。背景削除→文字入れ→SNS投稿サイズ調整まで1ツールで完結するのは、日常的にコンテンツを量産するライターやマーケターにとって大きなアドバンテージです。
 
-<!-- TODO: affiliate link for 'canva_ai_bg_removal' not set in config.yaml -->
+[[AFF:canva_ai_bg_removal]]
 
 ---
 
@@ -153,7 +153,7 @@ PNG透過で書き出すと、JPEGと比べてファイルサイズが大きく�
 
 **A. はい、使えます。** Canva Proには30日間の無料トライアルがあり、背景リムーバーを含むすべてのPro機能を試せます。トライアル期間中に解約すれば料金は発生しません。ただし、解約手続きを忘れると自動更新されるため注意が必要です。
 
-<!-- TODO: affiliate link for 'canva_ai_bg_removal' not set in config.yaml -->
+[[AFF:canva_ai_bg_removal]]
 
 ### Q2. スマートフォン（アプリ版）でも背景削除はできますか？
 
@@ -178,7 +178,7 @@ Canva ProのAI背景削除機能を実際に使い込んだ感想を率直にま
 
 月額約1,300円〜というコストで、背景削除＋デザイン全機能が使い放題になるCanva Proは、コンテンツを継続的に制作する方にとって費用対効果の高い選択肢です。まずは30日間の無料トライアルで実際の精度を試してみることをおすすめします。
 
-<!-- TODO: affiliate link for 'canva_ai_bg_removal' not set in config.yaml -->
+[[AFF:canva_ai_bg_removal]]
 
 ---
 

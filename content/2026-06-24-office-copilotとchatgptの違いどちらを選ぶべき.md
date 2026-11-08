@@ -30,13 +30,13 @@ Microsoft 365 Copilotは、Word・Excel・PowerPoint・Outlook・TeamsなどMicr
 
 ベースモデルはOpenAIのGPT-4系ですが、**Microsoftのグラフ（Graph API）を通じて自社のメール・カレンダー・ドキュメントのデータと連携できる**のが最大の特徴です。
 
-<!-- TODO: affiliate link for 'Microsoft365Copilot' not set in config.yaml -->
+[[AFF:Microsoft365Copilot]]
 
 ### ChatGPTとは
 
 OpenAIが提供する汎用AIチャットサービス。無料のGPT-3.5から始まり、現在はGPT-4o・GPT-4o miniなどを月額20ドル（ChatGPT Plus）で利用できます。ブラウザ・スマホアプリ・APIと幅広いアクセス手段があり、コーディング・翻訳・文章生成・画像生成（DALL-E連携）など守備範囲が非常に広いのが特徴です。
 
-<!-- TODO: affiliate link for 'ChatGPTPlus' not set in config.yaml -->
+[[AFF:ChatGPTPlus]]
 
 ---
 
@@ -147,8 +147,8 @@ Q3. 社内ドキュメントをAIに横断検索させたい？
 
 私の運用では「ドキュメント作成の下書きはChatGPT、Outlookの返信整理とExcelの集計はCopilot」という**併用スタイル**に落ち着きました。予算が許すなら両方使い分けるのが現実的な最適解です。
 
-<!-- TODO: affiliate link for 'Microsoft365Copilot' not set in config.yaml -->
-<!-- TODO: affiliate link for 'ChatGPTPlus' not set in config.yaml -->
+[[AFF:Microsoft365Copilot]]
+[[AFF:ChatGPTPlus]]
 
 ---
 

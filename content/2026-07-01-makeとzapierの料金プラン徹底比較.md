@@ -82,7 +82,7 @@ Zapierの場合、2ステップのZapを1回実行すると2タスク消費。Ma
 | エラー処理・ログの見やすさ | ◎ | ○ |
 | Webhook対応 | ◎（無料プランも可） | △（有料プランから） |
 
-<!-- TODO: affiliate link for 'make_affiliate' not set in config.yaml -->
+[[AFF:make_affiliate]]
 
 ---
 
@@ -113,7 +113,7 @@ Makeの対応アプリは1,500以上と豊富ですが、Zapierの6,000以上に
 **3. 無料プランのシナリオ数が2本だけ**
 複数の自動化を試したい場合、無料枠ではすぐに限界が来ます。
 
-<!-- TODO: affiliate link for 'make_affiliate_2' not set in config.yaml -->
+[[AFF:make_affiliate_2]]
 
 ---
 
@@ -144,7 +144,7 @@ Makeの対応アプリは1,500以上と豊富ですが、Zapierの6,000以上に
 **3. 無料プランの100タスクは実質テスト用**
 月100タスクは、実用的な自動化を継続するにはほぼ足りません。お試しレベルと考えたほうが現実的です。
 
-<!-- TODO: affiliate link for 'zapier_affiliate' not set in config.yaml -->
+[[AFF:zapier_affiliate]]
 
 ---
 
@@ -162,7 +162,7 @@ Makeの対応アプリは1,500以上と豊富ですが、Zapierの6,000以上に
 - **シンプルな2〜3ステップのZapを少数本だけ**使いたい場合
 - **チームで使い、サポートの充実度を重視する**場合
 
-<!-- TODO: affiliate link for 'zapier_affiliate_2' not set in config.yaml -->
+[[AFF:zapier_affiliate_2]]
 
 ---
 

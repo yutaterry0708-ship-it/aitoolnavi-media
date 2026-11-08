@@ -23,7 +23,7 @@ SNS投稿・バナー・プレゼン資料——デザイン作業を少しで�
 
 ただしどちらにも明確な弱点があります。その詳細をこれから解説します。
 
-<!-- TODO: affiliate link for 'canva_vs_adobe_ai_canva' not set in config.yaml -->
+[[AFF:canva_vs_adobe_ai_canva]]
 
 ---
 
@@ -72,7 +72,7 @@ Canvaと同様にワンクリック背景除去が可能。精度はほぼ同等
 
 実際に使い込んで感じた課題もあります。**テンプレートの日本語対応数がCanvaより少ない**こと、そしてUIがCanvaほど直感的でないため、**デザイン初心者にはやや学習コストがかかる**点です。また、フル機能を使うにはCreative Cloudとの契約形態が絡んでくるため、料金体系がわかりにくいという声もよく聞きます。
 
-<!-- TODO: affiliate link for 'canva_vs_adobe_ai_adobe' not set in config.yaml -->
+[[AFF:canva_vs_adobe_ai_adobe]]
 
 ---
 
@@ -136,7 +136,7 @@ Canvaと同様にワンクリック背景除去が可能。精度はほぼ同等
 
 **Canva無料版**でもBackground Removerなど一部のAI機能は試せますが、Magic MediaやMagic Writeなどの主要AI機能はProプランが必要です。**Adobe Express無料版**もFireflyを使った画像生成を限定的に試せますが、生成回数やクレジット数に制限があります。どちらも本格的にAI機能を活用するには有料プランへのアップグレードが現実的です。
 
-<!-- TODO: affiliate link for 'canva_vs_adobe_ai_canva' not set in config.yaml -->
+[[AFF:canva_vs_adobe_ai_canva]]
 
 ### Q2. SNS運用担当者にはどちらが向いていますか？
 
@@ -166,7 +166,7 @@ Canvaと同様にワンクリック背景除去が可能。精度はほぼ同等
 
 どちらも無料プランや試用期間があるので、**まず実際に触ってみること**が最善です。私自身、最初はどちらか一方に絞ろうと思っていましたが、今は用途によって使い分けるスタイルに落ち着いています。
 
-<!-- TODO: affiliate link for 'canva_vs_adobe_ai_adobe' not set in config.yaml -->
+[[AFF:canva_vs_adobe_ai_adobe]]
 
 ---
 

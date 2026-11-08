@@ -20,7 +20,7 @@ AIで画像を生成してみたいけど、Midjourneyって名前を聞いた�
 
 この記事では、AIツールを実際に多数使い込んできた私が、Midjourneyの登録から画像生成・プロンプトの書き方・料金プランの選び方まで、初心者がつまずきやすいポイントを重点的に解説します。「難しそう」という印象が、読み終わるころには「これなら使える」に変わるはずです。
 
-<!-- TODO: affiliate link for 'midjourney_tutorial' not set in config.yaml -->
+[[AFF:midjourney_tutorial]]
 
 ---
 
@@ -61,7 +61,7 @@ MidjourneyはDiscord（ゲーマーに人気のチャットアプリ）上で動
 
 2024年以降、Midjourneyは**完全有料制**に移行しています。無料トライアルは現在提供されていません（時期によって復活する場合もありますが、基本的に有料前提で考えてください）。
 
-<!-- TODO: affiliate link for 'midjourney_tutorial' not set in config.yaml -->
+[[AFF:midjourney_tutorial]]
 
 **料金プランの比較（2025年時点の目安）：**
 
@@ -156,7 +156,7 @@ Google翻訳やDeepLで英語に変換してから入力する習慣をつける
 - **手や指の生成が苦手**：人物画像で手が6本になるなどのミスが起きやすい（最新バージョンで改善傾向だが完璧ではない）
 - **生成画像の著作権が曖昧**：AIが生成した画像の権利関係は法的にグレーな部分があり、商用利用時は注意が必要
 
-<!-- TODO: affiliate link for 'midjourney_tutorial' not set in config.yaml -->
+[[AFF:midjourney_tutorial]]
 
 ---
 
@@ -192,7 +192,7 @@ Midjourneyの使い方をまとめます。
 
 まずは公式サイトから登録して、最初の一枚を生成してみてください。
 
-<!-- TODO: affiliate link for 'midjourney_tutorial' not set in config.yaml -->
+[[AFF:midjourney_tutorial]]
 
 ---
 

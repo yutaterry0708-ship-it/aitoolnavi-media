@@ -18,7 +18,7 @@ GitHub Copilotを契約したはいいものの、「VS Codeで全然サジェ�
 
 **この記事では、実際にGitHub CopilotをVS Codeで日常的に使い込んでいる筆者が、2025年現在の最新UIに合わせた導入手順・推奨設定・正直なデメリットまでをまとめて解説します。** 読み終わる頃には「とりあえず動く状態」から「快適に使える状態」まで到達できるはずです。
 
-<!-- TODO: affiliate link for 'copilot_vscode' not set in config.yaml -->
+[[AFF:copilot_vscode]]
 
 ---
 
@@ -47,7 +47,7 @@ VS Codeとの相性が特によい理由は主に3点です。
 
 > **筆者注**: Freeプランは2024年末に追加された比較的新しいプランです。月2,000回の補完は軽い用途なら十分ですが、1日フルに開発すると数日で上限に近づく印象でした。本格利用にはProプラン（月$10）が現実的な選択肢です。
 
-<!-- TODO: affiliate link for 'copilot_vscode' not set in config.yaml -->
+[[AFF:copilot_vscode]]
 
 ---
 
@@ -190,7 +190,7 @@ VS Code 1.93以降で利用可能な機能。サイドパネルから「Copilot 
 
 **筆者の所感**：VS Codeをメインエディタとして使い続けるなら、GitHub Copilotが最もシームレスです。Cursorは補完・Chat機能ともに強力ですが「エディタごと乗り換える」必要があり、既存のVS Code設定・拡張機能を引き継ぐ手間がかかります。コスト重視ならCodeiumの無料プランも選択肢になります。
 
-<!-- TODO: affiliate link for 'copilot_vscode' not set in config.yaml -->
+[[AFF:copilot_vscode]]
 
 ---
 
@@ -232,7 +232,7 @@ GitHub CopilotをVS Codeで使うための要点を整理します。
 
 まずはFreeプランで試してみて、物足りなくなったらProへ。それが最もリスクの少ない始め方です。
 
-<!-- TODO: affiliate link for 'copilot_vscode' not set in config.yaml -->
+[[AFF:copilot_vscode]]
 
 ---
 
