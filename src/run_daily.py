@@ -38,12 +38,10 @@ def main():
         rows = list(csv.DictReader(f))
 
     done = 0
-    fails = 0  # 連続失敗。API障害・キー失効でキュー全体を error にしないための安全弁
+    fails = 0  # 連続失敗。API障害・残高不足・キー失効でキューを error にしないための安全弁
+    recent = []  # 連続失敗した行（中断時は pending に戻す）
     for r in rows:
         if done >= n:
-            break
-        if fails >= 3:
-            print("3回連続で失敗したため中断します（残りは pending のまま）。")
             break
         if r.get("status") != "pending":
             continue
@@ -56,11 +54,18 @@ def main():
             r["status"] = "published"
             done += 1
             fails = 0
+            recent = []
             print(f"  -> {path}")
         except Exception as e:  # noqa: BLE001
             r["status"] = "error"
             fails += 1
+            recent.append(r)
             print(f"  ERROR: {e}")
+            if fails >= 3:
+                for fr in recent:  # 記事固有の失敗ではなく API 側の問題とみなし、キーワードを失わない
+                    fr["status"] = "pending"
+                print("3回連続で失敗したため中断します（API残高・キー・障害を確認。キーワードは pending に戻しました）。")
+                break
 
     with open(queue_path, "w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
