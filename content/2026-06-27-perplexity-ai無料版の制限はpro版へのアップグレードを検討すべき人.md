@@ -84,7 +84,7 @@ Pro版では**DALL-E 3やStable Diffusionを使った画像生成**が可能で�
 
 > ※仕様は変更される場合があります。最新情報は公式サイトでご確認ください。
 
-<!-- TODO: affiliate link for 'perplexity_free_vs_pro' not set in config.yaml -->
+[[AFF:perplexity_free_vs_pro]]
 
 ---
 
@@ -126,7 +126,7 @@ Pro版に画像生成機能はありますが、MidjourneyやAdobe Fireflyと比
 - **複数のAIモデルを1つのUIで使いたい人**：ChatGPT・Claude・Geminiをバラバラに契約するより効率的な場合がある
 - **Copilotを1日5回以上使いたい人**：制限に毎日ぶつかっているなら費用対効果が合う
 
-<!-- TODO: affiliate link for 'perplexity_free_vs_pro' not set in config.yaml -->
+[[AFF:perplexity_free_vs_pro]]
 
 ### こんな人は無料版で十分
 
@@ -147,7 +147,7 @@ Pro版に画像生成機能はありますが、MidjourneyやAdobe Fireflyと比
 
 **A.** 年払いを選択すると、月換算で約16〜17ドル程度になり、月払い（約20ドル）より2〜3割ほど割安になります。「まず試してみたい」なら月払いで始め、継続利用が決まったら年払いに切り替えるのが無難です。
 
-<!-- TODO: affiliate link for 'perplexity_free_vs_pro' not set in config.yaml -->
+[[AFF:perplexity_free_vs_pro]]
 
 ### Q3. Perplexity Pro版とChatGPT Plusを両方契約する価値はありますか？
 
@@ -169,7 +169,7 @@ Perplexity AIの無料版は、同カテゴリのツールの中では**非常�
 
 まずは無料版を使い倒して、自分の使用パターンを把握してから判断するのが最も賢い選択です。
 
-<!-- TODO: affiliate link for 'perplexity_free_vs_pro' not set in config.yaml -->
+[[AFF:perplexity_free_vs_pro]]
 
 ---
 

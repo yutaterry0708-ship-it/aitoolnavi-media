@@ -59,7 +59,7 @@ Perplexity APIでは、大きく以下のカテゴリのモデルが利用可能
 
 小規模な検証フェーズであれば**Pay-as-you-goから始める**のが合理的です。月間リクエスト数が安定してきたタイミングでEnterpriseプランへの移行を検討するのが、私の運用での推奨フローです。
 
-<!-- TODO: affiliate link for 'perplexity_api_enterprise' not set in config.yaml -->
+[[AFF:perplexity_api_enterprise]]
 
 ### Step 3：APIの基本的な呼び出し（Pythonサンプル）
 
@@ -131,7 +131,7 @@ print(response.json()["choices"][0]["message"]["content"])
 
 > **筆者の所感**：「とにかく早く検索連携AIを試したい」「PoC段階でRAGを自前構築したくない」という企業には、Perplexity APIの導入障壁の低さは明確なアドバンテージです。一方、既存のAzureやGoogle Cloudインフラに乗せたい場合は、各クラウドのネイティブ連携の方が運用管理しやすい場面もあります。
 
-<!-- TODO: affiliate link for 'perplexity_api_enterprise' not set in config.yaml -->
+[[AFF:perplexity_api_enterprise]]
 
 ---
 
@@ -168,7 +168,7 @@ AzureやGoogle Cloudのようにプライベートなインフラへのデプロ
 **5. レートリミットの壁**
 Pay-as-you-goプランでは、急激なトラフィックスパイク時にレートリミットに引っかかります。本番運用前にEnterpriseプランのリミット上限を確認し、必要であれば交渉することを推奨します。
 
-<!-- TODO: affiliate link for 'perplexity_api_enterprise' not set in config.yaml -->
+[[AFF:perplexity_api_enterprise]]
 
 ---
 
@@ -217,7 +217,7 @@ Perplexity AI APIは、「リアルタイムWeb検索＋LLM回答生成」を最
 
 まずはPay-as-you-goプランで小規模なPoCから始め、ユースケースとの相性を確認してからEnterpriseプランへの移行を判断するのが、リスクを抑えた現実的なアプローチです。
 
-<!-- TODO: affiliate link for 'perplexity_api_enterprise' not set in config.yaml -->
+[[AFF:perplexity_api_enterprise]]
 
 ---
 

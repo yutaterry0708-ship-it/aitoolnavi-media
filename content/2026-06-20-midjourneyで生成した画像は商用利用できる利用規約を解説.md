@@ -18,7 +18,7 @@ draft: false
 
 この記事では、Midjourneyの公式利用規約（Terms of Service）を読み解きながら、プラン別の商用利用可否・著作権の考え方・実務での注意点を具体的に解説します。
 
-<!-- TODO: affiliate link for 'midjourney_commercial' not set in config.yaml -->
+[[AFF:midjourney_commercial]]
 
 ---
 
@@ -68,7 +68,7 @@ Basic・Standard・Pro・Megaの有料プランに加入すると、生成画像
 
 > ※料金は2025年時点の公式サイト掲載価格をもとにした目安です。最新情報は公式サイトでご確認ください。
 
-<!-- TODO: affiliate link for 'midjourney_commercial' not set in config.yaml -->
+[[AFF:midjourney_commercial]]
 
 ---
 
@@ -154,7 +154,7 @@ StandardプランまではDiscordのパブリックチャンネルで生成し�
 
 **著作権リスクを最小化したい方にはAdobe Fireflyが特に安心**です。Fireflyは「商用利用に安全なデータのみで学習した」と明示しており、実際に企業案件では採用しやすいという声もよく聞きます。ただし、純粋な画像クオリティ・表現の幅ではMidjourneyが依然として優位に立っています。
 
-<!-- TODO: affiliate link for 'midjourney_commercial' not set in config.yaml -->
+[[AFF:midjourney_commercial]]
 
 ---
 
@@ -195,7 +195,7 @@ Midjourneyは有料プランであれば商用利用が認められており、�
 
 実際に使ってみた感想としては、プロンプトの習熟に少し時間はかかりますが、慣れてしまえば商用クオリティのビジュアル素材を驚くほど短時間で制作できます。まずは有料プランで試してみることをおすすめします。
 
-<!-- TODO: affiliate link for 'midjourney_commercial' not set in config.yaml -->
+[[AFF:midjourney_commercial]]
 
 ---
 

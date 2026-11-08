@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="---">
-<title>2026-06-20-github-copilot-を-vs-code-で導入設定する完全ガイド | AIツールナビ</title>
+<meta name="description" content="GitHub CopilotをVS Codeで使うための導入手順・おすすめ設定・実際に使って感じたメリット／デメリットを徹底解説。初心者から中級者まで役立つ完全ガイド。">
+<title>GitHub Copilot を VS Code で導入・設定する完全ガイド | AIツールナビ</title>
 <link rel="canonical" href="https://aitoolnavi.com/2026-06-20-github-copilot-を-vs-code-で導入設定する完全ガイド/">
 <style>
 :root{--accent:#6366f1;--bg:#0f172a;--surface:#1e293b;--text:#f8fafc;--muted:#94a3b8}
@@ -35,28 +35,15 @@ footer{background:var(--surface);padding:32px 0;text-align:center;color:var(--mu
 <header><div class="container"><a href="/">AIツールナビ</a></div></header>
 <main>
 <div class="hero container">
-<h1>2026-06-20-github-copilot-を-vs-code-で導入設定する完全ガイド</h1>
+<h1>GitHub Copilot を VS Code で導入・設定する完全ガイド</h1>
 <div class="meta">更新日: 2026-06-20 | AIツールナビ編集部</div>
 <div class="disclosure">※本記事はアフィリエイト広告（PR）を含みます。実際に使用・調査した内容に基づき公平に解説しています。</div>
 </div>
 <article class="container">
-<hr />
-<p>title: "GitHub Copilot を VS Code で導入・設定する完全ガイド"<br />
-description: "GitHub CopilotをVS Codeで使うための導入手順・おすすめ設定・実際に使って感じたメリット／デメリットを徹底解説。初心者から中級者まで役立つ完全ガイド。"<br />
-keywords: ["GitHub Copilot VS Code 設定"]<br />
-date: "2026-06-20"<br />
-draft: false</p>
-<hr />
-<blockquote>
-<p>※本記事はアフィリエイト広告（PR）を含みます。実際に使用・調査した内容に基づき公平に解説しています。</p>
-</blockquote>
-<hr />
 <h2>「補完が出ない」「どこで設定するの？」――Copilotで詰まる人が多い理由</h2>
 <p>GitHub Copilotを契約したはいいものの、「VS Codeで全然サジェストが出ない」「Chat機能はどこにある？」「拡張機能が2つあって混乱する」――こうした声はコミュニティやSNSで今でも頻繁に見かけます。</p>
 <p>公式ドキュメントは英語が多く、UIのアップデートも早いため、半年前の記事を見ながら設定しようとすると画面が全然違う、ということも珍しくありません。</p>
 <p><strong>この記事では、実際にGitHub CopilotをVS Codeで日常的に使い込んでいる筆者が、2025年現在の最新UIに合わせた導入手順・推奨設定・正直なデメリットまでをまとめて解説します。</strong> 読み終わる頃には「とりあえず動く状態」から「快適に使える状態」まで到達できるはずです。</p>
-<!-- TODO: affiliate link for 'copilot_vscode' not set in config.yaml -->
-
 <hr />
 <h2>GitHub Copilotとは？VS Codeとの相性が抜群な理由</h2>
 <p>GitHub Copilotは、OpenAIのモデルをベースにGitHubが開発したAIコーディングアシスタントです。コードの自動補完だけでなく、チャット形式での質問・コードレビュー・テスト生成など、開発ワークフロー全体をサポートします。</p>
@@ -118,8 +105,6 @@ draft: false</p>
 <blockquote>
 <p><strong>筆者注</strong>: Freeプランは2024年末に追加された比較的新しいプランです。月2,000回の補完は軽い用途なら十分ですが、1日フルに開発すると数日で上限に近づく印象でした。本格利用にはProプラン（月$10）が現実的な選択肢です。</p>
 </blockquote>
-<!-- TODO: affiliate link for 'copilot_vscode' not set in config.yaml -->
-
 <hr />
 <h2>導入手順：VS CodeにGitHub Copilotを設定する</h2>
 <h3>ステップ1：GitHubアカウントとプランの準備</h3>
@@ -311,8 +296,6 @@ draft: false</p>
 </table>
 <p>※Continueはローカルモデル次第</p>
 <p><strong>筆者の所感</strong>：VS Codeをメインエディタとして使い続けるなら、GitHub Copilotが最もシームレスです。Cursorは補完・Chat機能ともに強力ですが「エディタごと乗り換える」必要があり、既存のVS Code設定・拡張機能を引き継ぐ手間がかかります。コスト重視ならCodeiumの無料プランも選択肢になります。</p>
-<!-- TODO: affiliate link for 'copilot_vscode' not set in config.yaml -->
-
 <hr />
 <h2>FAQ</h2>
 <h3>Q1. GitHub Copilot無料プランとProプランは何が違いますか？</h3>
@@ -341,8 +324,6 @@ draft: false</p>
 </ul>
 <p>実際に使ってみて、「コードを書く速度」よりも「調べる・考える時間」が減った実感の方が大きいです。エラーの原因調査・ドキュメント読み込み・テスト作成といった「本来の実装以外の作業」をCopilotに任せることで、本質的な設計や実装に集中しやすくなります。</p>
 <p>まずはFreeプランで試してみて、物足りなくなったらProへ。それが最もリスクの少ない始め方です。</p>
-<!-- TODO: affiliate link for 'copilot_vscode' not set in config.yaml -->
-
 <hr />
 <p><em>最終更新: 2026年6月 / 検証環境: VS Code 1.95, GitHub Copilot 拡張機能 v1.250</em></p>
 </article>

@@ -18,7 +18,7 @@ Midjourneyで気に入った画像が生成できたのに、いざダウンロ�
 
 本記事では、実際にMidjourneyを日常的に使い込んでいる筆者が、アップスケールの種類・手順・使い分けのコツ・正直なデメリットまでを徹底解説します。
 
-<!-- TODO: affiliate link for 'midjourney_upscale' not set in config.yaml -->
+[[AFF:midjourney_upscale]]
 
 ---
 
@@ -77,7 +77,7 @@ U1〜U4でアップスケールした画像の下に、さらに追加ボタン�
 
 どちらを選んでも**Fast GPU時間を消費**します。プランによって月間の利用枠が異なるため注意が必要です。
 
-<!-- TODO: affiliate link for 'midjourney_upscale' not set in config.yaml -->
+[[AFF:midjourney_upscale]]
 
 ### Step 4：生成完了後にダウンロード
 
@@ -146,7 +146,7 @@ U1〜U4でアップスケールした画像の下に、さらに追加ボタン�
 **4. ベクター形式には対応していない**
 出力はラスター（PNG）のみ。ロゴ制作など拡大縮小を繰り返す用途にはIllustratorなど別ツールが必要です。
 
-<!-- TODO: affiliate link for 'midjourney_upscale' not set in config.yaml -->
+[[AFF:midjourney_upscale]]
 
 ---
 
@@ -180,7 +180,7 @@ Midjourneyのアップスケールで2048px相当にしたあと、**Topaz Gigap
 
 **A.** Midjourneyは現在、無料トライアルを停止しており、有料プランへの加入が必要です。Basic・Standard・Pro・Megaの各プランで月間のFast GPU時間が異なり、アップスケールはその時間を消費します。プランの詳細は公式サイトでご確認ください。
 
-<!-- TODO: affiliate link for 'midjourney_upscale' not set in config.yaml -->
+[[AFF:midjourney_upscale]]
 
 ### Q2. U1〜U4を押した後と、Upscale (Subtle/Creative) を押した後では何が違うのですか？
 
@@ -208,7 +208,7 @@ Midjourneyのアップスケール機能を整理すると、以下のポイン�
 
 まだMidjourneyを試したことがない方は、まず有料プランから始めてみることをおすすめします。
 
-<!-- TODO: affiliate link for 'midjourney_upscale' not set in config.yaml -->
+[[AFF:midjourney_upscale]]
 
 ---
 

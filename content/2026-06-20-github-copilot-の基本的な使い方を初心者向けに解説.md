@@ -20,7 +20,7 @@ draft: false
 
 この記事では、実際に GitHub Copilot を使い込んできた経験をもとに、初心者がつまずきやすいポイントを含めて丁寧に解説します。
 
-<!-- TODO: affiliate link for 'copilot_beginner' not set in config.yaml -->
+[[AFF:copilot_beginner]]
 
 ---
 
@@ -80,7 +80,7 @@ GitHub Copilot には以下のプランがあります（2026年6月時点）。
 
 **初心者には「Copilot Free」から始めることを強くおすすめします。** 月2,000回の補完は、学習目的であれば十分な量です。私の運用では、個人学習レベルなら Free プランで不満を感じることはほとんどありませんでした。
 
-<!-- TODO: affiliate link for 'copilot_beginner' not set in config.yaml -->
+[[AFF:copilot_beginner]]
 
 ### ステップ3：VS Code に拡張機能をインストール
 
@@ -179,7 +179,7 @@ VS Code の左サイドバーに「Copilot Chat」パネルが追加されます
 **4. プライベートコードの扱いに注意**
 デフォルト設定では、入力したコードが学習データとして使われる可能性があります。業務での使用は会社のポリシーを必ず確認してください。
 
-<!-- TODO: affiliate link for 'copilot_beginner' not set in config.yaml -->
+[[AFF:copilot_beginner]]
 
 ---
 
@@ -211,7 +211,7 @@ GitHub Copilot は、魔法のようにコードを全自動で書いてくれ�
 - 提案を鵜呑みにせず「理解してから使う」習慣が大切
 - 依存しすぎず、基礎学習と並行して使うのが理想
 
-<!-- TODO: affiliate link for 'copilot_beginner' not set in config.yaml -->
+[[AFF:copilot_beginner]]
 
 ---
 

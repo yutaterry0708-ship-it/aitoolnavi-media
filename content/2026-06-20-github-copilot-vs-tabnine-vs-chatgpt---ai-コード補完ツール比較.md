@@ -30,7 +30,7 @@ GitHubとOpenAIが共同開発したAIコーディングアシスタント。VSC
 
 個人向けプランは月額約10ドル（2024年時点）で、学生・OSS開発者向けの無料枠もあります。
 
-<!-- TODO: affiliate link for 'copilot_comparison' not set in config.yaml -->
+[[AFF:copilot_comparison]]
 
 ### Tabnine
 
@@ -42,7 +42,7 @@ GitHubとOpenAIが共同開発したAIコーディングアシスタント。VSC
 
 OpenAIのチャットAI。コード補完専用ツールではありませんが、**コードの設計相談・デバッグ・リファクタリング・ドキュメント生成**など、より高度なタスクに対応できます。ChatGPT Plusは月額20ドル。APIを使えば開発環境に組み込むことも可能です。
 
-<!-- TODO: affiliate link for 'copilot_comparison' not set in config.yaml -->
+[[AFF:copilot_comparison]]
 
 ---
 
@@ -121,7 +121,7 @@ ChatGPTをコーディングに使う場合、IDE内でのリアルタイム補�
 - GitHubをすでにメインで使っており、エコシステムを統一したい
 - 月10ドルでコスパよくスタートしたい
 
-<!-- TODO: affiliate link for 'copilot_comparison' not set in config.yaml -->
+[[AFF:copilot_comparison]]
 
 ### Tabnineを選ぶべき人
 
@@ -149,7 +149,7 @@ ChatGPTをコーディングに使う場合、IDE内でのリアルタイム補�
 
 3つすべてを契約すると月額40〜50ドル程度になりますが、開発生産性の向上を考えると、特にフリーランスや副業エンジニアにとっては十分元が取れる投資と感じています（ただし費用対効果は個人の状況によります）。
 
-<!-- TODO: affiliate link for 'copilot_comparison' not set in config.yaml -->
+[[AFF:copilot_comparison]]
 
 ---
 

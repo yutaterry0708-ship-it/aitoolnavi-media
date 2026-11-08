@@ -24,7 +24,7 @@ SNSやYouTubeでCanvaのAI機能が話題になるたびに、この疑問を抱
 
 この記事では、実際に無料版とProの両方を日常的に使い込んできた筆者が、機能差を正直に・具体的に解説します。「Pro契約すべきか迷っている」方の判断材料になれば幸いです。
 
-<!-- TODO: affiliate link for 'canva_ai_image_gen_free' not set in config.yaml -->
+[[AFF:canva_ai_image_gen_free]]
 
 ---
 
@@ -103,7 +103,7 @@ Fluxモデルが使えるようになってから、生成画像のリアリテ�
 **③ クレジットを気にせず試行錯誤できる**  
 AI画像生成は「1発で完璧な画像が出る」ことはほぼありません。プロンプトを少しずつ変えながら10〜20枚試して良いものを選ぶ、というワークフローが普通です。無料版のクレジット制限下でこれをやると、すぐに枯渇します。
 
-<!-- TODO: affiliate link for 'canva_ai_image_gen_free' not set in config.yaml -->
+[[AFF:canva_ai_image_gen_free]]
 
 ---
 
@@ -147,7 +147,7 @@ AI画像生成は「1発で完璧な画像が出る」ことはほぼありま�
 - Background RemoverやMagic Eraserなど編集AI機能も使いたい
 - チームで共有・ブランド管理をしたい
 
-<!-- TODO: affiliate link for 'canva_ai_image_gen_free' not set in config.yaml -->
+[[AFF:canva_ai_image_gen_free]]
 
 ---
 
@@ -165,7 +165,7 @@ AI画像生成は「1発で完璧な画像が出る」ことはほぼありま�
 
 **A.** Canva Proには無料トライアル期間が設けられていることがあります（期間・条件は時期によって変動します）。トライアル中はProのAI機能をフル活用できるため、「本当に使えるか確かめてから契約したい」という方にはまず試してみることをおすすめします。申し込みは公式サイトから行えます。
 
-<!-- TODO: affiliate link for 'canva_ai_image_gen_free' not set in config.yaml -->
+[[AFF:canva_ai_image_gen_free]]
 
 ---
 
@@ -185,7 +185,7 @@ Canvaの強みは「AI画像生成＋デザイン編集＋チーム共有」が�
 無料版で使い始めて限界を感じたら、Proのトライアルを試してみるのが最もリスクの少ない判断だと思います。
 
 > **Canva Proを試してみる（公式サイト）**  
-> <!-- TODO: affiliate link for 'canva_ai_image_gen_free' not set in config.yaml -->
+> [[AFF:canva_ai_image_gen_free]]
 
 ---
 

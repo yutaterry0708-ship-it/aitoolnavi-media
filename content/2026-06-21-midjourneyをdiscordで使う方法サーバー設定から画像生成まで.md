@@ -21,7 +21,7 @@ Midjourneyに興味を持って公式サイトを開いたものの、「なぜ�
 - `/imagine`コマンドの基本から、画像を生成して保存するまでの流れ
 - 実際に使い込んで感じた正直なメリット・デメリット
 
-<!-- TODO: affiliate link for 'midjourney_discord' not set in config.yaml -->
+[[AFF:midjourney_discord]]
 
 ---
 
@@ -45,7 +45,7 @@ Midjourneyは2022年のリリース当初から、独自UIを持たず**Discord 
 
 Midjourneyは**現在、無料トライアルを提供していません**（2024年以降は終了）。利用するには有料プランへの加入が必須です。
 
-<!-- TODO: affiliate link for 'midjourney_discord' not set in config.yaml -->
+[[AFF:midjourney_discord]]
 
 プランは以下の4種類があります（月払い価格の目安）。
 
@@ -156,7 +156,7 @@ Discordのチャンネルはそのままログになるため、「あのプロ�
 **4. Discordの通知がうるさくなりがち**
 公式サーバーに参加したままにしておくと、通知設定を適切にしないと大量の通知が来ます。サーバーごとに通知を「ミュート」に設定することを忘れずに。
 
-<!-- TODO: affiliate link for 'midjourney_discord' not set in config.yaml -->
+[[AFF:midjourney_discord]]
 
 ---
 
@@ -205,7 +205,7 @@ Midjourneyは「画像クオリティ」という一点においては、現時�
 
 まずはBasicプランで試してみて、自分のワークフローに合うかどうかを確かめてみてください。
 
-<!-- TODO: affiliate link for 'midjourney_discord' not set in config.yaml -->
+[[AFF:midjourney_discord]]
 
 ---
 

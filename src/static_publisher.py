@@ -12,11 +12,13 @@ import re
 import json
 import shutil
 import argparse
+from html import escape as _esc
 from pathlib import Path
 from datetime import datetime
 import yaml
 
 ROOT = Path(__file__).parent.parent
+SITE_URL = "https://aitoolnavi.com"
 CONTENT_DIR = ROOT / "content"
 OUTPUT_DIR = ROOT / "docs"  # GitHub Pages convention
 
@@ -160,13 +162,38 @@ def md_to_html(md: str) -> str:
     return "\n".join(out)
 
 
+_FRONT_MATTER = re.compile(r"\A﻿?---[ \t]*\r?\n(.*?)\r?\n---[ \t]*(?:\r?\n|\Z)", re.DOTALL)
+_AFF_PLACEHOLDER = re.compile(r"\[\[AFF:.*?\]\]")
+
+
+def split_front_matter(text: str):
+    """Return (meta dict, body). Articles start with a YAML front matter block."""
+    m = _FRONT_MATTER.match(text)
+    if not m:
+        return {}, text
+    try:
+        meta = yaml.safe_load(m.group(1)) or {}
+    except yaml.YAMLError:
+        meta = {}
+    return (meta if isinstance(meta, dict) else {}), text[m.end():]
+
+
 def parse_md(md_path: Path) -> dict:
     text = md_path.read_text(encoding="utf-8")
-    h1 = re.search(r"^# (.+)$", text, re.MULTILINE)
-    title = h1.group(1).strip() if h1 else md_path.stem
-    body_md = re.sub(r"^# .+\n", "", text, count=1, flags=re.MULTILINE)
-    paras = [p.strip() for p in body_md.split("\n") if p.strip() and not p.startswith("#")]
-    desc = paras[0][:120] if paras else title
+    meta, body_md = split_front_matter(text)
+    # 未設定のアフィリエイト枠は公開ページに出さない（ソースの [[AFF:..]] は残す）
+    body_md = _AFF_PLACEHOLDER.sub("", body_md)
+    # 広告表記はテンプレートが出すので、本文先頭の同文ブロック引用は取り除く
+    body_md = body_md.lstrip()
+    body_md = re.sub(r"\A(?:>[^\n]*\n)+\s*(?:---\s*\n)?", "", body_md)
+    lines = body_md.lstrip().split("\n", 1)
+    h1 = re.match(r"# (.+)", lines[0])
+    title = str(meta.get("title") or "").strip() or (h1.group(1).strip() if h1 else md_path.stem)
+    if h1:  # 先頭の H1 はテンプレートが <h1> を出すので重複させない
+        body_md = lines[1] if len(lines) > 1 else ""
+    paras = [p.strip() for p in body_md.split("\n")
+             if p.strip() and not p.startswith(("#", ">", "---", "|"))]
+    desc = str(meta.get("description") or "").strip() or (paras[0][:120] if paras else title)
     body_html = md_to_html(body_md)
     slug = md_path.stem
     date_m = re.match(r"(\d{4}-\d{2}-\d{2})", slug)
@@ -301,10 +328,10 @@ def build_site():
         out_dir = OUTPUT_DIR / info["slug"]
         out_dir.mkdir(exist_ok=True)
         html = HTML_TEMPLATE.format(
-            title=info["title"],
+            title=_esc(info["title"]),
             slug=info["slug"],
             date=info["date"],
-            description=info["description"],
+            description=_esc(info["description"]),
             disclosure=DISCLOSURE,
             body=info["body"],
         )
@@ -314,7 +341,7 @@ def build_site():
 
     # Build index
     cards = "\n".join(
-        f'<div class="card"><h3><a href="/{a["slug"]}/">{a["title"]}</a></h3>'
+        f'<div class="card"><h3><a href="/{a["slug"]}/">{_esc(a["title"])}</a></h3>'
         f'<div class="meta">{a["date"]}</div></div>'
         for a in articles
     )
@@ -325,7 +352,7 @@ def build_site():
     _build_static_pages(OUTPUT_DIR)
 
     # sitemap.xml
-    BASE = "https://yutaterry0708-ship-it.github.io/aitoolnavi-media"
+    BASE = SITE_URL  # docs/CNAME と各記事の canonical に合わせる
     sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n'
     sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     sitemap += f'<url><loc>{BASE}/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>\n'

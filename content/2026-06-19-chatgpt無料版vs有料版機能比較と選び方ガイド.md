@@ -34,7 +34,7 @@ OpenAIアカウントを作れば誰でも使えるプラン。費用は0円。�
 
 個人向け有料プランの主力。GPT-4oをより多くのメッセージ数で使えるほか、**o1・o3などの推論モデル、DALL·E 3による画像生成、Advanced Data Analysis（コード実行）、カスタムGPTs**が解放されます。
 
-<!-- TODO: affiliate link for 'ChatGPT-Plus' not set in config.yaml -->
+[[AFF:ChatGPT-Plus]]
 
 ### ChatGPT Team（1ユーザーあたり月額約4,000円〜、最低2名）
 
@@ -120,7 +120,7 @@ ChatGPT Plusで使えるo1・o3系のモデルは、GPT-4oとは根本的に異�
 - o1/o3は応答が遅く、スピード重視のタスクには向かない
 - 他社の有料AIツール（Claude Pro、Gemini Advancedなど）と比較検討が必要
 
-<!-- TODO: affiliate link for 'ChatGPT-Plus' not set in config.yaml -->
+[[AFF:ChatGPT-Plus]]
 
 ---
 
@@ -143,7 +143,7 @@ ChatGPT Plusで使えるo1・o3系のモデルは、GPT-4oとは根本的に異�
 
 **月額3,000円を時給換算で考えると、1ヶ月に1〜2時間の作業時間を節約できれば元が取れる計算です。** ビジネス利用であれば、費用対効果は高いと実感しています。
 
-<!-- TODO: affiliate link for 'ChatGPT-Plus-Business' not set in config.yaml -->
+[[AFF:ChatGPT-Plus-Business]]
 
 ---
 
@@ -157,7 +157,7 @@ ChatGPT Plusで使えるo1・o3系のモデルは、GPT-4oとは根本的に異�
 
 用途によります。長文の読解・ライティング補助はClaude Proが優秀という評価が多く、コード生成・データ分析・画像生成の統合環境としてはChatGPT Plusが強みを持ちます。両方を1〜2ヶ月ずつ試して比較するのが最も確実です。当サイトでは別途比較記事も用意しています。
 
-<!-- TODO: affiliate link for 'Claude-Pro-Compare' not set in config.yaml -->
+[[AFF:Claude-Pro-Compare]]
 
 ### Q3. GPT-4oとGPT-4o miniの実際の性能差はどのくらいですか？
 
@@ -176,7 +176,7 @@ ChatGPT無料版と有料版（Plus）の違いを整理すると、単純なモ
 
 AIツールは実際に手を動かして使ってみるのが一番の判断材料。この記事が、あなたの「どちらを選ぶか」の決断に役立てば幸いです。
 
-<!-- TODO: affiliate link for 'ChatGPT-Plus' not set in config.yaml -->
+[[AFF:ChatGPT-Plus]]
 
 ---
 

@@ -29,7 +29,7 @@ SNSではMidjourneyの美麗な作例が流れてくる。一方でStable Diffus
 
 ## Midjourneyとは？特徴を整理する
 
-<!-- TODO: affiliate link for 'midjourney_comparison' not set in config.yaml -->
+[[AFF:midjourney_comparison]]
 
 Midjourneyは、Discord上で動作するクラウド型のAI画像生成サービスです。2022年のオープンベータ以降、急速にユーザーを拡大し、現在はv6以降のモデルで非常に高い完成度の画像を生成できます。
 
@@ -96,7 +96,7 @@ AUTOMATIC1111やComfyUIなどのUIを使う場合でも、初期設定・モデ�
 - **ローカル動作不可**。インターネット接続必須で、オフライン環境では使えない
 - 規約変更の歴史があり、**商用利用ポリシーは定期的に確認が必要**
 
-<!-- TODO: affiliate link for 'midjourney_comparison' not set in config.yaml -->
+[[AFF:midjourney_comparison]]
 
 ### Stable Diffusionのメリット
 
@@ -130,7 +130,7 @@ AUTOMATIC1111やComfyUIなどのUIを使う場合でも、初期設定・モデ�
 - **ローカル環境でプライバシーを守りながら**作業したい
 - 技術的な探求・実験を楽しめる**エンジニア・ガジェット好き**
 
-<!-- TODO: affiliate link for 'midjourney_comparison' not set in config.yaml -->
+[[AFF:midjourney_comparison]]
 
 ---
 
@@ -142,7 +142,7 @@ Midjourneyで方向性を固めてクライアントにOKをもらい、その�
 
 どちらか一方に固執する必要はありません。まずMidjourneyの有料プランで全体感をつかみ、必要に応じてStable Diffusionを学ぶ、というステップが現実的です。
 
-<!-- TODO: affiliate link for 'midjourney_comparison' not set in config.yaml -->
+[[AFF:midjourney_comparison]]
 
 ---
 

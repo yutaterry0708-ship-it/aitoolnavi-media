@@ -34,7 +34,7 @@ Copilot in ExcelはMicrosoft 365に統合されたAIアシスタントです。G
 - **Copilot Pro（個人向け）** または **Microsoft 365 Copilot（法人向け）** のライセンス追加
 - データがExcelテーブル形式（Ctrl+T）に変換されていること
 
-<!-- TODO: affiliate link for 'excel_automation' not set in config.yaml -->
+[[AFF:excel_automation]]
 
 最後の「テーブル形式」という条件は見落としがちですが、Copilotが正しく列を認識するために必須です。私の運用では、この変換を忘れてCopilotが「データが見つかりません」と返してきたことが何度かありました。
 
@@ -103,7 +103,7 @@ Copilotは平均・標準偏差を計算し、±2σを超える行をハイラ�
 
 **私の結論：** 「今すぐ・非エンジニアが・単発の分析をしたい」ならCopilotが最速。「定期的に全自動で回したい」ならPower AutomateやVBAの方が適しています。両者を組み合わせるのが現実的な最適解です。
 
-<!-- TODO: affiliate link for 'excel_automation' not set in config.yaml -->
+[[AFF:excel_automation]]
 
 ---
 
@@ -157,7 +157,7 @@ AIが生成した数式・集計結果は必ず人間が確認する必要があ
 - Excelを使わずGoogleスプレッドシートがメインの人（→ Gemini in Sheetsを検討）
 - コストを一切かけたくない人（→ ChatGPTの無料プランでコードを生成する方法もある）
 
-<!-- TODO: affiliate link for 'excel_automation' not set in config.yaml -->
+[[AFF:excel_automation]]
 
 ---
 
@@ -191,7 +191,7 @@ Copilot in Excelを実際に使い込んだ率直な感想は、**「非エン�
 
 まずは現在のMicrosoft 365プランにCopilot Proを追加して、自分の日常業務に当てはめて試してみることをおすすめします。1ヶ月使ってみれば、費用対効果を自分で判断できるはずです。
 
-<!-- TODO: affiliate link for 'excel_automation' not set in config.yaml -->
+[[AFF:excel_automation]]
 
 ---
 

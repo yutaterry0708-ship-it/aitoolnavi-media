@@ -126,11 +126,11 @@ ChatGPT APIをSaaSに組み込む際、直接叩く以外に**APIゲートウェ
 | **OpenAI API（直接）** | 最もシンプル・低レイテンシ | 小規模・シンプルな用途 | 従量課金 |
 | **LangChain** | OSSフレームワーク・RAG構築が容易 | 複雑なチェーン処理・RAG | 無料（OSSコスト）|
 | **LlamaIndex** | ドキュメント連携特化・RAG向け | 社内文書検索・QA | 無料（OSSコスト）|
-| **Dify** <!-- TODO: affiliate link for 'Dify' not set in config.yaml --> | ノーコード〜ローコードでLLMアプリ構築 | 非エンジニアも関わる開発 | Free〜有料プラン |
+| **Dify** [[AFF:Dify]] | ノーコード〜ローコードでLLMアプリ構築 | 非エンジニアも関わる開発 | Free〜有料プラン |
 | **Vertex AI (Google)** | マルチモデル対応・エンタープライズ向け | GCP環境・高セキュリティ要件 | 従量課金 |
-| **Azure OpenAI Service** <!-- TODO: affiliate link for 'AzureOpenAI' not set in config.yaml --> | Microsoft管理・コンプライアンス対応 | エンタープライズ・金融・医療系 | 従量課金 |
+| **Azure OpenAI Service** [[AFF:AzureOpenAI]] | Microsoft管理・コンプライアンス対応 | エンタープライズ・金融・医療系 | 従量課金 |
 
-<!-- TODO: affiliate link for 'LangChain_Cloud' not set in config.yaml -->
+[[AFF:LangChain_Cloud]]
 
 実際に使ってみて感じるのは、**LangChainは学習コストが高いが、RAGやエージェント構成を組むときの生産性は段違い**です。一方、シンプルなQ&A機能なら直接APIを叩くほうがデバッグしやすいです。
 
@@ -153,7 +153,7 @@ ChatGPT APIをSaaSに組み込む際、直接叩く以外に**APIゲートウェ
 - **OpenAIへのベンダーロックイン**：モデルの仕様変更・価格改定・サービス停止リスクがある。重要なサービスではAnthropic（Claude）やGeminiへの切り替えを想定した抽象化レイヤーを設計しておくべき
 - **データプライバシー**：デフォルト設定ではAPIに送ったデータがOpenAIのサーバーを経由する。個人情報・機密情報を含むデータを扱う場合はAzure OpenAI ServiceやプライベートデプロイのOSSモデルを検討する必要がある
 
-<!-- TODO: affiliate link for 'Azure_OpenAI_Comparison' not set in config.yaml -->
+[[AFF:Azure_OpenAI_Comparison]]
 
 ---
 

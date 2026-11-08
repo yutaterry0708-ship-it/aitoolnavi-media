@@ -65,7 +65,7 @@ Midjourneyは独立したアプリを持たず、**Discordというチャット�
 
 特にChatGPTに「以下の日本語をMidjourneyのプロンプトとして最適な英語に変換してください」と依頼すると、単純な翻訳以上に画像生成に適した形式で出力してくれます。これが現時点で最もコストパフォーマンスの良い運用方法です。
 
-<!-- TODO: affiliate link for 'midjourney_japanese' not set in config.yaml -->
+[[AFF:midjourney_japanese]]
 
 ### 方法②：よく使う日本語ワードの英語対応表を作る
 
@@ -99,7 +99,7 @@ Midjourneyは独立したアプリを持たず、**Discordというチャット�
 | **Canva AI（Magic Media）** | ◎ | ○（実用レベル） | ◎（無料枠あり） | 無料〜約$13 | デザインと一体化して使いやすい |
 | **Stable Diffusion（ローカル）** | △ | △（モデル依存） | 無料 | 0円（環境構築が必要） | 自由度最高だが技術知識が必要 |
 
-<!-- TODO: affiliate link for 'midjourney_japanese' not set in config.yaml -->
+[[AFF:midjourney_japanese]]
 
 **日本語での使いやすさだけを優先するなら、Adobe FireflyやCanva AIのほうが圧倒的に扱いやすい**のが正直なところです。ただし、画質と芸術的な表現力ではMidjourneyが頭一つ抜けているため、「英語プロンプトを習得するコストを払ってでも使いたい」と思わせる魅力があります。
 
@@ -138,7 +138,7 @@ Midjourneyは独立したアプリを持たず、**Discordというチャット�
 
 **A.** UIと日本語プロンプト精度の両面で優れているのは**Adobe Firefly**です。Adobeアカウントがあれば無料枠で試せ、日本語で直感的に使えます。Canva内蔵の「Magic Media」も日本語UIで使いやすく、デザイン作業と一体化して使えるため初心者におすすめです。高い画質を求めてMidjourneyを使いたい場合は、ChatGPTとの組み合わせで英語翻訳フローを作るのが現実的な解決策です。
 
-<!-- TODO: affiliate link for 'midjourney_japanese' not set in config.yaml -->
+[[AFF:midjourney_japanese]]
 
 ---
 
@@ -152,7 +152,7 @@ Midjourneyは、残念ながら2025年時点では**日本語ネイティブ対�
 
 目的に合ったツール選びの参考に、ぜひこの記事を活用してください。
 
-<!-- TODO: affiliate link for 'midjourney_japanese' not set in config.yaml -->
+[[AFF:midjourney_japanese]]
 
 ---
 

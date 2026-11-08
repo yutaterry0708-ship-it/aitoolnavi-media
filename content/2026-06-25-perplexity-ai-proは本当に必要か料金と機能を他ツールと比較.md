@@ -22,7 +22,7 @@ AIツールが乱立する中で、**Perplexity AI Proの月額料金（約20ド
 
 この記事では、料金体系の詳細・無料版との差・競合ツールとの比較・正直なデメリットまで、実体験をベースに解説します。
 
-<!-- TODO: affiliate link for 'perplexity_pro_pricing' not set in config.yaml -->
+[[AFF:perplexity_pro_pricing]]
 
 ---
 
@@ -101,7 +101,7 @@ ChatGPT Plusが「万能型」であるのに対し、Perplexityは「検索エ�
 
 という使い分けが現実的です。
 
-<!-- TODO: affiliate link for 'perplexity_pro_pricing' not set in config.yaml -->
+[[AFF:perplexity_pro_pricing]]
 
 ---
 
@@ -151,7 +151,7 @@ ChatGPTのように機能が複雑化していないため、「とにかく調�
 - 日本語ローカル情報のリサーチが中心の人
 - すでにChatGPT Plusを契約していて、リサーチ用途も十分カバーできている人
 
-<!-- TODO: affiliate link for 'perplexity_pro_pricing' not set in config.yaml -->
+[[AFF:perplexity_pro_pricing]]
 
 ---
 
@@ -173,7 +173,7 @@ ChatGPTのように機能が複雑化していないため、「とにかく調�
 
 **A.** 「3ヶ月以上使い続けると確信できるなら年払い」が基本的な考え方です。年払いは$200（月換算約$16.67）で、月払い$20と比べると年間約$40の節約になります。ただし、まず月払いで1〜2ヶ月試してから年払いに切り替える方が、無駄な出費を防げます。
 
-<!-- TODO: affiliate link for 'perplexity_pro_pricing' not set in config.yaml -->
+[[AFF:perplexity_pro_pricing]]
 
 ---
 

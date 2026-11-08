@@ -31,7 +31,7 @@ Zapierは2011年創業のアメリカ発の自動化ツールです。「Zap（�
 
 UIは非常にシンプルで、「トリガー（きっかけ）→アクション（動作）」という直線的な構造が基本です。実際に使ってみて感じるのは、「考える前に動く」感覚の速さ。設定画面が日本語化されており（一部英語混在）、初めての人でも30分以内にシンプルなZapを作れます。
 
-<!-- TODO: affiliate link for 'zapier-beginner' not set in config.yaml -->
+[[AFF:zapier-beginner]]
 
 ### Makeとは
 
@@ -39,7 +39,7 @@ Make（旧Integromat）は2012年にチェコで誕生し、2022年にブラン�
 
 私の運用では、複数のAPIを組み合わせてスプレッドシートのデータを整形しながら別サービスに送るといった処理をMakeで組みました。Zapierでは有料プランでないと難しい複数ステップの処理が、Makeの無料プランでも実現できた点は正直驚きでした。
 
-<!-- TODO: affiliate link for 'make-beginner' not set in config.yaml -->
+[[AFF:make-beginner]]
 
 ---
 
@@ -137,8 +137,8 @@ Make（旧Integromat）は2012年にチェコで誕生し、2022年にブラン�
 
 私の運用では、**最初の1ヶ月はZapierで自動化の概念を学び、その後Makeに移行してコストを下げながら機能を拡張する**というアプローチが最もスムーズでした。どちらか一方に絞る必要はなく、用途によって使い分けるのも現実的な選択肢です。
 
-<!-- TODO: affiliate link for 'zapier-trial' not set in config.yaml -->
-<!-- TODO: affiliate link for 'make-trial' not set in config.yaml -->
+[[AFF:zapier-trial]]
+[[AFF:make-trial]]
 
 ---
 
@@ -171,7 +171,7 @@ MakeとZapierは、どちらも優れた自動化ツールです。「どちら�
 
 この記事が、あなたの「最初の一歩」を踏み出すきっかけになれば嬉しいです。
 
-<!-- TODO: affiliate link for 'beginner-automation-guide' not set in config.yaml -->
+[[AFF:beginner-automation-guide]]
 
 ---
 

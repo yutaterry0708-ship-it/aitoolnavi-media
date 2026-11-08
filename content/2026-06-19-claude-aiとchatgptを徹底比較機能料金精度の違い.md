@@ -31,7 +31,7 @@ Claude AIはAnthropicが開発したLLM（大規模言語モデル）ベース�
 
 現行の主力モデルは**Claude 3.5 Sonnet / Claude 3 Opus**。特に長文コンテキストの処理能力（最大200,000トークン）が突出しており、長い資料を丸ごと読み込ませての要約・分析が得意だ。
 
-<!-- TODO: affiliate link for 'claude_vs_chatgpt' not set in config.yaml -->
+[[AFF:claude_vs_chatgpt]]
 
 ### ChatGPT（OpenAI）
 
@@ -80,7 +80,7 @@ Claudeもコーディング能力は高く、特に「コードの意図を説�
 
 ## 料金プランの比較
 
-<!-- TODO: affiliate link for 'claude_vs_chatgpt' not set in config.yaml -->
+[[AFF:claude_vs_chatgpt]]
 
 ### Claude AIの料金
 
@@ -149,7 +149,7 @@ Claudeもコーディング能力は高く、特に「コードの意図を説�
 | チーム・企業利用 | **ChatGPT** | Team/Enterpriseプランが充実 |
 | コスト重視の個人利用 | **Claude Pro** | 文章用途ならコスパ◎ |
 
-<!-- TODO: affiliate link for 'claude_vs_chatgpt' not set in config.yaml -->
+[[AFF:claude_vs_chatgpt]]
 
 ---
 
@@ -181,7 +181,7 @@ Claude AIとChatGPTの比較をまとめると以下のとおりだ。
 
 AIツールの進化は速く、数ヶ月で機能差が変わることも珍しくない。本記事も定期的にアップデートしていく予定だ。
 
-<!-- TODO: affiliate link for 'claude_vs_chatgpt' not set in config.yaml -->
+[[AFF:claude_vs_chatgpt]]
 
 ---
 

@@ -18,7 +18,7 @@ draft: false
 
 この記事では、実際にCopilotを日常的に使い込んできた経験をもとに、精度を引き上げるための具体的なプロンプト設計のコツを体系的に解説します。
 
-<!-- TODO: affiliate link for 'copilot_accuracy' not set in config.yaml -->
+[[AFF:copilot_accuracy]]
 
 ---
 
@@ -128,7 +128,7 @@ GitHub Copilot Chatを使う場合、プロンプトの冒頭に役割を与え�
 
 この設定を入れてからは、補完コードがプロジェクトのスタイルに沿ったものになり、修正コストが明らかに減りました。チーム開発では特に効果を実感しやすい機能です。
 
-<!-- TODO: affiliate link for 'copilot_accuracy' not set in config.yaml -->
+[[AFF:copilot_accuracy]]
 
 ---
 
@@ -163,7 +163,7 @@ GitHub Copilot Chatを使う場合、プロンプトの冒頭に役割を与え�
 - **コンテキストウィンドウに上限がある**：ファイルが大きすぎると参照できる範囲が制限される
 - **プランによって機能差がある**：`copilot-instructions.md` などの高度な機能はプランによって利用可否が異なる場合がある
 
-<!-- TODO: affiliate link for 'copilot_accuracy' not set in config.yaml -->
+[[AFF:copilot_accuracy]]
 
 ---
 
@@ -205,7 +205,7 @@ GitHub Copilotの精度が上がらない最大の原因は、多くの場合「
 
 GitHub Copilotをまだ導入していない方や、プランのアップグレードを検討している方は、以下のリンクから詳細を確認してみてください。
 
-<!-- TODO: affiliate link for 'copilot_accuracy' not set in config.yaml -->
+[[AFF:copilot_accuracy]]
 
 ---
 

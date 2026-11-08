@@ -42,7 +42,7 @@ Microsoft 365 Copilotは、TeamsのミーティングにAIアシスタントと�
 
 Copilotを使うには **Microsoft 365 Copilotライセンス**（2024年時点で1ユーザー月額約4,497円、企業契約）が必要です。Teams単体やMicrosoft 365 Business Basicでは利用できない点に注意してください。
 
-<!-- TODO: affiliate link for 'microsoft365_copilot' not set in config.yaml -->
+[[AFF:microsoft365_copilot]]
 
 ---
 
@@ -79,7 +79,7 @@ Copilotを使うには **Microsoft 365 Copilotライセンス**（2024年時点�
 
 会議に参加できなかったメンバーへの共有にも活用できます。Copilotが生成した要約をそのまま共有するだけで、1時間の録画を見なくても内容を把握できます。
 
-<!-- TODO: affiliate link for 'meeting_assistant' not set in config.yaml -->
+[[AFF:meeting_assistant]]
 
 ---
 
@@ -132,7 +132,7 @@ Microsoft 365 Copilotライセンスは決して安くありません。中小�
 **5. ライセンス管理が複雑**
 部署ごとに導入する場合、ライセンス割り当てや管理者設定の工数がかかります。IT担当者との連携が不可欠です。
 
-<!-- TODO: affiliate link for 'microsoft365_copilot' not set in config.yaml -->
+[[AFF:microsoft365_copilot]]
 
 ---
 
@@ -178,7 +178,7 @@ Microsoft Copilot for Teamsは、会議議事録の作成工数を劇的に削�
 
 Copilotを試してみたい方は、まず自社のMicrosoft 365プランを確認し、IT管理者に相談するところから始めてみてください。
 
-<!-- TODO: affiliate link for 'meeting_assistant' not set in config.yaml -->
+[[AFF:meeting_assistant]]
 
 > **関連記事：** AI議事録ツール比較2024｜Notta・Fireflies・tl;dvを実際に使って比べた
 

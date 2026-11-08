@@ -63,7 +63,7 @@ Midjourneyはもともと、Discordの`/imagine`コマンドで誰でも無料�
 
 **ProプランとMegaプラン**は、クライアントワークや大量生成が必要なプロ・法人向けです。特にProプランの**Stealthモード**（生成した画像をコミュニティギャラリーに非公開にできる機能）は、商用案件を扱う際に重要です。BasicやStandardでは生成画像がデフォルトで公開されるため、クライアントの秘密保持が必要な案件には向きません。
 
-<!-- TODO: affiliate link for 'midjourney_free' not set in config.yaml -->
+[[AFF:midjourney_free]]
 
 ---
 
@@ -83,7 +83,7 @@ Adobeが提供するAI画像生成ツール。無料アカウントで月25ク�
 
 デザインツールとして有名なCanvaにも、AI画像生成機能が搭載されています。無料プランでも一定数の生成が可能。「デザインと画像生成を一体でやりたい」というSNS運用者には便利ですが、クリエイティブな表現の幅はMidjourneyより狭いです。
 
-<!-- TODO: affiliate link for 'midjourney_free' not set in config.yaml -->
+[[AFF:midjourney_free]]
 
 ---
 
@@ -130,7 +130,7 @@ Discordサーバーには世界中のユーザーが集まっており、他者�
 
 **A.** 年払いは約20%割引になるため、6ヶ月以上継続して使う予定があれば年払いが明らかにお得です。ただし、「まず1〜2ヶ月試してから判断したい」という方は月払いから始めて、継続利用を決めてから年払いに切り替えるのが賢い選択です。
 
-<!-- TODO: affiliate link for 'midjourney_free' not set in config.yaml -->
+[[AFF:midjourney_free]]
 
 ---
 
@@ -146,7 +146,7 @@ Discordサーバーには世界中のユーザーが集まっており、他者�
 
 「無料で使えない」という事実はハードルに感じるかもしれませんが、Midjourneyが生み出す画像クオリティは、月$10〜$30を払う価値が十分にあると実際に使い込んできた立場から言えます。まずは代替ツールで感覚をつかんでから、Midjourneyへの課金を検討するというステップが、失敗しない選び方です。
 
-<!-- TODO: affiliate link for 'midjourney_free' not set in config.yaml -->
+[[AFF:midjourney_free]]
 
 ---
 

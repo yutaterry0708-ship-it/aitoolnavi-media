@@ -31,13 +31,13 @@ draft: false
 
 2011年創業の老舗ノーコード自動化ツール。「Zap（ザップ）」と呼ばれるワークフローを、トリガー→アクションの**直線的なフロー**で構築します。対応アプリ数は7,000以上（2025年時点）と業界最多クラスで、マイナーなSaaSでも対応していることが多い。
 
-<!-- TODO: affiliate link for 'zapier_make_comparison' not set in config.yaml -->
+[[AFF:zapier_make_comparison]]
 
 ### Makeとは
 
 チェコ発のツールで、旧名はIntegromat。2022年にMakeへリブランド。**視覚的なキャンバス（シナリオビルダー）**上でノードを繋いでいく設計で、条件分岐・ループ・エラーハンドリングなどを細かく制御できます。対応アプリ数は1,800以上と少ないものの、カスタムHTTPリクエストやWebhookを使えば事実上ほぼどんなAPIとも繋がります。
 
-<!-- TODO: affiliate link for 'zapier_make_comparison' not set in config.yaml -->
+[[AFF:zapier_make_comparison]]
 
 ---
 
@@ -144,7 +144,7 @@ Zapierは「タスク数（=アクション実行回数）」で課金されま�
 
 どちらも無料プランで試せるので、**まず両方のUIを触ってみて、自分の感覚に合うほうを選ぶ**のが最も確実です。
 
-<!-- TODO: affiliate link for 'zapier_make_comparison' not set in config.yaml -->
+[[AFF:zapier_make_comparison]]
 
 ---
 
@@ -162,7 +162,7 @@ Zapierは「タスク数（=アクション実行回数）」で課金されま�
 
 **Zapier**の無料プランは月100タスク・5 Zapsまで。小規模なテストや個人用途なら十分ですが、業務で使うにはすぐ上限に達します。**Make**の無料プランは月1,000オペレーションで、シナリオ数の制限はあるものの、Zapierより余裕があります。本格運用を検討しているなら、まず無料プランで感触を掴んでから有料プランへの移行を検討するのがおすすめです。
 
-<!-- TODO: affiliate link for 'zapier_make_comparison' not set in config.yaml -->
+[[AFF:zapier_make_comparison]]
 
 ---
 

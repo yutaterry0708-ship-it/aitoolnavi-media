@@ -18,7 +18,7 @@ draft: false
 
 結論を先に言います。**CopilotをOneNoteと組み合わせることで、「書いたまま放置」だったノートが、検索・要約・整理の起点として機能するようになります**。ただし万能ではなく、ライセンス条件や動作の癖など正直なデメリットも存在します。本記事ではその両面を、実際の運用経験をもとに詳しく解説します。
 
-<!-- TODO: affiliate link for 'microsoft365_copilot' not set in config.yaml -->
+[[AFF:microsoft365_copilot]]
 
 ---
 
@@ -70,7 +70,7 @@ Copilotの質問応答機能を使うと、「競合の料金比較について�
 
 **注意点は、Copilotが勝手にノートを書き換えることはない**（提案を受け入れるかどうかはユーザーが選択）という点です。この「提案型」の設計は、誤操作リスクを下げる意味で好感を持っています。
 
-<!-- TODO: affiliate link for 'microsoft365_copilot' not set in config.yaml -->
+[[AFF:microsoft365_copilot]]
 
 ---
 
@@ -91,7 +91,7 @@ AI搭載ノートツールは複数あります。実際に触れた経験をも
 
 **総評**：既にMicrosoft 365を使っている法人ユーザーにとって、OneNote + Copilotは**追加の学習コストゼロで高度なAI機能を導入できる**点が最大の強みです。一方、個人利用やコスト優先ならNotion AIが現実的な選択肢になります。
 
-<!-- TODO: affiliate link for 'notion_ai' not set in config.yaml -->
+[[AFF:notion_ai]]
 
 ---
 
@@ -122,7 +122,7 @@ Microsoftの新機能は英語圏から展開され、日本語環境での完�
 **4. OneNote自体のUI古さは解消されない**
 Copilotがどれだけ賢くなっても、OneNoteのノートブック/セクション/ページという階層構造の設計は変わりません。この構造が合わない人には、根本的な使いにくさが残ります。
 
-<!-- TODO: affiliate link for 'note_management_tool' not set in config.yaml -->
+[[AFF:note_management_tool]]
 
 ---
 
@@ -155,7 +155,7 @@ OneNote + Copilotの組み合わせは、**すでにMicrosoft 365環境にいる
 
 まずはMicrosoft 365 Copilotの試用（法人向けトライアル）から始めて、自分の業務フローに合うかを確認することをお勧めします。
 
-<!-- TODO: affiliate link for 'microsoft365_copilot' not set in config.yaml -->
+[[AFF:microsoft365_copilot]]
 
 ---
 

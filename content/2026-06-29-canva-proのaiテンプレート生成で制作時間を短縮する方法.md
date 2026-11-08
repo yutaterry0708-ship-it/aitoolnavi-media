@@ -18,7 +18,7 @@ SNS投稿用のバナー、ブログのアイキャッチ、プレゼン資料�
 
 ただし、万能ではありません。この記事では実際の使用感をベースに、効率化できる場面・できない場面を正直に整理します。
 
-<!-- TODO: affiliate link for 'canva_ai_template_gen' not set in config.yaml -->
+[[AFF:canva_ai_template_gen]]
 
 ---
 
@@ -97,7 +97,7 @@ SNS運用では同じデザインをInstagram正方形・ストーリーズ・X�
 
 **総合的にCanva Proが最もバランスが取れている**というのが私の結論です。特に「チームで使う」「動画サムネイルからプレゼンまで幅広く使う」用途では他ツールとの差が開きます。ただし、すでにAdobeのCreative Cloudを契約しているならAdobe Expressを先に試す価値はあります。
 
-<!-- TODO: affiliate link for 'canva_ai_template_gen' not set in config.yaml -->
+[[AFF:canva_ai_template_gen]]
 
 ---
 
@@ -142,7 +142,7 @@ AI生成素材の商用利用については、Canvaの利用規約を随時確�
 
 無料版でもMagic Designの一部機能は使えますが、生成回数に制限があり、Background RemoverやMagic Switch、Magic Writeなどの主要AI機能はPro限定です。実際に使ってみると、AI機能の大半がProに集中しており、「効率化」を目的にするなら無料版では物足りないと感じるはずです。まず無料トライアル（30日間）で試してから判断するのが現実的です。
 
-<!-- TODO: affiliate link for 'canva_ai_template_gen' not set in config.yaml -->
+[[AFF:canva_ai_template_gen]]
 
 ### Q2. AIが生成したデザインの著作権はどうなりますか？
 
@@ -164,7 +164,7 @@ Canva ProのAIテンプレート生成機能は、**「デザインの専門家�
 
 月額費用が継続的にかかる点は正直なデメリットですが、制作案件が月に数本以上あるなら、時間コストとの比較で十分に元が取れると私は判断しています。まずは30日間の無料トライアルで、自分の用途に合うかどうか試してみてください。
 
-<!-- TODO: affiliate link for 'canva_ai_template_gen' not set in config.yaml -->
+[[AFF:canva_ai_template_gen]]
 
 ---
 

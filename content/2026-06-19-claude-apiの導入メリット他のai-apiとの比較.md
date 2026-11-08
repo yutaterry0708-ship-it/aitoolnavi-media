@@ -18,7 +18,7 @@ AIを自社サービスやワークフローに組み込もうとしたとき、
 
 ただし「万能」ではありません。この記事では、実際に使い込んで感じたメリットとデメリットを両方正直に書きます。導入前の意思決定の参考にしてください。
 
-<!-- TODO: affiliate link for 'claude_api_benefits' not set in config.yaml -->
+[[AFF:claude_api_benefits]]
 
 ---
 
@@ -72,7 +72,7 @@ Claude APIはRESTful設計で、公式のPython・TypeScript SDKが整備され�
 
 Claudeはモデルごとに入力・出力トークン単価が明示されており、コスト試算がしやすい構造です。軽量タスクにはHaikuを使い、精度が必要な場面だけSonnetやOpusに切り替えるという**ハイブリッド運用**が設計しやすく、私の運用ではこの戦略でコストを抑えながら品質を確保しています。
 
-<!-- TODO: affiliate link for 'claude_api_benefits' not set in config.yaml -->
+[[AFF:claude_api_benefits]]
 
 ---
 
@@ -128,7 +128,7 @@ ClaudeはテキストとVision（画像読み取り）には対応していま�
 - 🔐 **コンプライアンスに敏感な業界**：金融・医療周辺の情報処理（ただし専門的判断の代替ではありません）
 - 🌏 **日本語品質にこだわるプロダクト**：ユーザー向け日本語テキスト生成
 
-<!-- TODO: affiliate link for 'claude_api_benefits' not set in config.yaml -->
+[[AFF:claude_api_benefits]]
 
 ---
 
@@ -158,7 +158,7 @@ Claude APIの最大の強みを一言で表すなら、「**長文・日本語�
 
 まずは無料枠やクレジット範囲内で小規模なプロトタイプを作り、実際の出力品質を自分の目で確かめることをおすすめします。
 
-<!-- TODO: affiliate link for 'claude_api_benefits' not set in config.yaml -->
+[[AFF:claude_api_benefits]]
 
 ---
 

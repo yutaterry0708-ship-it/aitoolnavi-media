@@ -38,7 +38,7 @@ PowerPoint上では主に以下のことができます。
 - スピーカーノートの自動生成
 - 既存のWordファイルやPDFからプレゼンを生成
 
-<!-- TODO: affiliate link for 'Microsoft365' not set in config.yaml -->
+[[AFF:Microsoft365]]
 
 ### 利用に必要な条件
 
@@ -121,11 +121,11 @@ Copilot以外にも、プレゼン作成を効率化するAIツールはいく�
 | **Canva AI** | デザイン特化・直感操作 | ビジュアル重視のスライド | 複雑なビジネス文書には不向き | 無料〜約1,500円/月 |
 | **Tome** | ストーリーテリング特化 | 提案書・ピッチデッキ | PowerPoint出力の互換性 | 無料〜$20/月 |
 
-<!-- TODO: affiliate link for 'Gamma' not set in config.yaml -->
+[[AFF:Gamma]]
 
 **私の結論**：既存のMicrosoft 365環境で仕事をしている人には、Copilotが最も「摩擦なく使える」ツールです。一方、スタートアップのピッチデッキやデザイン性の高い資料を作りたい場合は、GammaやBeautiful.aiの方が向いている場面もあります。
 
-<!-- TODO: affiliate link for 'BeautifulAI' not set in config.yaml -->
+[[AFF:BeautifulAI]]
 
 ---
 
@@ -172,7 +172,7 @@ Copilot単体では「スライドの見た目を根本から変える」こと�
 
 ### Q2. 無料で試せますか？
 
-**A.** 現時点では、PowerPoint内でのCopilot機能はMicrosoft 365 Copilotアドオン（有料）が必要です。ただし、Microsoft 365の一部プランには無料トライアル期間があります。また、Web版のCopilot（copilot.microsoft.com）は無料で利用できますが、PowerPointとの直接統合機能は使えません。プレゼン作成AIを無料で試したい場合は、GammaやCanva AIの無料プランから始めるのも一つの選択肢です。<!-- TODO: affiliate link for 'Gamma' not set in config.yaml -->
+**A.** 現時点では、PowerPoint内でのCopilot機能はMicrosoft 365 Copilotアドオン（有料）が必要です。ただし、Microsoft 365の一部プランには無料トライアル期間があります。また、Web版のCopilot（copilot.microsoft.com）は無料で利用できますが、PowerPointとの直接統合機能は使えません。プレゼン作成AIを無料で試したい場合は、GammaやCanva AIの無料プランから始めるのも一つの選択肢です。[[AFF:Gamma]]
 
 ### Q3. 既存のPowerPointファイルにも使えますか？
 
@@ -195,7 +195,7 @@ CopilotをPowerPointで使いこなすポイントを整理します。
 
 まずは1本、試しにCopilotで資料を作ってみてください。「最初のスライド構成が30秒で出てくる」体験をすれば、使い続ける理由が自然とわかるはずです。
 
-<!-- TODO: affiliate link for 'Microsoft365' not set in config.yaml -->
+[[AFF:Microsoft365]]
 
 ---
 

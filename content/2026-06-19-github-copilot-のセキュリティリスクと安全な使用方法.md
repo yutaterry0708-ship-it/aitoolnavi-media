@@ -22,7 +22,7 @@ draft: false
 
 GitHub Copilotは、GitHubとOpenAIが共同開発したAIコーディング支援ツールです。VSCodeやJetBrains系IDEに統合され、コードの自動補完・関数生成・テストコード作成などをリアルタイムで支援します。
 
-<!-- TODO: affiliate link for 'copilot_security' not set in config.yaml -->
+[[AFF:copilot_security]]
 
 個人向けプランから、企業向けの「GitHub Copilot Business」「GitHub Copilot Enterprise」まで用意されており、特に企業向けプランではセキュリティ機能が強化されています。
 
@@ -85,7 +85,7 @@ Copilotが提案するコードは、GitHubのパブリックリポジトリに�
 | IP許可リスト | ✗ | ✗ | ✓ |
 | コンテンツ除外設定 | ✗ | ✓ | ✓ |
 
-<!-- TODO: affiliate link for 'copilot_security' not set in config.yaml -->
+[[AFF:copilot_security]]
 
 ### 具体的な安全対策5ステップ
 
@@ -124,7 +124,7 @@ GitHub Advanced SecurityのCode Scanningや、SonarQube、Snykなどのツール
 
 **セキュリティ要件が極めて厳しい企業**（金融・医療・防衛など）には、TabnineやCodeiumのオンプレ対応プランが選択肢になります。コードが一切外部に出ないため、情報漏洩リスクを根本から排除できます。
 
-<!-- TODO: affiliate link for 'copilot_security' not set in config.yaml -->
+[[AFF:copilot_security]]
 
 ---
 
@@ -176,7 +176,7 @@ GitHub Copilotのセキュリティリスクをまとめると以下の通りで
 
 リスクを正しく理解し、組織に合ったプランと設定で導入することが、安全で効果的なCopilot活用への近道です。
 
-<!-- TODO: affiliate link for 'copilot_security' not set in config.yaml -->
+[[AFF:copilot_security]]
 
 ---
 

@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="---">
-<title>データを処理する | AIツールナビ</title>
+<meta name="description" content="GitHub Copilot を使って Python コードを効率的に書く方法を実体験ベースで解説。コード例・活用テクニック・正直なデメリット・他ツールとの比較まで網羅。">
+<title>GitHub Copilot で Python コードを効率的に書く方法 | AIツールナビ</title>
 <link rel="canonical" href="https://aitoolnavi.com/2026-06-19-github-copilot-で-python-コードを効率的に書く方法/">
 <style>
 :root{--accent:#6366f1;--bg:#0f172a;--surface:#1e293b;--text:#f8fafc;--muted:#94a3b8}
@@ -35,28 +35,15 @@ footer{background:var(--surface);padding:32px 0;text-align:center;color:var(--mu
 <header><div class="container"><a href="/">AIツールナビ</a></div></header>
 <main>
 <div class="hero container">
-<h1>データを処理する</h1>
+<h1>GitHub Copilot で Python コードを効率的に書く方法</h1>
 <div class="meta">更新日: 2026-06-19 | AIツールナビ編集部</div>
 <div class="disclosure">※本記事はアフィリエイト広告（PR）を含みます。実際に使用・調査した内容に基づき公平に解説しています。</div>
 </div>
 <article class="container">
-<hr />
-<p>title: "GitHub Copilot で Python コードを効率的に書く方法"<br />
-description: "GitHub Copilot を使って Python コードを効率的に書く方法を実体験ベースで解説。コード例・活用テクニック・正直なデメリット・他ツールとの比較まで網羅。"<br />
-keywords: ["GitHub Copilot Python コード例"]<br />
-date: "2026-06-19"<br />
-draft: false</p>
-<hr />
-<blockquote>
-<p>※本記事はアフィリエイト広告（PR）を含みます。実際に使用・調査した内容に基づき公平に解説しています。</p>
-</blockquote>
-<hr />
 <h2>「Copilot って結局どこまで使えるの？」——Python 開発者のリアルな疑問に答えます</h2>
 <p>「GitHub Copilot を導入してみたけど、補完が的外れで結局手書きしている」「どんなプロンプトを書けばちゃんとしたコードが出てくるのかわからない」——Python を書く開発者やデータサイエンティストから、こういった声をよく耳にします。</p>
 <p>結論から言うと、<strong>GitHub Copilot は「使い方を知っている人」と「とりあえず入れただけの人」で生産性の差が数倍開くツール</strong>です。コメントの書き方・コンテキストの与え方・Chat 機能との使い分けを理解すれば、ボイラープレートの記述やテストコード生成は劇的に速くなります。</p>
 <p>本記事では、実際に GitHub Copilot を Python 開発（Web API・データ処理・スクリプト自動化）で日常的に使い込んできた筆者の経験をもとに、<strong>具体的なコード例・効果的なプロンプトパターン・正直なデメリット</strong>まで余すところなく解説します。</p>
-<!-- TODO: affiliate link for 'copilot_python' not set in config.yaml -->
-
 <hr />
 <h2>GitHub Copilot の基本セットアップ（Python 開発向け）</h2>
 <h3>VS Code + Copilot 拡張の導入</h3>
@@ -81,7 +68,8 @@ draft: false</p>
 <h3>1. コメントドリブン補完：「何をするか」を日本語・英語で先に書く</h3>
 <p>Copilot は直前のコメントをプロンプトとして解釈します。<strong>曖昧なコメントより具体的な仕様コメント</strong>のほうが精度が高い補完を引き出せます。</p>
 <p><strong>悪い例：</strong></p>
-<pre><code class="language-python">def process():
+<pre><code class="language-python"># データを処理する
+def process():
 </code></pre>
 <p><strong>良い例：</strong></p>
 <pre><code class="language-python"># CSVファイルを読み込み、欠損値を中央値で補完し、
@@ -194,8 +182,6 @@ def load_and_aggregate_sales(
         return None
 </code></pre>
 <p>このコード、実は<strong>コメント部分だけ自分で書いて、実装はほぼ Copilot の提案をベースに微調整</strong>したものです。型ヒントや例外処理まで含めた形で提案が出てくるのは、Python の型情報が豊富なプロジェクトならではの体験です。</p>
-<!-- TODO: affiliate link for 'copilot_python' not set in config.yaml -->
-
 <hr />
 <h2>他の AI コーディングツールとの比較</h2>
 <table>
@@ -253,8 +239,6 @@ def load_and_aggregate_sales(
 </tbody>
 </table>
 <p><strong>筆者の使い分け：</strong> 日常的な Python 開発は GitHub Copilot をメインに使い、大規模リファクタリングや複数ファイルにまたがる変更には Cursor を併用しています。Copilot は既存の GitHub ワークフローとの親和性が高く、PR レビューへの統合（Copilot for Pull Requests）が便利な点で優位です。</p>
-<!-- TODO: affiliate link for 'copilot_python' not set in config.yaml -->
-
 <hr />
 <h2>正直なメリット・デメリット</h2>
 <h3>✅ メリット</h3>
@@ -317,8 +301,6 @@ def load_and_aggregate_sales(
 </table>
 <p>Copilot は「コードを書いてくれる魔法のツール」ではなく、<strong>「経験豊富なペアプログラマーが隣にいる感覚」</strong>に近いものです。良い補完を引き出すには、良い設計と良いコメントを書く力が前提になります。逆に言えば、Copilot を使い込むことで「伝わるコメントを書く習慣」が自然と身につくという副次効果もあります。</p>
 <p>まずは個人プランの無料トライアルから試してみて、自分のワークフローに合うかどうか確かめてみてください。</p>
-<!-- TODO: affiliate link for 'copilot_python' not set in config.yaml -->
-
 <hr />
 <p><em>本記事は 2026 年 6 月時点の情報をもとに執筆しています。料金・機能は変更される場合があります。最新情報は公式サイトでご確認ください。</em></p>
 </article>

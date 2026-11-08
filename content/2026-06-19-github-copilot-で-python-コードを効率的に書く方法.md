@@ -18,7 +18,7 @@ draft: false
 
 本記事では、実際に GitHub Copilot を Python 開発（Web API・データ処理・スクリプト自動化）で日常的に使い込んできた筆者の経験をもとに、**具体的なコード例・効果的なプロンプトパターン・正直なデメリット**まで余すところなく解説します。
 
-<!-- TODO: affiliate link for 'copilot_python' not set in config.yaml -->
+[[AFF:copilot_python]]
 
 ---
 
@@ -172,7 +172,7 @@ def load_and_aggregate_sales(
 
 このコード、実は**コメント部分だけ自分で書いて、実装はほぼ Copilot の提案をベースに微調整**したものです。型ヒントや例外処理まで含めた形で提案が出てくるのは、Python の型情報が豊富なプロジェクトならではの体験です。
 
-<!-- TODO: affiliate link for 'copilot_python' not set in config.yaml -->
+[[AFF:copilot_python]]
 
 ---
 
@@ -188,7 +188,7 @@ def load_and_aggregate_sales(
 
 **筆者の使い分け：** 日常的な Python 開発は GitHub Copilot をメインに使い、大規模リファクタリングや複数ファイルにまたがる変更には Cursor を併用しています。Copilot は既存の GitHub ワークフローとの親和性が高く、PR レビューへの統合（Copilot for Pull Requests）が便利な点で優位です。
 
-<!-- TODO: affiliate link for 'copilot_python' not set in config.yaml -->
+[[AFF:copilot_python]]
 
 ---
 
@@ -245,7 +245,7 @@ Copilot は「コードを書いてくれる魔法のツール」ではなく、
 
 まずは個人プランの無料トライアルから試してみて、自分のワークフローに合うかどうか確かめてみてください。
 
-<!-- TODO: affiliate link for 'copilot_python' not set in config.yaml -->
+[[AFF:copilot_python]]
 
 ---
 

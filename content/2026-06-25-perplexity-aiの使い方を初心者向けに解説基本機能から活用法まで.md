@@ -18,7 +18,7 @@ draft: false
 
 この記事では、Perplexity AIを初めて使う方に向けて、アカウント登録から基本操作、実際の活用シーン、そして正直なデメリットまでを丁寧に解説します。読み終えたあとには「これなら使えそう」と感じてもらえるはずです。
 
-<!-- TODO: affiliate link for 'perplexity_beginner' not set in config.yaml -->
+[[AFF:perplexity_beginner]]
 
 ---
 
@@ -56,7 +56,7 @@ Perplexity AIは**無料で使い始められます**。以下の手順で登録
 
 アカウント登録なしでも試せますが、**会話履歴の保存や1日あたりの質問回数の上限**などを考えると、無料登録しておくことをおすすめします。実際に使ってみて、登録の手間は1〜2分程度でした。
 
-<!-- TODO: affiliate link for 'perplexity_beginner' not set in config.yaml -->
+[[AFF:perplexity_beginner]]
 
 ### ステップ2：質問を入力してみる
 
@@ -98,7 +98,7 @@ ChatGPTの無料版は学習データに時間的な制限があるため、最�
 
 無料プランでも十分使えますが、**Perplexity Pro（月額約20ドル）**に加入すると、GPT-4やClaude 3などの高性能モデルを選択できるようになります。より複雑な質問や長文の分析に向いており、ヘビーユーザーには費用対効果が高いと感じます。
 
-<!-- TODO: affiliate link for 'perplexity_beginner' not set in config.yaml -->
+[[AFF:perplexity_beginner]]
 
 ---
 
@@ -146,7 +146,7 @@ ChatGPTの無料版は学習データに時間的な制限があるため、最�
 
 **A.** 基本的な機能は無料で利用できます。ただし、無料プランでは1日あたりの高度な検索（Pro Search）の利用回数に上限があります。日常的な調べ物であれば無料プランで十分対応できます。より高性能なAIモデルを使いたい場合はProプラン（月額約20ドル）の検討をおすすめします。
 
-<!-- TODO: affiliate link for 'perplexity_beginner' not set in config.yaml -->
+[[AFF:perplexity_beginner]]
 
 ### Q2. Perplexity AIの回答は信頼できますか？
 
@@ -172,7 +172,7 @@ Perplexity AIは、**「情報を調べる」という行為をアップグレ�
 
 AIツールは使ってみてナンボ。まずは一歩踏み出してみてください。
 
-<!-- TODO: affiliate link for 'perplexity_beginner' not set in config.yaml -->
+[[AFF:perplexity_beginner]]
 
 ---
 

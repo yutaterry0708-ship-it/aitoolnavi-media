@@ -18,7 +18,7 @@ draft: false
 
 この記事では、実際にCanva Proを日常的に使い込んできた経験をもとに、初心者がAI機能で成果を出すための具体的な方法を正直にお伝えします。
 
-<!-- TODO: affiliate link for 'canva_ai_beginner' not set in config.yaml -->
+[[AFF:canva_ai_beginner]]
 
 ---
 
@@ -100,7 +100,7 @@ Magic Designは、テーマやキーワードを入力するだけでデザイ�
 
 Adobe製品を日常的に使っているならAdobe Expressも選択肢に入りますが、**完全に独立した環境でデザインするならCanva Proが最も使いやすい**というのが私の結論です。
 
-<!-- TODO: affiliate link for 'canva_ai_beginner' not set in config.yaml -->
+[[AFF:canva_ai_beginner]]
 
 ---
 
@@ -146,7 +146,7 @@ AI機能を使うと「生成されたものをそのまま使いたい」衝動
 
 はい、Canva Proは**30日間の無料トライアル**が提供されています（時期によって条件が変わる場合があります）。まず無料で試してから判断することをおすすめします。
 
-<!-- TODO: affiliate link for 'canva_ai_beginner' not set in config.yaml -->
+[[AFF:canva_ai_beginner]]
 
 ### Q2. スマホだけでも使えますか？
 
@@ -172,7 +172,7 @@ Canva Proで作成したデザインは、基本的に商用利用が可能で�
 
 まずは30日間の無料トライアルで、自分の手を動かして確かめてみてください。頭で理解するより、一度作ってみる方が何倍も早く感覚がつかめます。
 
-<!-- TODO: affiliate link for 'canva_ai_beginner' not set in config.yaml -->
+[[AFF:canva_ai_beginner]]
 
 ---
 

@@ -22,7 +22,7 @@ draft: false
 
 この3択に絞られます。以下で詳しく解説します。
 
-<!-- TODO: affiliate link for 'copilot_comparison' not set in config.yaml -->
+[[AFF:copilot_comparison]]
 
 ---
 
@@ -66,7 +66,7 @@ ChatGPTはコード補完ツールではなく、汎用の対話型AIです。�
 - Plus：月額20ドル（GPT-4o利用可）
 - Team/Enterprise：月額25〜30ドル/ユーザー～
 
-<!-- TODO: affiliate link for 'copilot_comparison' not set in config.yaml -->
+[[AFF:copilot_comparison]]
 
 ---
 
@@ -149,7 +149,7 @@ ChatGPTはコード補完ツールではなく、汎用の対話型AIです。�
 
 学習中の方にはChatGPTを強くおすすめします。「なぜこのコードが動くのか」を説明してもらいながら学べるため、理解が深まります。Copilotは便利すぎて「考えずにコードが書ける」状態になりやすく、学習の観点では諸刃の剣です。
 
-<!-- TODO: affiliate link for 'copilot_comparison' not set in config.yaml -->
+[[AFF:copilot_comparison]]
 
 ---
 
@@ -183,7 +183,7 @@ ChatGPTはコード補完ツールではなく、汎用の対話型AIです。�
 
 どのツールも「試してみないとわからない」部分が大きいので、まずは無料プランや試用期間を活用して自分のワークフローに合うかを確かめてみてください。
 
-<!-- TODO: affiliate link for 'copilot_comparison' not set in config.yaml -->
+[[AFF:copilot_comparison]]
 
 ---
 

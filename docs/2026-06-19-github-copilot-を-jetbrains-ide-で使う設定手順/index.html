@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="---">
-<title>フィボナッチ数列を返す関数 | AIツールナビ</title>
+<meta name="description" content="GitHub Copilot を IntelliJ IDEA・PyCharm などの JetBrains IDE で使う設定手順を実体験ベースで解説。プラグイン導入からトラブル対処、VS Code との違いまで正直に比較します。">
+<title>GitHub Copilot を JetBrains IDE で使う設定手順 | AIツールナビ</title>
 <link rel="canonical" href="https://aitoolnavi.com/2026-06-19-github-copilot-を-jetbrains-ide-で使う設定手順/">
 <style>
 :root{--accent:#6366f1;--bg:#0f172a;--surface:#1e293b;--text:#f8fafc;--muted:#94a3b8}
@@ -35,28 +35,15 @@ footer{background:var(--surface);padding:32px 0;text-align:center;color:var(--mu
 <header><div class="container"><a href="/">AIツールナビ</a></div></header>
 <main>
 <div class="hero container">
-<h1>フィボナッチ数列を返す関数</h1>
+<h1>GitHub Copilot を JetBrains IDE で使う設定手順</h1>
 <div class="meta">更新日: 2026-06-19 | AIツールナビ編集部</div>
 <div class="disclosure">※本記事はアフィリエイト広告（PR）を含みます。実際に使用・調査した内容に基づき公平に解説しています。</div>
 </div>
 <article class="container">
-<hr />
-<p>title: "GitHub Copilot を JetBrains IDE で使う設定手順"<br />
-description: "GitHub Copilot を IntelliJ IDEA・PyCharm などの JetBrains IDE で使う設定手順を実体験ベースで解説。プラグイン導入からトラブル対処、VS Code との違いまで正直に比較します。"<br />
-keywords: ["GitHub Copilot JetBrains IDE 対応"]<br />
-date: "2026-06-19"<br />
-draft: false</p>
-<hr />
-<blockquote>
-<p>※本記事はアフィリエイト広告（PR）を含みます。実際に使用・調査した内容に基づき公平に解説しています。</p>
-</blockquote>
-<hr />
 <h2>「JetBrains でも Copilot って使えるの？」——その疑問、正直に答えます</h2>
 <p>「GitHub Copilot は VS Code 専用でしょ？」と思い込んでいる JetBrains ユーザーは、実は今でも多い。私自身、IntelliJ IDEA をメイン IDE として使いながら、しばらくの間は Copilot を試したいがために VS Code を併用するという二度手間な運用をしていた時期があった。</p>
 <p>結論から言うと、<strong>GitHub Copilot は JetBrains IDE に公式プラグインで対応しており、IntelliJ IDEA・PyCharm・WebStorm・GoLand・Rider など主要製品すべてで利用できる</strong>。設定自体は10分もあれば完了する。ただし VS Code 版と比べると機能の出方に差があり、「入れたけど思ったより使えない」と感じるポイントも正直存在する。</p>
 <p>本記事では、実際に JetBrains IDE 上で Copilot を数ヶ月運用してきた経験をもとに、<strong>導入手順・動作確認・よくあるトラブル・VS Code との比較</strong>まで包み隠さず解説する。</p>
-<!-- TODO: affiliate link for 'copilot_jetbrains' not set in config.yaml -->
-
 <hr />
 <h2>GitHub Copilot の JetBrains 対応状況</h2>
 <h3>対応している JetBrains 製品一覧</h3>
@@ -123,8 +110,6 @@ draft: false</p>
 <li><strong>Copilot Business / Enterprise</strong>：組織向け、管理機能付き</li>
 </ul>
 <p>学生・OSS コントリビューター向けの無料枠もある。まず GitHub の設定ページでサブスクリプション状況を確認しておこう。</p>
-<!-- TODO: affiliate link for 'copilot_jetbrains' not set in config.yaml -->
-
 <h3>2. JetBrains IDE のバージョン確認</h3>
 <p>プラグインの動作要件は <strong>2022.1 以降</strong>。古い IDE を使っている場合はアップデートが必要になる。Toolbox App を使っていれば「更新あり」の通知が出るので見落としにくい。</p>
 <hr />
@@ -152,7 +137,8 @@ draft: false</p>
 <p>認証が完了すると、コードエディタ上でグレーのインライン補完テキストが表示されるようになる。<code>Tab</code> キーで補完を受け入れ、<code>Esc</code> で却下、<code>Alt + ]</code>（Windows/Linux）または <code>Option + ]</code>（macOS）で次の候補に切り替えられる。</p>
 <h3>ステップ3：動作確認</h3>
 <p>Python ファイルを新規作成し、以下のようなコメントを書いてみよう。</p>
-<pre><code class="language-python">def fibonacci(
+<pre><code class="language-python"># フィボナッチ数列を返す関数
+def fibonacci(
 </code></pre>
 <p>数秒待つと、関数の実装候補がグレーのゴーストテキストで表示されるはずだ。これが表示されれば導入成功。</p>
 <hr />
@@ -235,8 +221,6 @@ draft: false</p>
 <li><strong>メモリ使用量が増える</strong>：JetBrains IDE はもともとメモリを食う。Copilot プラグインを追加するとさらに増えるため、8GB RAM 環境では体感できるほど重くなる場合がある</li>
 <li><strong>一部のチャットコマンドが未実装</strong>：<code>/tests</code> や <code>/fix</code> など便利なスラッシュコマンドが JetBrains 版では動作しないことがある（バージョンによって変わるため要確認）</li>
 </ul>
-<!-- TODO: affiliate link for 'copilot_jetbrains' not set in config.yaml -->
-
 <hr />
 <h2>よくあるトラブルと対処法</h2>
 <h3>Copilot アイコンが黄色・赤色になる</h3>
@@ -257,8 +241,6 @@ draft: false</p>
 <p>動作します。ただし Community Edition は Java/Kotlin のみ対応であり、Spring フレームワーク関連の高度な補完など Ultimate 版固有の機能との連携は当然使えません。IDE 自体の機能制限の問題であり、Copilot プラグイン自体は Community Edition でも正常に機能します。</p>
 <p><strong>Q3. JetBrains AI Assistant と GitHub Copilot は併用できますか？</strong></p>
 <p>技術的には両方インストールできますが、補完候補が干渉し合う場合があります。私の環境では両方有効にすると補完の表示タイミングがずれて混乱したため、どちらか一方に絞るか、用途によって有効/無効を切り替える運用にしています。JetBrains AI Assistant は JetBrains 製品との統合が深い反面、Copilot はモデルの精度や GitHub との連携が強みです。</p>
-<!-- TODO: affiliate link for 'copilot_jetbrains' not set in config.yaml -->
-
 <hr />
 <h2>まとめ</h2>
 <p>GitHub Copilot の JetBrains IDE 対応は、公式プラグインとして十分実用レベルに達している。導入手順は<strong>プラグインインストール → GitHub 認証 → 動作確認</strong>の3ステップで完結し、難しいところはほぼない。</p>

@@ -16,7 +16,7 @@ draft: false
 
 **結論から言います。Perplexity AIは日本語で十分実用できます。** ただし「何でも完璧」ではなく、得意・不得意がはっきりしているツールです。実際に日常的に使い込んできた経験をもとに、対応状況・精度・活用シーン・正直なデメリットまで、フラットにお伝えします。
 
-<!-- TODO: affiliate link for 'perplexity_japanese' not set in config.yaml -->
+[[AFF:perplexity_japanese]]
 
 ---
 
@@ -58,7 +58,7 @@ ChatGPTのように**対話形式で思考を深める**用途にも使えます
 
 無料プランでも十分使えますが、**Perplexity Pro（有料プラン）**に加入すると、より高精度なAIモデル（GPT-4oやClaude 3.5 Sonnetなど）を選択でき、日本語回答の精度もさらに向上します。長文の日本語レポート作成や、複雑な比較分析を依頼する場合はProが明確に優位です。
 
-<!-- TODO: affiliate link for 'perplexity_japanese' not set in config.yaml -->
+[[AFF:perplexity_japanese]]
 
 ---
 
@@ -108,7 +108,7 @@ ChatGPTのように**対話形式で思考を深める**用途にも使えます
 **4. 長文の日本語生成はChatGPT等に劣る場面も**
 「5000字の日本語ブログ記事を書いて」といった純粋な長文生成は、Perplexityの本来の強みではありません。コンテンツ生成メインの用途ではChatGPTやClaudeのほうが適しています。
 
-<!-- TODO: affiliate link for 'perplexity_japanese' not set in config.yaml -->
+[[AFF:perplexity_japanese]]
 
 ---
 
@@ -127,7 +127,7 @@ ChatGPTのように**対話形式で思考を深める**用途にも使えます
 
 ### Q1. Perplexity AIは完全無料で日本語使用できますか？
 
-**A.** 基本的な日本語での質問・回答は無料プランで制限なく利用できます。ただし、高精度モデル（GPT-4o、Claudeなど）を使うProモードは1日あたりの利用回数に上限があります。日常的なリサーチ用途であれば、無料プランでも十分実用的です。より高度な使い方や回数制限なしに使いたい場合は有料のPerplexity Proが選択肢になります。<!-- TODO: affiliate link for 'perplexity_japanese' not set in config.yaml -->
+**A.** 基本的な日本語での質問・回答は無料プランで制限なく利用できます。ただし、高精度モデル（GPT-4o、Claudeなど）を使うProモードは1日あたりの利用回数に上限があります。日常的なリサーチ用途であれば、無料プランでも十分実用的です。より高度な使い方や回数制限なしに使いたい場合は有料のPerplexity Proが選択肢になります。[[AFF:perplexity_japanese]]
 
 ### Q2. ChatGPTと比べてどちらが日本語対応で優れていますか？
 
@@ -147,7 +147,7 @@ Perplexity AIは、**日本語での情報収集・リサーチ用途におい�
 
 私自身、記事執筆前のリサーチや技術動向のキャッチアップにPerplexity AIを日常的に活用しており、その価値を実感しています。まずは無料プランで試してみることをおすすめします。
 
-<!-- TODO: affiliate link for 'perplexity_japanese' not set in config.yaml -->
+[[AFF:perplexity_japanese]]
 
 ---
 

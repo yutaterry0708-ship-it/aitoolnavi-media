@@ -18,7 +18,7 @@ draft: false
 
 本記事では、実際に JetBrains IDE 上で Copilot を数ヶ月運用してきた経験をもとに、**導入手順・動作確認・よくあるトラブル・VS Code との比較**まで包み隠さず解説する。
 
-<!-- TODO: affiliate link for 'copilot_jetbrains' not set in config.yaml -->
+[[AFF:copilot_jetbrains]]
 
 ---
 
@@ -55,7 +55,7 @@ Copilot を使うには **GitHub アカウントへのサブスクリプショ�
 
 学生・OSS コントリビューター向けの無料枠もある。まず GitHub の設定ページでサブスクリプション状況を確認しておこう。
 
-<!-- TODO: affiliate link for 'copilot_jetbrains' not set in config.yaml -->
+[[AFF:copilot_jetbrains]]
 
 ### 2. JetBrains IDE のバージョン確認
 
@@ -146,7 +146,7 @@ def fibonacci(
 - **メモリ使用量が増える**：JetBrains IDE はもともとメモリを食う。Copilot プラグインを追加するとさらに増えるため、8GB RAM 環境では体感できるほど重くなる場合がある
 - **一部のチャットコマンドが未実装**：`/tests` や `/fix` など便利なスラッシュコマンドが JetBrains 版では動作しないことがある（バージョンによって変わるため要確認）
 
-<!-- TODO: affiliate link for 'copilot_jetbrains' not set in config.yaml -->
+[[AFF:copilot_jetbrains]]
 
 ---
 
@@ -182,7 +182,7 @@ def fibonacci(
 
 技術的には両方インストールできますが、補完候補が干渉し合う場合があります。私の環境では両方有効にすると補完の表示タイミングがずれて混乱したため、どちらか一方に絞るか、用途によって有効/無効を切り替える運用にしています。JetBrains AI Assistant は JetBrains 製品との統合が深い反面、Copilot はモデルの精度や GitHub との連携が強みです。
 
-<!-- TODO: affiliate link for 'copilot_jetbrains' not set in config.yaml -->
+[[AFF:copilot_jetbrains]]
 
 ---
 

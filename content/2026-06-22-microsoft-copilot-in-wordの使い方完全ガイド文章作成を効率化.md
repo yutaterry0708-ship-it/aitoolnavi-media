@@ -24,7 +24,7 @@ draft: false
 
 以下では実際に使い込んだ経験をもとに、操作手順・活用テクニック・正直なデメリットまで余すところなく解説します。
 
-<!-- TODO: affiliate link for 'office_tutorial' not set in config.yaml -->
+[[AFF:office_tutorial]]
 
 ---
 
@@ -125,7 +125,7 @@ Copilotパネルで文書に関する質問を自由に投げかけられます�
 
 **総評：** WordユーザーにとってCopilot in Wordは「文書内で完結できる」点が最大のアドバンテージです。ChatGPTの方が生成品質が高い場面もありますが、毎回コピペする手間を考えると、Wordメインで仕事をするビジネスパーソンにはCopilot in Wordが最も実用的です。
 
-<!-- TODO: affiliate link for 'office_tutorial' not set in config.yaml -->
+[[AFF:office_tutorial]]
 
 ---
 
@@ -192,7 +192,7 @@ Copilot in Wordを使い込んでわかったのは、**「プロンプトの質
 新入社員が読んで行動に移せるような、テレワーク申請手順書を作成してください。
 ```
 
-<!-- TODO: affiliate link for 'office_tutorial' not set in config.yaml -->
+[[AFF:office_tutorial]]
 
 ---
 
@@ -230,7 +230,7 @@ Copilot in Wordを使い込んでわかったのは、**「プロンプトの質
 
 まずは日常的に書いている文書の「下書き生成」から試してみてください。最初の一歩を踏み出すだけで、文書作成の体験が変わります。
 
-<!-- TODO: affiliate link for 'office_tutorial' not set in config.yaml -->
+[[AFF:office_tutorial]]
 
 ---
 

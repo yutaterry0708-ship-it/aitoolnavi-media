@@ -18,7 +18,7 @@ Midjourneyを始めたばかりのころ、私も同じ壁にぶつかりまし�
 
 この記事では、実際に多数のプロンプトを試してきた経験をもとに、再現性の高いコツを体系的に解説します。初心者から中級者まで、すぐに実践できる内容にまとめました。
 
-<!-- TODO: affiliate link for 'midjourney_prompt' not set in config.yaml -->
+[[AFF:midjourney_prompt]]
 
 ---
 
@@ -104,7 +104,7 @@ watercolor style --no people, text, watermark, ugly, deformed
 
 商品撮影風の画像を作りたいときは `--s 20` 程度に下げると、余計な装飾が減って実用的な画像になりやすいです。
 
-<!-- TODO: affiliate link for 'midjourney_prompt' not set in config.yaml -->
+[[AFF:midjourney_prompt]]
 
 ---
 
@@ -144,7 +144,7 @@ Midjourneyは英語で学習されたモデルです。日本語プロンプト�
 - **著作権・商用利用のルールが複雑**：プランによって商用利用の可否が異なるため、利用規約の確認が必須
 - **ローカル環境では動かない**：クラウドサービスのため、オフライン利用・自社サーバー運用は不可
 
-<!-- TODO: affiliate link for 'midjourney_prompt' not set in config.yaml -->
+[[AFF:midjourney_prompt]]
 
 ---
 
@@ -184,7 +184,7 @@ Midjourneyのプロンプトは、AIへの「丸投げ」ではなく、**ビジ
 
 まずは5要素の構造でプロンプトを1本書いてみてください。それだけで「なんか違う」が「これに近い！」に変わるはずです。
 
-<!-- TODO: affiliate link for 'midjourney_prompt' not set in config.yaml -->
+[[AFF:midjourney_prompt]]
 
 ---
 

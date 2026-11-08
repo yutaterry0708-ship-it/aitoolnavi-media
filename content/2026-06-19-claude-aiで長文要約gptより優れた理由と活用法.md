@@ -20,7 +20,7 @@ ChatGPT（GPT-4o）を使ってみたものの、「長文を貼り付けたら�
 
 本記事では、実際にClaude AIを長文処理ツールとして運用してきた経験をもとに、具体的な活用法・GPTとの比較・正直なデメリットまで包み隠さずお伝えします。
 
-<!-- TODO: affiliate link for 'claude_summarize' not set in config.yaml -->
+[[AFF:claude_summarize]]
 
 ---
 
@@ -65,7 +65,7 @@ GPT-4oは文章の流暢さでは優れますが、条件節を勝手に削除�
 
 Claude AIは無料プラン（Claude.ai）でも利用できますが、長文処理を頻繁に行う場合は**Claude Pro（月額$20前後）**を強く推奨します。無料プランは1日あたりの利用回数に制限があり、大量の文書を処理したい場面では上限に引っかかります。
 
-<!-- TODO: affiliate link for 'claude_summarize' not set in config.yaml -->
+[[AFF:claude_summarize]]
 
 **入力方法は主に3つ：**
 
@@ -167,7 +167,7 @@ Claude AIは無料プラン（Claude.ai）でも利用できますが、長文�
 - **ライター・編集者**：長いインタビュー書き起こしや参考文献の整理に
 - **経営者・管理職**：会議議事録や報告書を素早く把握したい方
 
-<!-- TODO: affiliate link for 'claude_summarize' not set in config.yaml -->
+[[AFF:claude_summarize]]
 
 ---
 
@@ -201,7 +201,7 @@ Claude AIを長文要約ツールとして使い込んできた結論として�
 
 まずは無料プランで試してみて、「これは使える」と感じたらProへのアップグレードを検討してみてください。
 
-<!-- TODO: affiliate link for 'claude_summarize' not set in config.yaml -->
+[[AFF:claude_summarize]]
 
 ---
 
