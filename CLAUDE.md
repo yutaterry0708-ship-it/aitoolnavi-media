@@ -49,6 +49,9 @@ python keyword_research.py --per-topic 15    # ⚠ API課金: keywords_seed.csv 
 
 `src/run_all.ps1` / `src/run_daily.ps1` はローカル Windows Task Scheduler 用の経路（パスは `C:\Users\yutat\...` 固定）。
 
+- **公開先は GitHub Pages**（`docs/` + `docs/CNAME` = aitoolnavi.com）。WordPress（`wp_publisher.py`）は使われていない。`master` への push がそのまま本番反映になる。
+- **GitHub は 60 日間リポジトリに動きがないと定期実行を自動停止する**（`state: disabled_inactivity`）。キューが空で差分が出ない日が続くと発生する。再開は Actions 画面の「Enable workflow」。キューは常に pending を残しておくこと。
+
 ## 設計上の決定・落とし穴
 
 - IMPORTANT: **`docs/` は生成物。直接編集しない**（毎回上書きされる）。例外は手管理の `docs/CNAME`。見た目を変えるときは `src/static_publisher.py` のテンプレート（`HTML_TEMPLATE` など）を編集して再生成する。
