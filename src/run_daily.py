@@ -38,8 +38,12 @@ def main():
         rows = list(csv.DictReader(f))
 
     done = 0
+    fails = 0  # 連続失敗。API障害・キー失効でキュー全体を error にしないための安全弁
     for r in rows:
         if done >= n:
+            break
+        if fails >= 3:
+            print("3回連続で失敗したため中断します（残りは pending のまま）。")
             break
         if r.get("status") != "pending":
             continue
@@ -51,9 +55,11 @@ def main():
             path = ga.save(md, r.get("title") or r["keyword"], cfg)
             r["status"] = "published"
             done += 1
+            fails = 0
             print(f"  -> {path}")
         except Exception as e:  # noqa: BLE001
             r["status"] = "error"
+            fails += 1
             print(f"  ERROR: {e}")
 
     with open(queue_path, "w", encoding="utf-8", newline="") as f:
