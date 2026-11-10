@@ -37,6 +37,15 @@ python keyword_research.py --per-topic 15    # ⚠ API課金: keywords_seed.csv 
 - 設計判断を伴うタスクは複数案を比較してから実装する。
 - 破壊的な変更（ファイル・データの削除、`keywords.csv` の一括書き換えなど）は事前に承認を得る。
 
+## 現在の運用状況（2026-11-10 に決定）
+
+- **毎日の自動実行（`daily.yml`）は手動停止中**（`disabled_manually`）。Anthropic API のクレジットは補充しない方針のため。再開は Actions 画面の「Enable workflow」。
+- 公開済みの記事 87 本と公開サイト（GitHub Pages）はそのまま公開中。費用はかからない。
+- `data/keywords.csv` に未生成のキーワード 35 件が `pending` で残っている（API が使えない間は消費されない作りにしてある）。
+- **アフィリエイトはしない**方針。全記事の広告表記（`content.disclosure`）と `[[AFF:..]]` 枠をどうするかは未決定。
+- Claude Code は**パソコン側（デスクトップ）だけで使う**方針。クラウド側のセッションは使わない。
+- 手元の定期実行 `AIToolNaviDailyPDCA`（Windows タスクスケジューラ）は無効化済み（削除はしていない。再有効化は `Enable-ScheduledTask`）。
+
 ## パイプライン（本番 = GitHub Actions）
 
 `.github/workflows/daily.yml` が毎日 22:30 UTC（7:30 JST）に実行し、`master` に直接コミットする。
@@ -56,7 +65,7 @@ python keyword_research.py --per-topic 15    # ⚠ API課金: keywords_seed.csv 
 
 - IMPORTANT: **`docs/` は生成物。直接編集しない**（毎回上書きされる）。例外は手管理の `docs/CNAME`。見た目を変えるときは `src/static_publisher.py` のテンプレート（`HTML_TEMPLATE` など）を編集して再生成する。
 - **`keyword_research.py` は CI に入っていない**。キューが全件 `published` になると記事生成が止まり、差分がないのでコミットも発生しない。
-- **アフィリ置換は破壊的**: URL 未設定の `[[AFF:x]]` は `<!-- TODO: affiliate link for 'x' ... -->` に置き換わり、元のプレースホルダーは消える。後から `config.yaml` に URL を入れても既存記事には自動反映されない。
+- アフィリ置換は非破壊: URL 未設定の `[[AFF:x]]` はそのまま残り、公開ページでは非表示になる（`config.yaml` に URL を入れれば次回の `affiliate_inject.py` で反映）。ただし枠の名前（`midjourney_comparison` 等）は登録済み案件名と合わないものが多い。
 - ブランド名・ドメイン・広告表記は `config.yaml` と `static_publisher.py`（ハードコード）の二重管理。片方を変えたらもう片方も直す。
 - LLM 呼び出しは必ず `src/llm.py`（`call_claude` / `call_llm_json`、リトライ付き）を経由する。モデル名は `config.yaml` の `llm.*` で管理。
 - `.env` は `load_dotenv(override=True)` で読む（空のシステム環境変数を上書きするための意図的な指定）。
